@@ -18,7 +18,6 @@ import  Test from './Components/Test';
 const Home = lazy(() => import('./pages/Home'));
 const Views = lazy(() => import('./Components/Views'));
 const ProductDetails = lazy(() => import('./pages/ProductDetails'));
-const PagesContent = lazy(() => import('./pages/PagesContent'));
 const PagesName = lazy(() => import('./pages/PagesName'));
 const Cart = lazy(() => import('./pages/Cart'));
 const AllProduct = lazy(() => import('./pages/AllProduct'));
@@ -41,7 +40,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="Menu/Chọn-Size" element={<ChooseSize/>}/>         
           <Route path="Menu/Coolxprint" element={<h1>Coolxprint</h1>} />      
           <Route path = "/product/:ductName&:id" element={<ProductDetails/>}/>       
-          <Route path="/Danh-mục/:content" element={<PagesContent/>}/> 
           <Route path="/collection/:name" element={<PagesName/>}/>      
                         
         </Route>

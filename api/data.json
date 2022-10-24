@@ -47,7 +47,7 @@
                      },
                  {               
                      "name":"Phụ kiện",
-                     "product":["Mũ (Nón)","Tất(Vớ)"]         
+                     "product":["Mũ (Nón)","Tất (Vớ)"]         
                  },     
                  {               
                      "name":"Quần Nam",
@@ -2414,20 +2414,17 @@
     "tabs":[
             {"id":"1",            
             "title":"Excool"           
-                                                            
             },
             {"id":"2",            
             "title":"Quần-Trunk-(Boxer)"            
-                                                
             },
             {"id":"3",            
             "title":"Anti-Smell"        
-                                                
             }
                                                             
         ]
 
-
+    }
 
     
        

@@ -6,7 +6,6 @@ function useSrt(str, path) {
     str = str.trim();
     return str;
   } else {
-    console.log("qưewqeqw", str);
     str = str.replace(/-/g, " ");
     return str;
   }

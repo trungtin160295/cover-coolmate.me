@@ -1,10 +1,12 @@
 import { Button } from 'reactstrap';
 import Text from './Text';
 import '../style/card.scss'
+import { Link } from 'react-router-dom';
+import useSrt from "../customize/str"
 
 
 export default  function Card(props) {  
-const {linkImage,title,content}= {...props.obj};
+const {linkImage,title,content,link}= {...props.obj};
       
 
     let className;
@@ -29,9 +31,9 @@ const {linkImage,title,content}= {...props.obj};
                            }
                         </div>
                         <span>
-                           <Button color="info" outline>
+                           <Link to={link} color="info" outline>
                               Tìm hiểu thêm 
-                           </Button>
+                           </Link>
                         </span>
                      
                       </div>

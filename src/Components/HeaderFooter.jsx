@@ -108,7 +108,7 @@ import '../style/footer.scss'
                                                                                    {child.product.map((content) => {
                                                                                       return (
                                                                                           <li key= {content}>
-                                                                                              <Link to= {`Danh-mục/${useSrt(content,true)}`}  className="child-product">{content}</Link>
+                                                                                              <Link to= {`collection/${useSrt(content,true)}`}  className="child-product">{content}</Link>
                                                                                               
                                                                                           </li>                                                   
                                                                                       )

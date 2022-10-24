@@ -18,6 +18,7 @@ import Basic from '../Components/Basic'
         title:"Coolmate's CLEAN DENIM",
         content:[{content:"Một chiếc quần Jeans đầu tiên tại Coolmate được sử dụng chất liệu là Cotton Tái sinh (Regenerative Cotton) - loại Cotton chất lượng  và trồng bằng quy trình sạch, bền vững. Chiếc quần với vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex /- nhà máy với nhiều trang máy móc, thiết bị hiện đại với quy trình sản xuất khép kín, giảm thiểu CO2 và nước thải ra môi trường.",
                     key:1}],
+        link:"/Danh-mục/Clean-Vietnam"
         
     }
     const excool ={
@@ -25,6 +26,7 @@ import Basic from '../Components/Basic'
         title:"Dòng sản phẩm công nghệ EXCOOL",
         content:[{content:"Công nghệ Việt cho người Việt. Với hơn 100.000 sản phẩm đã được gửi đến tay khách hàng sử dụng và hài lòng",
                     key:1}],
+       link:"/collection/Excool"
         
     }
     const shoppingWithCool ={
@@ -48,6 +50,7 @@ import Basic from '../Components/Basic'
         }
 
         ],
+        link:"/Menu/Về-Coolmate"
         
     }
 

@@ -1,18 +1,46 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import ListProduct from "../Components/ListProduct";
 import useFetch from "../customize/fetch";
 import useSrt from "../customize/str"
-
+import sortBy from "../customize/sortBy"
 import '../style/HomeUnderwear.scss';
 
 export  default function PageTitle () {  
   const  listFilter = ["Mới nhất","Bán chạy", "Giá thấp đến cao","Giá cao đến thấp"]
-  const [filter,setFilter] =useState(listFilter[0])
+  const [filter,setFilter] =useState("Mới nhất")
+  const [dataProductsFilter,setDataProductsFilter] =useState()
   const {name} = useParams();
   
-  const { data: dataProducts, isLoading }
+    const { data: dataProducts, isLoading }
   = useFetch(`http://localhost:3004/products/?q=${name}`, false); 
+  // if(isLoading===true ){
+  //   setDataProductsFilter([])
+        
+  //   }
+  useEffect(() => {
+    if(isLoading === false && dataProducts.length >0){
+      switch (filter) {
+      
+        case "Giá thấp đến cao":
+          setDataProductsFilter(sortBy(dataProducts, {prop:"date", desc: false}))
+          break;
+        case "Giá cao đến thấp":
+            setDataProductsFilter(sortBy(dataProducts, {prop:"date", desc: true}))
+            break;
+        case "Bán chạy":
+          setDataProductsFilter(sortBy(dataProducts, {prop:"comment", desc: true}))
+          break;
+    
+        default:
+          setDataProductsFilter(dataProducts)
+          
+      }
+    }
+    
+},[filter]) 
+
+
   return (
     <>
         <div className="collections-filter">
@@ -28,14 +56,14 @@ export  default function PageTitle () {
             ))}
           </select>
         </div>
-                { isLoading === false && dataProducts.length >0 &&
+        <button onClick={() =>console.log(dataProductsFilter) }>aaa</button>
+          { isLoading === false && dataProducts.length >0 &&
             <ListProduct 
-              
-              dataProducts ={dataProducts}
+              dataProducts ={dataProductsFilter}
             />
           }
            { isLoading === false && dataProducts.length == 0 &&
-         <div>
+         <div style={{margin: "30px",textAlign:"center"}}>
             Sản phẩm này chưa trình bán.
             <br/>
             Mong quý khách xem các sản phẩm khác

@@ -71,10 +71,7 @@ export default function SliderBanner(args) {
         key={item.id}
       >
         <img src={item.src}  />
-        {/* <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
-        /> */}
+        
       </CarouselItem>
       
     );
