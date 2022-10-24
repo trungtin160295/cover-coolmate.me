@@ -265,7 +265,7 @@ header{
 
 .container-seach{
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: -40px;
   width: 38%;
   
   .nav-seach{
@@ -280,10 +280,10 @@ header{
       padding-left: 20px;
       background-color: white;
     }
-    a{
+    button{
       margin-left: 10px;
       text-decoration: none;
-      background-color: #2d41ee;
+      background-color: #f46874;
       color: white;
       padding:5px 10px ;
       border-radius:10px ;

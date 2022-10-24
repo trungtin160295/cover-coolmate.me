@@ -33,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Wrapper>
     <Routes>
         <Route path="/" element={<Views />} >
-          <Route  index element={<Test/>} />
+          <Route  index element={<Home/>} />
           <Route path="Menu/Sale" element={<div> chưa có  </div>} />
           <Route path="Cart" element={<Cart/>} />
           <Route path="Menu/Sản-phẩm" element={<AllProduct/>} />

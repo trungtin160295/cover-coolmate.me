@@ -26,20 +26,30 @@ import '../style/footer.scss'
     const [timeShow,setTimeShow] =useState(false)
 
     
-    if(show){
-        setTimeout(() => {
-            setShow(false)
-        }, 100000);
-    }
+    
 
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
 
-    const focusSeachInput = () =>{
+
+
+  function timerShow (){
+    if(show){
+        setTimeout(() => {
+            setShow(false)
+        }, 3000);
+    }
+}
+   function focusSeachInput (){
         setShow(true)
         seachInput.current.focus()
+        timerShow ()
         
     }
+
+
+   
+    
        
     function sum (cartProduct){     
         let  sumProduct = 0 ;
@@ -167,11 +177,11 @@ import '../style/footer.scss'
              <div  className={`container-seach  ${show===true ? 'show-nav-seach' : ''}`}>
                 <div className="nav-seach">
                     <input ref = {seachInput} type="text"  onChange={(e) =>setKeyWord(e.target.value)} />
-                    <Link >Tìm kiếm</Link>
+                    <button onClick={() =>{setShow(false)}}>X</button>
                 </div>
                 {
-                keyWord.length > 0 && loadSeach===false ? 
-                <div className="seach-products">
+                keyWord.length > 0 &&show===true && loadSeach===false ? 
+                <div  className="seach-products" >
                     <Link > Xem thêm</Link>
                     {dataProductsSeach.length >0?
                     dataProductsSeach.slice(0,5).map((product) =>{

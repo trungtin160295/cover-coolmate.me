@@ -40,12 +40,11 @@ export  default function PageTitle () {
         </div>
       
         { isLoading === false && dataProducts.length > 0 &&
-            <ListProduct 
-              imgFirst='https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/do-mac-nha-va-mac-trong.jpg'
+            <ListProduct               
               dataProducts ={dataProducts}
             />
           }
-         { isLoading === false &&  dataProducts.length =="0" &&
+         { isLoading === false &&  dataProducts.length ==0 &&
          <div>
             Sản phẩm này chưa trình bán.
             <br/>

@@ -208,11 +208,11 @@ const ProductDetails = () => {
                         </>
                         :null}
                       </div>
-                      { product.combo!= "" && 
+                      {/* { product.combo!= "" && 
                         <span className="product-combo">
                           {product.combo}
                         </span>
-                        }
+                        } */}
                       { product.sale != "" &&
                         <Text className="product-sale">{product.sale}   </Text>
                         }
