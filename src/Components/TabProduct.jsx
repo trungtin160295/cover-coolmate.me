@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState,useRef} from 'react';
 import useFetch from '../customize/fetch';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,25 +6,29 @@ import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import ListProduct from './ListProduct';
 import Product from './Product';
-import '../style/Home.scss'
+import '../style/home.scss'
 
 
 
 
 function TabsProduct(){
     const { data: titleTabs, isLoading}
-    = useFetch(`http://localhost:3004/homeProducts`, false);     
+    = useFetch(`http://localhost:3004/tabs`, false);     
     
      
     
-    const [isSelected, setIsSelected] = useState(true)
-    const [selectedIndex, setSelectedIndex] = useState(0)
     
-    const handleChangeType = (index) => {
-        setIsSelected(true)
-        setSelectedIndex(index)
-        
-      }
+    const [tab, setTab] = useState()
+    
+
+    if(isLoading === false && titleTabs.length > 0 && !tab){
+      setTab(titleTabs[0].title)
+
+
+    }
+   const { data: dataProducts,isLoading:loadDataProducts }
+      = useFetch(`http://localhost:3004/products/?q=${tab}`, false); 
+            
     const settings = {        
       speed: 1000,
       slidesToShow: 5,
@@ -63,31 +67,27 @@ function TabsProduct(){
     <div className="category-container">
         {isLoading === false && titleTabs.length > 0  &&
         <>
-       
-        <div className="second-slogan">Mặc Ngay, Yêu Luôn</div>
+        <div className="second-slogan">Mặc Ngay, Yêu Luôn</div>       
         <div className="category-title">
-            {titleTabs.map((type, index) => (
-                    
+            {titleTabs.map((item) => (
                 <div
                     className={`category-name ${
-                    isSelected && selectedIndex === index
+                      tab === item.title
                         ? "on-click"
                         : "not-on-click"
                     }`}
-                    key={type.id}
-                    onClick={() => handleChangeType(index)}
+                    key={item.id}
+                    onClick={() => setTab(item.title)}
                 >
-                    {type.title}
-                    {type.attention && <span className="tag">{type.attention}</span>}      
-                    
+                    {item.title}                      
                 </div>
             ))}
         </div>
-        {titleTabs[selectedIndex]?  
+        {dataProducts?  
             <div className="slick-container">
                 <Slider {...settings}>
                     
-                    {titleTabs[selectedIndex].products.map((child,index) => {                      
+                    {dataProducts.map((child,index) => {                      
                         return ( 
                         <Product products ={child}  index={index} key={child.id}/>
                         
