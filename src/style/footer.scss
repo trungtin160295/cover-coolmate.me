@@ -1,0 +1,130 @@
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: azure;
+    font-size: 14px;
+    line-height: 200%;
+    margin-top: 40px;
+  }
+  .footer-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .footer-menu-item {
+    max-width: 180px;
+  }
+  
+  .footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-menu ul li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 12px;
+  }
+  
+  .footer-title {
+    font-size: 15px;
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+  }
+  
+  .footer-right {
+    max-width: 260px;
+    margin-top: 30px;
+  }
+  .footer-title-right {
+    font-size: 18px;
+  }
+  .footer-content-right {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .sent-idea {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(13, 108, 225);
+    color: azure;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+  
+  .sent-idea:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .hotline {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  .hotline img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  .social {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+  }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #faf8f8;
+    padding: 20px 0;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 12px;
+  }
+  .footer-bottom-right {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-bottom-right img {
+    height: 40px;
+  }
+  footer ul li a:hover {
+    color: #f9f86c;
+  }
+  .basic {
+    text-align: center;
+  }
+  
+  .list-basic {
+    display: flex;
+  }
+  .list-basic-child {
+    width: 20%;
+  }
+  .list-basic-child img {
+    width: 100%;
+  }
+  
+  .basic button {
+    margin: 20px 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: aqua;
+    border: none;
+  }
+  .basic button:hover {
+    background-color: antiquewhite;
+  }
+  
+  .card-collections {
+    display: flex;
+    gap: 2%;
+  }
+  .card-collections div {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .card-collections img {
+    width: 100%;
+  }

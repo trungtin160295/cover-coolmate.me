@@ -1,0 +1,3213 @@
+{ 
+     "headerAndFooter":{
+    "header":{
+    "sale":"Ưu đãi combo tiết kiệm đến 50% ",
+    "header":[
+   {
+    "id":"1",
+    "title":"Sale"
+   },
+   {
+    "id":"2",
+    "title":"Sản phẩm",
+    "child":[
+        {"title" :"Nhu cầu",
+        "child" : [
+                 {               
+                     "name":"Mặc nhà & Mặc trong",
+                     "explain":"Homewear /& Underwear" 
+                       
+                     },
+                 {               
+                     "name":"Mặc hằng ngày",
+                     "explain":"Casualwear" 
+                                  
+                 },     
+                 
+                 {               
+                     "name":"Đồ thể thao",
+                     "explain":"Casualwear" , 
+                     "attention": "Hot" ,     
+                     "product":[]         
+                  },
+                 {               
+                      "name":"Phụ kiện",
+                     "explain":"Accessories" ,      
+                     "product":[]            
+                 }
+             ] 
+             },    
+      
+      
+        {"title" :"Danh mục",
+        "child" : [
+                 {               
+                     "name":"Áo nam",
+                     "product":["Áo Tank top","Áo T-shirt","Áo Polo","Áo Sơ mi","Áo thể thao","Áo in hình","Áo khoác thể thao"]             
+                     },
+                 {               
+                     "name":"Phụ kiện",
+                     "product":["Mũ (Nón)","Tất(Vớ)"]         
+                 },     
+                 {               
+                     "name":"Quần Nam",
+                     "product":["Quần Shorts","Quần Jeans","Quần dài"]          
+                 },
+                 {               
+                     "name":"Quần lót nam",
+                     "product":["Quần Brief (Tam giác)","Quần Trunk (Boxer)","Quần Brief Boxer","(Boxer dài)" ]  
+                     },
+                 {               
+                     "name":"Tất cả sản phẩm",      
+                    "product":[]
+                     
+                       
+                 },
+                 {               
+                     "name":"Box đồ nam",  
+                     "attention": "Sale" ,     
+                     "product":[]
+                       
+                 }
+              ] 
+          }, 
+        {"title" :"Bộ Sưu Tập",
+        "child": [
+                 {               
+                    "name":"Vũ trụ Áo Marvel NEW",
+                     "explain":"Ưu đãi trải nghiệm hấp dẫn" ,
+                     "attention": "New" ,  
+                     "product":[]        
+                     },
+                     
+                 {               
+                     "name":"Clean Vietnam",
+                     "explain":"Sự kết hợp giữa Coolmate & Vietmax" ,  
+                     "product":[]                 
+                 },     
+                 
+                 {               
+                     "name":"Coolmate Basics",
+                     "explain":"10% doanh thu dành cho các bé" , 
+                        
+                     "product":[]          
+                     },
+                 {               
+                 "name":"Sản phẩm bền vững",
+                     "explain":"Sản phẩm thân thiện với môi trường" ,      
+                     "product":[]           
+                    }
+             ] 
+             },  
+            
+         {"title" :"Công nghệ",
+          "child" : [
+                 {               
+                     "name":"Excool",
+                      "explain":"Công nghệ làm mát tối đa" ,
+                     
+                     "product":[]      
+                     },
+                 {               
+                     "name":"Cleandye",
+                     "explain":"Nhuộm không dùng nước" ,  
+                     "product":[]                
+                 },     
+                 
+                 {               
+                     "name":"HeiQ Viroblock",
+                     "explain":"10% doanh thu dành cho các bé" , 
+                        
+                     "product":[]         
+                     },
+                 {               
+                 "name":"Anti-Smell",
+                     "explain":"Công nghệ khử mùi từ Nhật Bản" ,      
+                     "product":[]           
+                 },
+                 {
+                    "name":"",
+                     "explain":"" ,      
+                     "product":[] ,
+                     "imgSale":"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/September2022/Desktop-Banner-CLEARANCE-SALE-_100.jpeg"
+                 }
+             ] 
+             }                                                                        
+         
+    ] 
+   },
+   {
+    "id":"3",
+    "title":"Coolxprint"
+   },
+   {
+    "id":"4",
+    "title":"Về Coolmate",
+    "child": [
+        {
+            "id":"1",
+            "linkImg":"https://mcdn.coolmate.me/image/August2022/mceclip0_97.jpg",
+            "title":"Coolmate 101",
+            "content":"Tất cả những gì bạn muốn biết về Coolmate và gia nhập Coolmate"
+        },
+        {
+            "id":2,
+            "linkImg":"https://mcdn.coolmate.me/image/August2022/mceclip1_92.jpg",
+            "title":"Dịch vụ 100% hài lòng",
+            "content":"Bật mí dịch vụ Coolmate cam kết với khách hàng"
+        },
+        {
+            "id":3,
+            "linkImg":"https://mcdn.coolmate.me/image/August2022/mceclip2_100.jpg",
+            "title":"Cool-club- Khách hàng thân thiết",
+            "content":"Những ưu đãi hấp dẫn dành cho khách hàng thân thiết"
+        },
+        {
+            "id":4,
+            "linkImg":"https://mcdn.coolmate.me/image/August2022/mceclip3_34.jpg",
+            "title":"Câu chuyện về Coolmate",
+            "content":"Về Starup với mô hình Online D2C"
+        }
+    ]
+   },
+   {
+    "id":"5",
+    "title":"Chọn Size"
+   }
+    ] },
+    "footer": [
+    {
+      "id": 1,
+      "name": "Khám phá COOLMATE",
+      "children": [
+        "Áo-Polo",
+        "Áo T-shirt",
+        "Áo Sơ mi",
+        "Quần",
+        "Quần Lót",
+        "Tất (Vớ)",
+        "Mũ (Nón)",
+        "Phụ Kiện Khác"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Dịch vụ khách hàng",
+      "children": [
+        "Hỏi đáp - FAQs",
+        "Chính sách đổi trả 60 ngày",
+        "Liên hệ",
+        "Thành viên Coolclub",
+        "Khách hàng hài lòng 100%",
+        "Chính sách khuyến mãi",
+        "Chính sách giao hàng"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Kiến thức mặc đẹp",
+      "children": ["Hướng dẫn chọn size", "Blog", "Group mặc đẹp sống chất"]
+    },
+    {
+      "id": 4,
+      "name": "Tài liệu - Tuyển dụng",
+      "children": ["Tuyển dụng", "Đăng ký bản quyền"]
+    },
+    {
+      "id": 5,
+      "name": "Về COOLMATE",
+      "children": [
+        "Câu chuyện về Coolmate",
+        "Nhà máy",
+        "CoolClub",
+        "Care-&-Share"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Địa chỉ liên hệ",
+      "children": [
+        "HUB Hà Nội: Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội",
+        "HUB Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh"
+      ]
+    }
+  ]
+    },
+      
+   "home":{
+    
+            "bannerSlider":[
+                {
+                "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/August2022/COMBO-GIAM-GIA---T7_15.jpeg",
+                
+                "id": "1"
+                },
+                {
+                "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/July2022/Banner-Coolmate-Active-opt-1.jpeg",
+                
+                "id": "2"
+                },
+                {
+                "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/August2022/Banner-CXp-2.jpeg",
+                
+                "id": "3"
+                },
+                {
+                    "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/July2022/Excool-Banner-website.jpeg",
+                    
+                    "id": "4"
+                }
+                
+            ],
+            "tabsProducts":[
+                    {"id":"1",            
+                    "title":"We made too much",
+                    "attention":"Sale", 
+                    "products":[
+                        {
+                            "id":1,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 500,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":2,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 2",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":3,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                            "price":200,
+                            "discount":"" ,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":4,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 3",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":5,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 4",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":6,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        }
+                    ] 
+                            
+                },
+                    {"id":"2",                       
+                    "title":"Quần lót nam",
+                    "products":[
+                        {
+                            "id":7,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 5",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":8,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":9,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 6",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":10,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 7",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":11,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":12,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 8",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        }
+                    ]                                           
+                },
+                    {"id":"3",                       
+                    "title":"mặc hàng ngày" ,
+                    "products":[
+                        {
+                            "id":13,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 9",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":14,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":15,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 10",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":16,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 11",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":17,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 12",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        },
+                        {
+                            "id":18,                    
+                            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                                        },               
+                            "rate":  3.9 ,
+                            "comment": 400,
+                            "ductName": "Áo Polo nam công nghệ khử mùi cao 13",
+                            "price":200,
+                            "discount": 25,
+                            "voucherCode": "XMDDDDDDDD",
+                            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                            "combo":"Mua 3 được giảm thêm 5%",
+                            "attention": "Hot" ,
+                            "voucherValue": 30000,
+                            "listSize" :["S","M","L","XL","2XL"],
+                            "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+                        }
+                    ]                         
+                }
+                        
+                ]
+
+         }   ,       
+        
+    
+    
+    
+    
+   "products" : [
+        {
+            "id":1,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/combo-3_49.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/139-1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/Untitled-3_45.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/139-6.jpg"
+                            ],                         
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Combo 03 Quần lót Trunk Pima Cotton thấm hút tốt - Xanh Navy",
+            "price":299,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "New" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"",
+            "technology":"",
+            "date":"2011-11-14",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu 92% sợi Pima Cotton, 8% Spandex với khả năng hút ẩm và giữ màu tốt."
+                        },
+                        {
+                            "key" :"2",
+                            "content" :"Cotton Pima có độ dài hơn 50% so với cotton thông thường, nên sẽ tạo sự mềm mại, ít xù lông, bền và chắc chắn hơn so với cotton thường."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Đai lưng được dệt bằng công nghệ mới nhất hiện tại, đem đến cảm giác co giãn siêu tốt, mềm mượt không vết hằn."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"An toàn, không gây kích ứng da."
+                        },
+                        {
+                            "key" :"5",
+                            "content" :"Sản xuất tại xưởng 10 năm kinh nghiệm tại TP Hồ Chí Minh."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                    }
+                ]
+                        
+        } , 
+        {
+            "id":2,
+            "linkImages": [  "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/cottonmoxammix.jpg",
+                             "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/DSC06279_copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/DSC06301_copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/DSC06380_copy.jpg"
+                        ],
+                          
+            "rate":  3.9 ,
+            "comment": 300,
+            "ductName": "Combo 3 Quần lót Trunk vải Cotton Modal đen cạp mới - Phối màu",
+            "price":279,
+            "discount": 7,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"",
+            "attention": "Sale" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"",
+            "technology":"",
+            "date":"2011-11-15",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 50% Modal - 42% Cotton - 8% Spandex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Công nghệ may Flat-out Stream đảm bảo co dãn và êm ái nhẹ nhàng cho phần da vùng nhạy cảm."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Đai lưng được dệt bằng công nghệ mới nhất hiện tại, đem đến cảm giác co giãn siêu tốt, mềm mượt không vết hằn."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Sản xuất tại xưởng 10 năm kinh nghiệm tại TP Hồ Chí Minh."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Người mẫu 1m78, 70kg - mặc 2XL."
+                            }
+                           
+                ]       
+        } , 
+        {
+            "id":3,
+            "linkImages": [  "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/1briefba3_79.jpg",
+                             "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/brief_den_thumb.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/Brief_basic_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/Brief_basic_3.jpg"
+                        ],            
+                            
+            "rate":  5 ,
+            "comment": 800,
+            "ductName": "Quần lót nam Brief Coolmate Basics",
+            "price":49,
+            "discount":"" ,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"",
+            "attention": "Hot" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"",
+            "technology":"",
+            "date":"2011-10-15",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu 95% Cotton Compact - 5% Spandex tạo sự mềm mại và thoáng mát."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"ĐỊnh lượng 170gsm mỏng hơn Cotton Compact thường."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Đai lưng may liền, không viền, tạo cảm giác thoải mái và phù hợp với vóc dáng nam giới Việt."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Công nghệ may Flat-out Stream đảm bảo sự co dãn và êm ái nhẹ nhàng cho phần da vùng nhạy cảm."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Người mẫu: 1m80 - 75kg, mặc XL."
+                            }
+                          
+                ]       
+        } , 
+        {
+            "id":4,
+            "linkImages": [  "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/5trangkkk_99.jpg",
+                             "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/thum_trang_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/thum_trang.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/January2022/trunk_trang1.jpg"
+                        ],          
+                            
+            "rate":  3.9 ,
+            "comment": 500,
+            "ductName": "Combo 05 Quần lót nam Trunk Coolmate Basics",
+            "price":200,
+            "discount": 25,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "Hot" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"",
+            "technology":"",
+            "date":"2011-10-20",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu 95% Cotton Compact - 5% Spandex tạo sự mềm mại và thoáng mát."
+            },
+                    {
+                        "key" :"2",
+                        "content" :"ĐỊnh lượng 170gsm mỏng hơn Cotton Compact thường."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Đai lưng may liền, không viền, tạo cảm giác thoải mái và phù hợp với vóc dáng nam giới Việt."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Công nghệ may Flat-out Stream đảm bảo sự co dãn và êm ái nhẹ nhàng cho phần da vùng nhạy cảm."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Người mẫu: 1m80 - 75kg, mặc XL."
+                        }
+                      
+                ]       
+        } ,
+        {
+            "id":5,
+            "linkImages": [  "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/DSC06380_copy.jpg",
+                             "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/cottonmoxanh.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/DSC06359_copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/DSC06407_copy.jpg"                        ],
+                 
+            "rate":  4.9 ,
+            "comment": 360,
+            "ductName": "Combo 3 Quần lót Trunk vải Cotton Modal đen cạp mới",
+            "price":200,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "Hot" ,
+            "voucherValue":"",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"",
+            "technology":"",
+            "date":"2011-10-20",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 50% Modal - 42% Cotton - 8% Spandex."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Công nghệ may Flat-out Stream đảm bảo co dãn và êm ái nhẹ nhàng cho phần da vùng nhạy cảm."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Đai lưng được dệt bằng công nghệ mới nhất hiện tại, đem đến cảm giác co giãn siêu tốt, mềm mượt không vết hằn."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Sản xuất tại xưởng 10 năm kinh nghiệm tại TP Hồ Chí Minh."
+                    },
+                     {
+                        "key" :"5",
+                            "content" :"Người mẫu 1m78, 70kg - mặc 2XL."
+                    }
+                       
+                ]       
+        } ,
+        {
+            "id":6,
+
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/DSC05295-copy_73.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/trangstrike.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/DSC05301-copy_92.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/DSC05267-copy.jpg"
+                        ],              
+            "rate":  4.5 ,
+            "comment": 255,
+            "ductName": "Áo Polo nam Pique Cotton USA thấm hút tối đa (kẻ sọc)",
+            "price":400,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "Hot" ,
+            "voucherValue":"",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4","màu 5","màu 6"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Polo",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "date":"2011-10-21",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 97% Cotton USA + 3% Spandex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Với chất liệu Cotton USA chất lượng cao, mang lại sự mềm mại và thấm hút mồ hôi tốt."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Co giãn 4 chiều mang lại sự thoải mái khi mặc."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Bo cổ dệt bằng sợi Cotton, viền phối Polyester để đảm bảo độ đàn hồi, chống bai và giữ màu qua các lần giặt."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Form áo hơi ôm eo và phù hợp với dáng nam giới Việt."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            }
+                           
+                ]       
+        },
+        {
+            "id":7,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/terry_shorts_xam_dam_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/terry_shorts_xam_dam_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/terry_shorts_xam_dam_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/terry_shorts_xam_dam_5.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Quần Short Nam New French Terry V2 (thêu logo)",
+            "price":259,
+            "discount": "",           
+            "sale":"",
+            "combo":"Mua 2 chỉ còn 199k/chiếc",
+            "attention": "Hot",            
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-Shorts",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "date":"2011-10-21",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 60% Cotton + 35% Polyester + 5% Spandex đem đến bề mặt vải cứng cáp, không nhăn."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Thiết kế đơn giản, kiểu dáng khỏe khoắn với đường may chắc chắn."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Túi 2 bên Có khoá YKK tiện lợi khi đựng đồ."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Kiểu dệt French Terry mang lại sự Cooling khi tiếp xúc với da."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Độ dài quần: 8 inch."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            }
+                          
+                ]       
+        } , 
+        {
+            "id":8,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_1.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Quần Short Outdoor vải Nylon 7'' Co giãn (có túi sau)",
+            "price":289,
+            "discount": 25,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"Mua 2 chỉ còn 249k/chiếc",
+            "attention": "Hot" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-Shorts",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "date":"2011-10-25",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 88% Nylon - 12% Spandex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Co giãn tốt và thoáng mát hơn nhiều lần vải Polyester."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Phần túi có khoá kéo để đựng đồ cá nhân tiện lợi."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Đai quần có dây rút giúp các chàng chỉnh được độ co giãn, phù hợp với vòng bụng."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Thích hợp với các hoạt động dã ngoại, trải nghiệm hay hoạt động cường độ cao."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Người mẫu: 1m77 - 74kg, mặc quần size XL"
+                        }
+                        
+                ]       
+        } ,                                                                                                                                                
+        {
+            "id":9,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/polousanavyy_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/polousanavy1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/polousanavy3.jpg"
+                            
+                            ],                          
+            "rate":  3.9 ,
+            "comment": 100,
+            "ductName": "Áo Polo nam Pique Cotton USA thấm hút tối đa (trơn)",
+            "price":200,
+            "discount": 25,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"",
+            "attention": "Hot" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Polo",
+            "collection":"Vũ-trụ-áo-Marvel",
+            "technology":"Cleandye",
+            "date":"2011-10-25",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 97% Cotton USA + 3% Spandex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Với chất liệu Cotton USA chất lượng cao, mang lại sự mềm mại và thấm hút mồ hôi tốt."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Co giãn 4 chiều mang lại sự thoải mái khi mặc."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Bo cổ dệt bằng sợi Cotton, viền phối Polyester để đảm bảo độ đàn hồi, chống bai và giữ màu qua các lần giặt."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Form áo hơi ôm eo và phù hợp với dáng nam giới Việt."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":10,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/DSC01693-copymovexanh_6.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/3536_57.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/DSC00750_copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/DSC00757_copy.jpg"
+                            ],
+                        
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Quần short nam thể thao Movement 7' co giãn - Xanh rêu",
+            "price":239,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+            "combo":"Mua 2 chỉ còn 169k/chiếc",
+            "attention": "Sale" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Đồ-thể-thao",
+            "category":"Quần-Nam",
+            "type":"Quần-Shorts",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "date":"2011-10-23",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":11,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/_MG_0190_(1).jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/DSC05891-copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/thumb_quan_promax_den.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/quanpromax_7.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Quần short nam thể thao ProMax-S1 thoáng khí",
+            "price":188,
+            "discount":"",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "Hot" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Đồ-thể-thao",
+            "category":"Quần-Nam",
+            "type":"Quần-Shorts",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "date":"2011-11-22",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+            },
+                    {
+                        "key" :"2",
+                        "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                        },
+                        {
+                        "key" :"7",
+                        "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                    },
+                    {
+                        "key" :"8",
+                        "content" :"Tự hào sản xuất tại Việt Nam."
+                    }
+                           
+                ]       
+        } , 
+        {
+            "id":12,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/5-1_94.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/5-3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/5-2_6.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/5-1.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 300,
+            "ductName": "Mũ/Nón lưỡi trai nam thoáng khí phối lưới Baseball Cap logo Coolmate",
+            "price":159,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "Hot" ,
+            "voucherValue":"",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Phụ-kiện",
+            "category":"Phụ-kiện",
+            "type":"Mũ-(Nón)",
+            "collection":"Coolmate-Basics",
+            "technology":"",
+            "date":"2011-10-22",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Phần vải 100% Cotton vải Kaki Hàn Quốc giúp đứng form."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Một chiếc mũ với thiết kế mới đem đến vẻ ngoài mới mẻ và thể thao."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Thiết kế tinh tế cùng với mặt trước vải kaki dày, hoàn thiện chắc chắn."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Mặt sau phối lưới tạo những lỗ thông hơi mang lại sự khô thoáng và cảm giác cực kỳ dễ chịu."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Size: Vòng đầu 58.5cm."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            }
+                        
+                ]       
+        } , 
+        {
+            "id":13,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/6-1_65.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/6-3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/6-2_46.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/6-1.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Mũ/Nón lưỡi trai nam thoáng khí phối lưới Baseball Cap",
+            "price":149,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"Outlet",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "New" ,
+            "voucherValue": "",
+            "listSize" :[],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Phụ-Kiện",
+            "category":"Phụ-kiện",
+            "type":"Mũ-(Nón)",
+            "collection":"Coolmate-Basics",
+            "technology":"Anti-Smell",
+            "date":"2011-09-22",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Phần vải 100% Cotton vải Kaki Hàn Quốc giúp đứng form."
+                     },
+                    {
+                        "key" :"2",
+                        "content" :"Một chiếc mũ với thiết kế mới đem đến vẻ ngoài mới mẻ và thể thao."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Thiết kế tinh tế cùng với mặt trước vải kaki dày, hoàn thiện chắc chắn."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Mặt sau phối lưới tạo những lỗ thông hơi mang lại sự khô thoáng và cảm giác cực kỳ dễ chịu."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Size: Vòng đầu 58.5cm."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":14,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/Simple_cap_be_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/Simple_cap_be_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/Simple_cap_be_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/Simple_cap_be_4.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Mũ/Nón lưỡi trai nam Simple Cool V2 (Form cứng)",
+            "price":190,
+            "discount": 10,
+            "voucherCode": "",
+            "sale":"Outlet",
+            "combo":"",
+            "attention": "New" ,
+            "voucherValue": "",
+            "listSize" :[],
+            "listColor" : ["màu 1","màu 2"],
+            "demand":"Phụ-Kiện",
+            "category":"Phụ-kiện",
+            "type":"Mũ-(Nón)",
+            "collection":"Coolmate-Basics",
+            "technology":"Anti-Smell",
+            "date":"2011-09-29",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Phần vải 100% Cotton vải Kaki Hàn Quốc giúp đứng form."
+                     },
+                    {
+                        "key" :"2",
+                        "content" :"Một chiếc mũ với thiết kế mới đem đến vẻ ngoài mới mẻ và thể thao."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Thiết kế tinh tế cùng với mặt trước vải kaki dày, hoàn thiện chắc chắn."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Mặt sau phối lưới tạo những lỗ thông hơi mang lại sự khô thoáng và cảm giác cực kỳ dễ chịu."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Size: Vòng đầu 58.5cm."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":15,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_4.jpg"
+                            ],
+            "imgsHome": {  "before": "https://media.coolmate.me/cdn-cgi/image/width=450,height=663,quality=100/uploads/August2022/quickdry_box_2_new.jpg",
+                            "after": "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/quickdry_box_2_new_333.jpg" 
+                        },               
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo Polo nam công nghệ khử mùi cao 15",
+            "price":200,
+            "discount": 25,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "Hot" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Tank-top",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":16,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/CoolMate0399_12.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/nausolid2x-100.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/CoolMate0391_48.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/CoolMate0396_64.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 40,
+            "ductName": "Combo 3 đôi tất/vớ cổ dài Cotton Solid Casual",
+            "price":200,
+            "discount":"",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "New" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Phụ-Kiện",
+            "category":"Phụ-kiện",
+            "type":"Tất-(Vớ)",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"Anti-Smell",
+            "date":"2011-09-20",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 80% Cotton, 18% Polyester, 2% Spandex."
+                        },
+                        {
+                            "key" :"2",
+                            "content" :"Co giãn, mềm mại, thoáng khí và thoải mái khi mang cả ngày."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Kiểu dệt Mesh tại phần bắp chân và lòng bàn chân mang đến sự ôm hơn và thoáng khí hơn."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Lựa chọn combo 3 đôi tất cùng màu hoặc mix màu."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            }
+                          
+                ]       
+        } , 
+        {
+            "id":17,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/CoolMate0328_7.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/den_va_cam.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/CoolMate0330_36.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/CoolMate0327_95.jpg"
+                            ],
+                         
+            "rate":  4.5 ,
+            "comment": 155,
+            "ductName": "Tất/Vớ thể thao cổ dài Compression Cushion",
+            "price":70,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "New" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Phụ-Kiện",
+            "category":"Phụ-kiện",
+            "type":"Tất-(Vớ)",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"Anti-Smell",
+            "date":"2011-09-20",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 80% Cotton, 18% Polyester, 2% Spandex."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Co giãn, mềm mại, thoáng khí và thoải mái khi mang cả ngày."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Kiểu dệt Mesh tại phần bắp chân và lòng bàn chân mang đến sự ôm hơn và thoáng khí hơn."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Lựa chọn combo 3 đôi tất cùng màu hoặc mix màu."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } ,
+         {
+            "id":18,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/_PHD1214_5.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/phoixanh.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/_PHD1230_22.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/_PHD1233.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Combo 3 đôi tất/vớ cổ ngắn phối màu",
+            "price":200,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+            "combo":"",
+            "attention": "Sale" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Phụ-Kiện",
+            "category":"Phụ-kiện",
+            "type":"Tất-(Vớ)",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"Anti-Smell",
+            "date":"2011-01-22",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 80% Cotton, 18% Polyester, 2% Spandex."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Co giãn, mềm mại, thoáng khí và thoải mái khi mang cả ngày."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Kiểu dệt Mesh tại phần bắp chân và lòng bàn chân mang đến sự ôm hơn và thoáng khí hơn."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Lựa chọn combo 3 đôi tất cùng màu hoặc mix màu."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":19,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/_CMM0493.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/Group_331.jpeg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/_CMM0494.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/_CMM0496.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Tất/Vớ thể thao cổ ngắn Compression Techfit",
+            "price":60,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "Sale" ,
+            "voucherValue": "",
+            "listSize" :[],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Phụ-Kiện",
+            "category":"Phụ-kiện",
+            "type":"Tất-(Vớ)",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"Anti-Smell",
+            "date":"2011-04-20",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 80% Cotton, 18% Polyester, 2% Spandex."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Co giãn, mềm mại, thoáng khí và thoải mái khi mang cả ngày."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Kiểu dệt Mesh tại phần bắp chân và lòng bàn chân mang đến sự ôm hơn và thoáng khí hơn."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Lựa chọn combo 3 đôi tất cùng màu hoặc mix màu."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":20,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Tank_xam_dam_11.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Tank_xam_dam_2d.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Tank_xam_dam_22.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Tank_xam_dam_5.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo Tank Top thể thao nam Recycle Active V1",
+            "price":119,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Áo-nam",
+            "type":"Áo-Tank-top",
+            "collection":"Care-&-Share",
+            "technology":"Cleandye",
+            "date" :"2011-8-30",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu 100% Recycle Polyester, theo xu hương thời trang bền vững."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải được xử lý hoàn thiện theo công nghệ Wicking (thoáng khí) & Quick-Dry (Nhanh khô)."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Kiểu dáng áo tanktop khoét nách sâu, đem đến sự thoải mái trong quá trình vận động."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Nhà cung cấp vải hàng đầu thế giới trong lĩnh vực đồ thể thao: Promax."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Tự hào may và hoàn thiện tại nhà máy Nobland, Bình Dương ."
+                            }
+                            
+                ]       
+        } , 
+        {
+            "id":21,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/3lo_trang_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_3.jpg"
+                            ],                       
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo Tank top thể thao nam thoáng khí",
+            "price":200,
+            "discount": 47,
+            "voucherCode": "",
+            "sale":"Outlet",
+            "combo":"",
+            "attention": "Hot" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Áo-nam",
+            "type":"Áo-Tank-top",
+            "collection":"Care-&-Share",
+            "technology":"Cleandye",
+            "date" :"2011-10-30",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":22,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/thumb_sat_nach_trang.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/1426x2100_(4).jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/thumb_sat_nach_trang2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/thumb_sat_nach_trang3.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo sát nách thể thao nam Dri-Breathe thoáng mát tối đa",
+            "price":189,
+            "discount": "",
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"Outlet",
+            "combo":"",
+            "attention": "Sale" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Tank-top",
+            "collection":"Proudly-Vietnam",
+            "technology":"Excool",
+            "date":"2011-10-20",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , {
+            "id":23,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/outdor23_4.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo thun Marvel Thor 'I choose Worthiness' Vàng",
+            "price":299,
+            "discount": "",
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"Mua 2 chỉ còn 259k/chiếc",
+            "attention": "Hot" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-T-shirt",
+            "collection":"Vũ-trụ-áo-Marvel",
+            "technology":"Excool",
+            "date":"2011-10-25",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 80% Cotton - 20% Recycle Polyester."
+                        },
+                        {
+                            "key" :"2",
+                            "content" :"Là sản phẩm của sự hợp tác giữa Coolmate và Disney - đơn vị sở hữu bản quyền Marvel. Chiếc áo thun có thành phần là sợi tái chế tại Việt Nam, hướng tới sự bền vững trong ngành may mặc.."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Mềm mại, bền dai, không bai, nhão, xù lông và không gây khó chịu khi mặc."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Chất liệu co giãn 4 chiều đem lại sự thoải mái suốt ngày dài."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Đây là sản phẩm thời trang đi theo hướng bền vững, thân thiện hơn với môi trường."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam."
+                            }
+                            
+                ]       
+        } , 
+        {
+            "id":24,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/cacao_aven_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/cacao_aven_4.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/cacao_aven_5.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/cacao_aven_3.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo thun Marvel Avengers Logo Basics - Cacao",
+            "price":200,
+            "discount": 25,
+            "voucherCode": "XMDDDDDDDD",
+            "sale":"",
+            "combo":"Mua 2 với giá 259K/sản phẩm",
+            "attention": "Sale" ,
+            "voucherValue": "",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-T-shirt",
+            "collection":"Vũ-trụ-áo-Marvel",
+            "technology":"Excool",
+            "date":"2011-10-29",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 80% Cotton - 20% Recycle Polyester."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Là sản phẩm của sự hợp tác giữa Coolmate và Disney - đơn vị sở hữu bản quyền Marvel. Chiếc áo thun có thành phần là sợi tái chế tại Việt Nam, hướng tới sự bền vững trong ngành may mặc.."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Mềm mại, bền dai, không bai, nhão, xù lông và không gây khó chịu khi mặc."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Chất liệu co giãn 4 chiều đem lại sự thoải mái suốt ngày dài."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Đây là sản phẩm thời trang đi theo hướng bền vững, thân thiện hơn với môi trường."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":25,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tee_recy_den_111.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/teeactivedentruoc_51.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/chi_tiet_den_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tee_den_44.jpg"
+                            ],                         
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo thun thể thao nam Recycle Active V1",
+            "price":169,
+            "discount":"",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"Mua 2 chỉ còn 149k/chiếc",
+            "attention": "Hot" ,
+            "voucherValue":"" ,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-T-shirt",
+            "collection":"Vũ-trụ-áo-Marvel",
+            "technology":"Excool",
+            "date":"2011-10-29",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 80% Cotton - 20% Recycle Polyester."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Là sản phẩm của sự hợp tác giữa Coolmate và Disney - đơn vị sở hữu bản quyền Marvel. Chiếc áo thun có thành phần là sợi tái chế tại Việt Nam, hướng tới sự bền vững trong ngành may mặc.."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Mềm mại, bền dai, không bai, nhão, xù lông và không gây khó chịu khi mặc."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Chất liệu co giãn 4 chiều đem lại sự thoải mái suốt ngày dài."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Đây là sản phẩm thời trang đi theo hướng bền vững, thân thiện hơn với môi trường."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":26,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/2(1)_40_27.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1(1)_20.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/7_56_89.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/3_25_6.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo thun Marvel Graphics Avengers",
+            "price":299,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"",
+            "combo":"Mua 2 với giá 259K/sản phẩm",
+            "attention": "Hot" ,
+            "voucherValue":"" ,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-T-shirt",
+            "collection":"Vũ-trụ-áo-Marvel",
+            "technology":"Excool",
+            "date":"2011-10-29",
+            "outstanding":
+                [
+                    {
+                        "key" :"1",
+                        "content" :"Chất liệu: 80% Cotton - 20% Recycle Polyester."
+                    },
+                    {
+                        "key" :"2",
+                        "content" :"Là sản phẩm của sự hợp tác giữa Coolmate và Disney - đơn vị sở hữu bản quyền Marvel. Chiếc áo thun có thành phần là sợi tái chế tại Việt Nam, hướng tới sự bền vững trong ngành may mặc.."
+                    },
+                    {
+                        "key" :"3",
+                        "content" :"Mềm mại, bền dai, không bai, nhão, xù lông và không gây khó chịu khi mặc."
+                    },
+                    {
+                        "key" :"4",
+                        "content" :"Chất liệu co giãn 4 chiều đem lại sự thoải mái suốt ngày dài."
+                        },
+                        {
+                        "key" :"5",
+                            "content" :"Đây là sản phẩm thời trang đi theo hướng bền vững, thân thiện hơn với môi trường."
+                        },
+                        {
+                            "key" :"6",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , {
+            "id":27,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_7.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_4.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_2.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo Polo nam Pique Cotton USA thấm hút tối đa (trơn)",
+            "price":399,
+            "discount": 25,
+            "voucherCode": "",
+            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+            "combo":"Mua 3 được giảm thêm 5%",
+            "attention": "" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Polo",
+            "collection":"Clean-Vietnam",
+            "technology":"Cleandye",
+            "date":"2011-10-23",
+            "outstanding":
+                [
+                    {
+                        "key": "1",
+                        "content": "Chất liệu: 97% Cotton USA + 3% Spandex."
+                      },
+                      {
+                        "key": "2",
+                        "content": "Với chất liệu Cotton USA chất lượng cao, mang lại sự mềm mại và thấm hút mồ hôi tốt."
+                      },
+                      {
+                        "key": "3",
+                        "content": "Co giãn 4 chiều mang lại sự thoải mái khi mặc."
+                      },
+                      {
+                        "key": "4",
+                        "content": "Bo cổ dệt bằng sợi Cotton, viền phối Polyester để đảm bảo độ đàn hồi, chống bai và giữ màu qua các lần giặt."
+                      },
+                      {
+                        "key": "5",
+                        "content": "Form áo hơi ôm eo và phù hợp với dáng nam giới Việt."
+                      },
+                      {
+                        "key": "6",
+                        "content": "Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                      },
+                      {
+                        "key": "7",
+                        "content": "Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                      },
+                      {
+                        "key": "8",
+                        "content": "Tự hào sản xuất tại Việt Nam."
+                      }
+                ]       
+        } , 
+        {
+            "id":28,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/IMG_1863_65_82_copya.jpg",
+                            "https://www.coolmate.me/product/ao-polo-pique-fitsoft-phien-ban-khang-khuan-dac-biet-v11?color=xam#",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/polo_gray-065_copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/polo_gray-074_copy.jpg"
+                            ],
+                           
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo Polo Pique Fitsoft phiên bản kháng khuẩn đặc biệt",
+            "price":349,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue": 30000,
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Polo",
+            "collection":"Clean-Vietnam",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-10-23",
+            
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        } , 
+        {
+            "id":29,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/_MG_0290-3_(1).jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/thumb_polo_prmx_trang.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/IMG_6535.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/IMG_6554.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo Polo thể thao nam ProMax-S1 Logo thoáng khí",
+            "price":239,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"Ưu đãi sản phẩm mới 20-27/9",
+            "combo":"Mua 2 chỉ còn 199k/chiếc",
+            "attention": "Sale" ,
+            "voucherValue":"",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-Polo",
+            "collection":"Clean-Vietnam",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-26",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
+                            },
+                            {
+                            "key" :"7",
+                            "content" :"Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
+                        },
+                        {
+                            "key" :"8",
+                            "content" :"Tự hào sản xuất tại Việt Nam."
+                        }
+                ]       
+        },
+        {
+            "id":30,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/tee_recycle_v2_xam_dam_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/tee_recycle_v2_xam_dam_4.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/tee_recycle_v2_xam_dam_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/tee_recycle_v2_xam_dam_5.jpg"
+                            ],
+                          
+            "rate":  3.9 ,
+            "comment": 400,
+            "ductName": "Áo thun thể thao nam Recycle Active V2",
+            "price":159,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"Mua 2 chỉ còn 129k/chiếc",
+            "attention": "Sale" ,
+            "voucherValue":"",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Áo-nam",
+            "type":"Áo-thể-thao",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-26",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu 100% Recycle Polyester với định lượng vải 140gsm siêu nhẹ."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải được xử lý hoàn thiện theo công nghệ Wicking (thoáng khí) & Quick-Dry (Nhanh khô)."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Sản phẩm theo xu hương thời trang bền vững với chất liệu Recycle."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Kiểu dáng áo thun thể thao vừa vặn với dáng nam giới Việt Nam."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Nhà cung cấp vải hàng đầu thế giới trong lĩnh vực đồ thể thao: Promax."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào may và hoàn thiện tại nhà máy Nobland, Bình Dương ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":31,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/Pro_s2_den.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/thumb_polo_s2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/DSC01359_copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/May2022/DSC01365_copy.jpg"
+                            ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Áo Polo thể thao nam ProMax-S2 thoáng khí",
+            "price":289,
+            "discount": "42",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["S","M","L","XL","2XL"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Đồ-thể-thao",
+            "category":"Áo-nam",
+            "type":"Áo-thể-thao",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-28",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu 100% Recycle Polyester với định lượng vải 140gsm siêu nhẹ."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Vải được xử lý hoàn thiện theo công nghệ Wicking (thoáng khí) & Quick-Dry (Nhanh khô)."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Sản phẩm theo xu hương thời trang bền vững với chất liệu Recycle."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Kiểu dáng áo thun thể thao vừa vặn với dáng nam giới Việt Nam."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Nhà cung cấp vải hàng đầu thế giới trong lĩnh vực đồ thể thao: Promax."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào may và hoàn thiện tại nhà máy Nobland, Bình Dương ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":32,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/1DSC06643-copy-2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/32-0.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/DSC06678-copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/xanh_n_co_gian.jpg"
+                            ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Quần Jeans Clean Denim dáng Slimfit",
+            "price":599,
+            "discount": "17",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["29","30","31","32","33"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-Jeans",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-28",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Chất liệu: 98% Regenerative Cotton (Cotton Tái sinh) + 2% Spandex, tạo sự co giãn đem đến sự thoải mái khi vận động."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Định lượng vải nhẹ chỉ với 11.4 Oz."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Công nghệ nhuộm KHÔNG sử dụng Sufur (lưu huỳnh) và KHÔNG có nước thải ra môi trường."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Kiểu dáng Slimfit, không bo ống phù hợp mặc đa chức năng."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"BẢO HÀNH TRỌN ĐỜI khoá kéo YKK, bất kỳ khi nào khoá kéo hỏng Coolmate sẽ đổi cho bạn sản phẩm mới! ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"HDSD: Tránh ngâm trong nước quá lâu - Tránh tiếp xúc với các chất liệu gây loang màu - Không sử dụng chất tẩy, tránh giặt bằng máy ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":33,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Jeans_moi_dam_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Jeans_moi_dam_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Jeans_moi_dam_4.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/Jeans_moi_dam_3.jpg"
+                            ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Quần Jeans Clean Denim dáng Slimfit S2",
+            "price":599,
+            "discount": "17",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["29","30","31","32","33"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-Jeans",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-29",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Chất liệu: 98% Regenerative Cotton (Cotton Tái sinh) + 2% Spandex, tạo sự co giãn đem đến sự thoải mái khi vận động."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Định lượng vải nhẹ chỉ với 11.4 Oz."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Công nghệ nhuộm KHÔNG sử dụng Sufur (lưu huỳnh) và KHÔNG có nước thải ra môi trường."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Kiểu dáng Slimfit, không bo ống phù hợp mặc đa chức năng."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"BẢO HÀNH TRỌN ĐỜI khoá kéo YKK, bất kỳ khi nào khoá kéo hỏng Coolmate sẽ đổi cho bạn sản phẩm mới! ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"HDSD: Tránh ngâm trong nước quá lâu - Tránh tiếp xúc với các chất liệu gây loang màu - Không sử dụng chất tẩy, tránh giặt bằng máy ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":34,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/xanh_nhat_s3_1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/xanh_nhat_s3_2.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/xanh_nhat_s3_3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/xanh_nhat_s3_5.jpg"
+                            ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Quần Jeans Clean Denim dáng Slimfit S3",
+            "price":599,
+            "discount": "17",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["29","30","31","32","33"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-Jeans",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-29",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Chất liệu: 98% Regenerative Cotton (Cotton Tái sinh) + 2% Spandex, tạo sự co giãn đem đến sự thoải mái khi vận động."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Định lượng vải nhẹ chỉ với 11.4 Oz."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Công nghệ nhuộm KHÔNG sử dụng Sufur (lưu huỳnh) và KHÔNG có nước thải ra môi trường."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Kiểu dáng Slimfit, không bo ống phù hợp mặc đa chức năng."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"BẢO HÀNH TRỌN ĐỜI khoá kéo YKK, bất kỳ khi nào khoá kéo hỏng Coolmate sẽ đổi cho bạn sản phẩm mới! ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"HDSD: Tránh ngâm trong nước quá lâu - Tránh tiếp xúc với các chất liệu gây loang màu - Không sử dụng chất tẩy, tránh giặt bằng máy ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":35,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/kaki-excool-xam-den.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/June2022/xamdenDSC00016.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/Mau_moi_kaki_Excool3.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/April2022/Mau_moi_kaki_Excool6.jpg"
+                            ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Quần dài Kaki Excool co giãn",
+            "price":499,
+            "discount": "16",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["29","30","31","32","33"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-dài",
+            "collection":"Sản-phẩm-bền-vững",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-29",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 43% Sợi Sorona + 57% Polyester co giãn."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Quần ống dài, lưng quần âu có chun CO GIÃN bên trong vừa vặn với cơ thể."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Dáng quần hơi ôm một chút để bạn luôn cảm thấy thoải mái và lịch sự."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Ứng dụng công nghệ Excool: Co giãn 4 chiều, Nhẹ, Thoáng khí, Chống tia UV SPF50+."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Không nên ủi, nếu cần thì ủi ở nhiệt độ thấp dưới 110 độ."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"Người mẫu: 1m80 - 75kg, mặc XL ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":36,
+            "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                            "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                            ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Quần thể thao Jogger co giãn",
+            "price":289,
+            "discount": "",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["29","30","31","32","33"],
+            "listColor" : ["màu 1","màu 2","màu 3","màu 4"],
+            "demand":"Mặc-hằng-ngày",
+            "category":"Quần-Nam",
+            "type":"Quần-dài",
+            "collection":"Care-&-Share",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-29",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 43% Sợi Sorona + 57% Polyester co giãn."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Quần ống dài, lưng quần âu có chun CO GIÃN bên trong vừa vặn với cơ thể."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Dáng quần hơi ôm một chút để bạn luôn cảm thấy thoải mái và lịch sự."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Ứng dụng công nghệ Excool: Co giãn 4 chiều, Nhẹ, Thoáng khí, Chống tia UV SPF50+."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Không nên ủi, nếu cần thì ủi ở nhiệt độ thấp dưới 110 độ."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"Người mẫu: 1m80 - 75kg, mặc XL ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":36,
+            "linkImages": [
+                    "https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/September2022/combo-3_49.jpg",
+                    "https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/September2022/139-1.jpg",
+                    "https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/September2022/Untitled-3_45.jpg"
+                    ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Combo 03 Quần lót Trunk Pima Cotton thấm hút tốt",
+            "price":299,
+            "discount": "7",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["M","X","L","XL","3XL"],
+            "listColor" : ["Đen","Xanh","Xám","Blue"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"Care-&-Share",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-29",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 43% Sợi Sorona + 57% Polyester co giãn."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Quần ống dài, lưng quần âu có chun CO GIÃN bên trong vừa vặn với cơ thể."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Dáng quần hơi ôm một chút để bạn luôn cảm thấy thoải mái và lịch sự."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Ứng dụng công nghệ Excool: Co giãn 4 chiều, Nhẹ, Thoáng khí, Chống tia UV SPF50+."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Không nên ủi, nếu cần thì ủi ở nhiệt độ thấp dưới 110 độ."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"Người mẫu: 1m80 - 75kg, mặc XL ."
+                            }
+                         
+                ]       
+        },
+        {
+            "id":36,
+            "linkImages": [
+                    "https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/September2022/combo-3_49.jpg",
+                    "https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/September2022/139-1.jpg",
+                    "https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/September2022/Untitled-3_45.jpg"
+                    ],
+                          
+            "rate":  4.9 ,
+            "comment": 390,
+            "ductName": "Combo 03 Quần lót Trunk Pima Cotton thấm hút tốt",
+            "price":299,
+            "discount": "7",
+            "voucherCode": "",
+            "sale":"",
+            "combo":"",
+            "attention": "" ,
+            "voucherValue":"",
+            "listSize" :["M","X","L","XL","3XL"],
+            "listColor" : ["Đen","Xanh","Xám","Blue"],
+            "demand":"Mặc-nhà-&-Mặc-trong",
+            "category":"Quần-lót-nam",
+            "type":"Quần-Trunk-(Boxer)",
+            "collection":"Care-&-Share",
+            "technology":"HeiQ-Viroblock",
+            "date":"2011-11-29",
+            "outstanding":
+                [
+                        {
+                            "key" :"1",
+                            "content" :"Chất liệu: 43% Sợi Sorona + 57% Polyester co giãn."
+                },
+                        {
+                            "key" :"2",
+                            "content" :"Quần ống dài, lưng quần âu có chun CO GIÃN bên trong vừa vặn với cơ thể."
+                        },
+                        {
+                            "key" :"3",
+                            "content" :"Dáng quần hơi ôm một chút để bạn luôn cảm thấy thoải mái và lịch sự."
+                        },
+                        {
+                            "key" :"4",
+                            "content" :"Ứng dụng công nghệ Excool: Co giãn 4 chiều, Nhẹ, Thoáng khí, Chống tia UV SPF50+."
+                            },
+                            {
+                            "key" :"5",
+                                "content" :"Không nên ủi, nếu cần thì ủi ở nhiệt độ thấp dưới 110 độ."
+                            },
+                            {
+                                "key" :"6",
+                                "content" :"Tự hào sản xuất tại Việt Nam ."
+                            },
+                            {
+                                "key" :"7",
+                                "content" :"Người mẫu: 1m80 - 75kg, mặc XL ."
+                            }
+                         
+                ]       
+        }          
+        
+
+        
+    ],
+    
+    "bannerSlider":[
+            {
+              "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/August2022/COMBO-GIAM-GIA---T7_15.jpeg",
+              
+              "id": "1"
+            },
+            {
+              "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/July2022/Banner-Coolmate-Active-opt-1.jpeg",
+              
+              "id": "2"
+            },
+            {
+              "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/August2022/Banner-CXp-2.jpeg",
+              
+              "id": "3"
+            },
+            {
+                "src": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/July2022/Excool-Banner-website.jpeg",
+                
+                "id": "4"
+              }
+              
+        ],
+    
+    "tabs":[
+            {"id":"1",            
+            "title":"We made too much",            
+            "search" :"attention",
+            "content":"Sale"                                      
+            },
+            {"id":"2",            
+            "title":"Quần lótnam",            
+            "search" :"demand",
+            "content":"Quần lót nam"                                      
+            },
+            {"id":"3",            
+            "title":"Đồ-thể-thao",            
+            "search" :"type",
+            "content":"Đồ-thể-thao"                                      
+            },
+            {"id":"4",            
+            "title":"Mặc hàng ngày",            
+            "search" :"demand",
+            "content":"Mặc hàng ngày"                                      
+            }                                                  
+        ]
+,
+"homeProducts":[
+        {"id":"1",            
+        "title":"We made too much",
+        "attention":"Sale",
+        "products":[
+            {
+                "id":1,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                "price":200,
+                "discount":"",
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":2,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 2",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":3,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":4,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 3",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":5,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 4",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":6,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            }
+        ] 
+              
+    },
+    {   "id":"2",                       
+        "title":"Quần lót nam",
+        "products":[
+            {
+                "id":7,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 5",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":8,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":9,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 6",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":10,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 7",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":11,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":12,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 8",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            }
+        ]                                           
+    },
+    {   "id":"3",                       
+        "title":"mặc hàng ngày" ,
+        "products":[
+            {
+                "id":13,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 9",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":14,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 1",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":15,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 10",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":16,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 11",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":17,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 12",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            },
+            {
+                "id":18,                    
+                "linkImages": [ "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/July2022/1234231.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/BOY_7738-copy.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-1.jpg",
+                "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/November2021/7-3_21.jpg"
+                ],
+                            
+                "rate":  3.9 ,
+                "comment": 400,
+                "ductName": "Áo Polo nam công nghệ khử mùi cao 13",
+                "price":200,
+                "discount": 25,
+                "voucherCode": "XMDDDDDDDD",
+                "sale":"Ưu đãi sản phẩm mới 20-27/9",
+                "combo":"Mua 3 được giảm thêm 5%",
+                "attention": "Hot" ,
+                "voucherValue": 30000,
+                "listSize" :["S","M","L","XL","2XL"],
+                "listColor" : ["màu 1","màu 2","màu 3","màu 4"]
+            }
+        ]                         
+    }
+             
+    ]
+
+
+}
+
+    
+       
+  

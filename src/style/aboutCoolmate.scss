@@ -1,0 +1,239 @@
+.about-coolmate{
+    width:100% ;
+    .coolmate-banner{
+        position: relative;     
+        
+        
+        .coolmate-banner-img{
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.716); 
+             
+            
+            img{
+                width:100% ;
+                height:70vh ;
+               
+            }
+        }
+        
+        .coolmate-banner-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            background-color:rgba(0, 0, 0, 0.347) ;
+            text-align: center;
+            width: 100%;
+            height:100% ;
+            .banner-conten-titlet{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;                
+                .title{
+                    color: #fff;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 65px;
+                    line-height: 82px;
+                    text-align: center;
+                }
+                span{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+
+            
+            
+            
+        }
+        
+    }
+    
+    .coolmate-born{
+        margin-top: 30px;
+       display: flex;        
+        justify-content: center;
+        .coolmate-born-gird{
+            width:90% ;
+            position: relative;
+            
+            .coolmate-born-title{
+                font-weight: 700;
+            }
+        }
+        
+    .coolmate-born-right{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        font-weight:500 ;
+    }
+    .coolmate-born-img{
+        position: absolute;
+        top: 30%;
+        left:-5%;
+
+    }
+
+    .direction-coolmate{
+        .direction-coolmate{
+            background-color: black;
+        }
+        }
+        @media only screen and (max-width: 767px) {
+        .coolmate-born-img{
+            position:unset;
+            top: 30%;
+            left:-5%;
+    
+        }
+        .coolmate-born-gird{
+            width:100% ;
+        }
+        }
+    }
+
+        .direction-coolmate{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            
+            .direction-coolmate-content{
+                color: yellow;
+                font-size:25px ;               
+                text-align: center;
+                margin:30px 10px ;
+                
+            }
+            .direction-coolmate-author{
+                font-size:18px ;
+                color:white ;
+                margin:30px 10px ;
+            }
+        }
+
+        .customer-ervice-story{
+            display: flex;
+            margin-top: 30px;
+            .customer-ervice-story-left{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    border-radius:20px ;
+                    width:80% ;
+
+                };
+                .customer-ervice-story-note{
+                    margin-top:10px ;
+                }
+               
+            }
+            .customer-ervice-story-right{
+                
+                .customer-ervice-story-content{
+                    background-color: rgba(54, 49, 49, 0.23);
+                    
+                    padding:20px 25px ;
+                    border-radius:30px ;
+                    width:90% ;
+                    .story-title{
+                        font-weight: 500;
+                        font-size: 30px;
+                        line-height: 35px;
+                        color: #2f5acf;
+                        position: relative;
+                        padding-bottom: 15px;
+                        ::before{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 64px;
+                            height: 4px;
+                            background-color: #2f5acf;
+                        }
+                     }
+                     .story-content{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        font-size: 15px;
+                     }
+
+                }
+            }
+        }
+       .responsibility-coolmate{
+            width:90% ;
+            margin: 30px auto;
+            max-width: 1500px; ;
+            
+            .responsibility-coolmate-title{
+                max-width: 900px;
+                font-weight: 600;
+                color: #2f5acf;
+            }
+            .responsibility-child{
+                display: flex;
+                margin-top: 30px;
+                gap: 40px;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                    .responsibility-child-title{
+                        margin:20px ;
+                       }
+                    .responsibility-child-content{
+                            margin-top:15px ;
+                            font-size:15px ;
+                            font-weight: 500;
+        
+                        }
+                    .responsibility-child-img{
+                        img{
+                            width:100% ;
+
+                        }
+                    }
+                    .responsibility-child-note{
+                        text-decoration: underline;
+                        margin-top:20px ;
+                    }
+
+                
+
+               
+            }
+        
+       }
+       .coolmate-thanks{
+        background-color: #2f5acf;
+        color: white;
+        font-size:40px ;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .coolmate-thanks-content{
+            padding: 30px;
+            width: 50%;
+            text-align: center;
+            span{
+                font-size: 50px;                
+            }
+         }
+       }
+}
