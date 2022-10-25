@@ -95,7 +95,12 @@ import '../style/footer.scss'
                                                                     list.child.map((child)  => {                                
                                                                       return(
                                                                           <div key={child.name} className="menu-header-child">                                                                            
-                                                                              <Link to={`collection/${useSrt(child.name,true)}`} className="child-name">
+                                                                              <Link to={
+                                                                               child.name==="Tất cả sản phẩm" ?
+                                                                                "Menu/Sản-phẩm"
+                                                                                :
+                                                                                `collection/${useSrt(child.name,true)}`}
+                                                                                 className="child-name">
                                                                                   <div className="child-name-title"> 
                                                                                           <Text>{child.name}</Text>
                                                                                       {child.attention? <Text className= "attention-hot">{child.attention}</Text> :null}                                            

@@ -10,12 +10,14 @@
    {
     "id":"2",
     "title":"Sản phẩm",
+
     "child":[
         {"title" :"Nhu cầu",
         "child" : [
                  {               
                      "name":"Mặc nhà & Mặc trong",
-                     "explain":"Homewear /& Underwear" 
+                     "explain":"Homewear & Underwear" 
+                     
                        
                      },
                  {               
@@ -1405,7 +1407,7 @@
                             ],
                           
             "rate":  3.9 ,
-            "comment": 400,
+            "comment": 200,
             "ductName": "Áo sát nách thể thao nam Dri-Breathe thoáng mát tối đa",
             "price":189,
             "discount": "",
@@ -1466,7 +1468,7 @@
                             ],
                           
             "rate":  3.9 ,
-            "comment": 400,
+            "comment": 300,
             "ductName": "Áo thun Marvel Thor 'I choose Worthiness' Vàng",
             "price":299,
             "discount": "",
@@ -1521,7 +1523,7 @@
                             ],
                           
             "rate":  3.9 ,
-            "comment": 400,
+            "comment": 350,
             "ductName": "Áo thun Marvel Avengers Logo Basics - Cacao",
             "price":200,
             "discount": 25,
@@ -1574,7 +1576,7 @@
                             "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tee_den_44.jpg"
                             ],                         
             "rate":  3.9 ,
-            "comment": 400,
+            "comment": 199,
             "ductName": "Áo thun thể thao nam Recycle Active V1",
             "price":169,
             "discount":"",

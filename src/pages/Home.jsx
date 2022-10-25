@@ -2,8 +2,10 @@
  import TabsProduct from '../Components/TabProduct'
  import Card from '../Components/Card'
 import Basic from '../Components/Basic'
+import { Link } from 'react-router-dom'
+import Text from '../Components/Text'
 
- import Collection from '../Components/Collection'
+//  import Collection from '../Components/Collection'
  
  import '../style/home.scss'
 
@@ -57,18 +59,34 @@ import Basic from '../Components/Basic'
     const collections=[
         {title:"Đồ mặc trong",
         linkImg:"./src/img/mceclip0_43.jpg",
-        id:1},
+        id:1,
+        linkTo:"collection/Mặc-nhà-&-Mặc-trong"
+    },
         {title:"Mặc hàng ngày",
         linkImg:"./src/img/mceclip0_99.jpg",
+        linkTo:"collection/Mặc-hằng-ngày",
         id:2},
         {title:"Đồ thể thao",
         linkImg:"./src/img/mceclip1_56.jpg",
+        linkTo:"collection/Đồ-thể-thao",
         id:3},
         {title:"Tất cả",
         linkImg:"./src/img/mceclip1_61.jpg",
+        linkTo:"Menu/Sản-phẩm",
         id:4},
     
     ]
+    function Collection({collection} ) {  
+        return(
+          <div className="collection" >
+             <Link to= {collection.linkTo}>                        
+               <img src={collection.linkImg} alt="" />    
+                <Text className="collection-title">{collection.title}</Text>
+             </Link>
+            </div>
+        )
+    
+    }
 
 
     return(

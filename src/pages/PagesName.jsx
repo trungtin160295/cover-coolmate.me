@@ -9,36 +9,39 @@ import '../style/HomeUnderwear.scss';
 export  default function PageTitle () {  
   const  listFilter = ["Mới nhất","Bán chạy", "Giá thấp đến cao","Giá cao đến thấp"]
   const [filter,setFilter] =useState("Mới nhất")
-  const [dataProductsFilter,setDataProductsFilter] =useState()
+  const [dataProductsFilter,setDataProductsFilter] =useState([])
   const {name} = useParams();
+ 
   
     const { data: dataProducts, isLoading }
   = useFetch(`http://localhost:3004/products/?q=${name}`, false); 
-  // if(isLoading===true ){
-  //   setDataProductsFilter([])
-        
-  //   }
+  if(isLoading === false && !dataProductsFilter.length){
+    setDataProductsFilter(dataProducts)
+    }
+
+
   useEffect(() => {
     if(isLoading === false && dataProducts.length >0){
+      let data =[...dataProducts]
       switch (filter) {
-      
+        
         case "Giá thấp đến cao":
-          setDataProductsFilter(sortBy(dataProducts, {prop:"date", desc: false}))
+          setDataProductsFilter(sortBy(data, {prop:"price", desc: false}))          
           break;
         case "Giá cao đến thấp":
-            setDataProductsFilter(sortBy(dataProducts, {prop:"date", desc: true}))
+            setDataProductsFilter(sortBy(data, {prop:"price", desc: true}))
             break;
         case "Bán chạy":
-          setDataProductsFilter(sortBy(dataProducts, {prop:"comment", desc: true}))
+          setDataProductsFilter(sortBy(data, {prop:"comment", desc: true}))
           break;
     
         default:
-          setDataProductsFilter(dataProducts)
+          setDataProductsFilter(data)
           
       }
     }
     
-},[filter]) 
+},[filter,dataProducts,name]) 
 
 
   return (
@@ -56,8 +59,7 @@ export  default function PageTitle () {
             ))}
           </select>
         </div>
-        <button onClick={() =>console.log(dataProductsFilter) }>aaa</button>
-          { isLoading === false && dataProducts.length >0 &&
+                  { isLoading === false && dataProducts.length >0 &&
             <ListProduct 
               dataProducts ={dataProductsFilter}
             />

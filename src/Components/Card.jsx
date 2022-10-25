@@ -1,8 +1,8 @@
-import { Button } from 'reactstrap';
+
 import Text from './Text';
 import '../style/card.scss'
 import { Link } from 'react-router-dom';
-import useSrt from "../customize/str"
+
 
 
 export default  function Card(props) {  
