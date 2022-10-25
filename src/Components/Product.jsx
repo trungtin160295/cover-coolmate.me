@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Button } from 'reactstrap';
 import Text from './Text';
-import '../style/ListProduct.scss'
+import '../style/listProduct.scss'
 
 
 export default function Product( props) {  
