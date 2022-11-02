@@ -3,7 +3,7 @@ import useFetch from '../customize/fetch';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick-theme.css";
 import ListProduct from './ListProduct';
 import Product from './Product';
 import '../style/home.scss'

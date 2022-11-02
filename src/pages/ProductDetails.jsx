@@ -152,9 +152,9 @@ const ProductDetails = () => {
 
       </div>
       <hr />
-      <button className='see-cart'>
+      <Link to ="/Cart" className='see-cart'>
         Xem giỏ hàng 
-      </button>
+      </Link>
 
     </div>
    

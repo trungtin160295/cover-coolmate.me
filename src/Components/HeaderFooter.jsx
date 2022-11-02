@@ -9,7 +9,7 @@ import Login from "./Login";
 import { useState,useEffect,useRef } from "react";
 import { useSelector } from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
-import { Spinner } from 'reactstrap';
+
 
 
 
@@ -18,26 +18,21 @@ import '../style/header.scss'
 import '../style/footer.scss'
 
  function Header({dataheader}) {
-    const cartProduct = useSelector(cartProductSelector);    
+   
     const  seachInput = useRef()
     const [sumProduct, setSumProduct] = useState()        
     const [keyWord,setKeyWord] =useState("")
     const [show,setShow] =useState(false)
-    const [timeShow,setTimeShow] =useState(false)
-
-    
-    
+   
 
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
-
-
-
+  const cartProduct = useSelector(cartProductSelector);    
   function timerShow (){
     if(show){
         setTimeout(() => {
             setShow(false)
-        }, 3000);
+        }, 3000); 
     }
 }
    function focusSeachInput (){
@@ -46,12 +41,8 @@ import '../style/footer.scss'
         timerShow ()
         
     }
-
-
-   
     
-       
-    function sum (cartProduct){     
+    function sumQuantity (cartProduct){     
         let  sumProduct = 0 ;
         for (let i = 1; i < cartProduct.length  ; i++){
             
@@ -61,14 +52,14 @@ import '../style/footer.scss'
     }
 
     useEffect(() => {
-        setSumProduct(sum(cartProduct))
+        setSumProduct(sumQuantity(cartProduct))
     },[cartProduct]) 
     
     return (    
            
         
         <header>
-            {dataheader.sale ? <Text className='topbar'>{dataheader.sale} </Text> :null}
+            {dataheader.sale ? <Text className='topbar' >{dataheader.sale} </Text> :null}        
             {dataheader.header ?  
             <nav >
                 <div className="navbar">
