@@ -1,5 +1,7 @@
 
 
+import {useEffect} from 'react'
+import { useSelector ,useDispatch} from "react-redux";
 
 import {Header,Footer}  from './HeaderFooter';
 import { Outlet } from "react-router-dom";
@@ -9,7 +11,10 @@ import { Button,Spinner } from 'reactstrap';
 
 
 
+
 export default function Views() { 
+
+  
 
   const { data: dataHeadefAndFooter, isLoading}
   = useFetch(`http://localhost:3004/headerAndFooter`, false);

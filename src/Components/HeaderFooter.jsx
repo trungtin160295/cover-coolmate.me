@@ -7,8 +7,9 @@ import useFetch from "../customize/fetch";
 import useSrt from "../customize/str"
 import Login from "./Login";
 import { useState,useEffect,useRef } from "react";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch  } from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
+import { fetchCart } from '../redux/slices/cartSlice';
 
 
 
@@ -20,6 +21,7 @@ import '../style/footer.scss'
  function Header({dataheader}) {
    
     const  seachInput = useRef()
+    const dispatch =useDispatch()
     const [sumProduct, setSumProduct] = useState()        
     const [keyWord,setKeyWord] =useState("")
     const [show,setShow] =useState(false)
@@ -27,7 +29,13 @@ import '../style/footer.scss'
 
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
-  const cartProduct = useSelector(cartProductSelector);    
+  useEffect(() => {
+    dispatch(fetchCart());    
+  }, [])
+ 
+  const cartProduct = useSelector(cartProductSelector);
+
+ 
   function timerShow (){
     if(show){
         setTimeout(() => {

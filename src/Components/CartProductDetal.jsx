@@ -2,50 +2,52 @@ import {Row,Col } from 'react-bootstrap';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 
-import cartSlice from "../redux/sliceReducer/cartReducer";
+import cartSlice, { updateProduct ,deleteProduct} from "../redux/slices/cartSlice";
 
 
  export default function CartProductDetal({product}){
-
-    const dispatch =useDispatch()
     
-
+      
+    const dispatch =useDispatch()
     const [quantity, setQuantity] = useState(product.quantity)
     const [color, setColor] = useState(product.color)
     const [size, setSize] = useState(product.size)
-   
+    const [del, setDel] = useState(false)
+    
+
     const updateQuantity = (type) => {
         if (type === 'plus') {
             setQuantity(quantity + 1)
         } else {
             setQuantity(quantity - 1 < 1 ? 1 : quantity - 1)
-        }                       
+        }     
         }
-              
-    
-    const  deleteProduct = () =>{
+     if(del){
         (dispatch(
-            cartSlice.actions.deleteProduct({                                         
+            deleteProduct({
               id:product.id,
-              
-            })));
+            })))
+     }
+        
             
-    }
+        
     useEffect(() => {
         
         (dispatch(
-            cartSlice.actions.changeProduct({                                         
-              id:product.id,
+            updateProduct({
               color: color,
               size: size,
-              quantity: quantity,                           
-            })));
-            
-    },[quantity,color,size]) 
+              quantity: quantity,                        
+              id:product.id,
+              product:product.product,                
+
+            })))
+    },[quantity,color,size])
+
   
     
-    return(
-        product.id&&
+    return( 
+         product.quantity &&
         <Row className='product-cart-detail'>
                 <Col md={12} xl={4}  className='product-img'>
                     <img src={product.product.linkImages[1]} alt={product.product.ductName} />
@@ -55,9 +57,9 @@ import cartSlice from "../redux/sliceReducer/cartReducer";
                         <div className='product-detail-name'>
                             {product.product.ductName}
                         </div>
-                        <button className='button-delete' onClick={deleteProduct}>X</button>
+                        <button className='button-delete' onClick={()=>setDel(true)}>X</button>
                         <div className='product-detail-selected'>
-                            <i>{color} / {size}</i>
+                            <i>{color} / {size}</i> <button ></button>
                         </div>
                     </div>
                     <div className='product-detail-bottom'>

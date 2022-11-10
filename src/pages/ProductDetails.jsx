@@ -11,8 +11,9 @@ import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from 'react-toastify';
 
-import cartSlice from "../redux/sliceReducer/cartReducer";
+import cartSlice,{addProduct} from "../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
+
 
 
 
@@ -25,8 +26,6 @@ import '../style/productDetails.scss'
 
 const ProductDetails = () => {  
   let {id} = useParams();
-
-  
   const { data: product, isLoading,imgProduct }
       = useFetch(`http://localhost:3004/products/${id}`, true);   
 
@@ -72,18 +71,16 @@ const ProductDetails = () => {
 
     const addToCart = () => {
         if (buttonBuy ==="Thêm vào giỏ hàng") {          
-            if (dispatch(
-              cartSlice.actions.addProduct({
-                color: color,
-                size: size,
-                quantity: quantity,
-                product:product,                
-                id:uuidv4()
-              }))) {
+          (dispatch(
+            addProduct({
+              color: color,
+              size: size,
+              quantity: quantity,
+              product:product,                
+              id:uuidv4()
+            })))
                 purchaseNotice()  
-            } else {
-                alert('Fail')
-            }
+            
         }
     }
 

@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
-import cartSlice from "../redux/sliceReducer/cartReducer";
+import cartSlice from "../redux/slices/cartSlice";
 
 
 import CartProductDetal from '../Components/CartProductDetal';
@@ -20,6 +20,7 @@ const Cart = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     const cartProduct = useSelector(cartProductSelector);
+    // console.log("jajsdjjjjjjj",cartProduct);
     const [sumMoney, setSumMoney] = useState()
     const [payment, setPayment] = useState(
         {
@@ -89,14 +90,14 @@ const Cart = () => {
 
     function Payments({item}){
         return(
-            <div             
+            <button             
             className={`payments-child  ${item.id ==payment.id ? 'active' : ''}`}
             onClick={()=>setPayment(item)}
             >
                 
                    
                     <div className='payments-child-conten'>
-                        <button className={`${item.id ==payment.id ? 'active-button' : ''}`}>&#8192; </button>
+                        <span className={`${item.id ==payment.id ? 'active-button' : ''}`}>&#8192; </span>
                         <img src={item.linkImg} alt= {item.content} className='img-check'/>
                         <div className='payments-content'>
                         {item.content.map((item) =>{
@@ -106,7 +107,7 @@ const Cart = () => {
                         </div>
                     </div>
                 
-         </div>  
+         </button>  
         )}
   
 
@@ -158,9 +159,9 @@ const Cart = () => {
                 </Row>
             </Col>
             <Col  md={12} xl={5} className='cart-right'>
-                <div className='title-cart'> Giỏ hàng của bạn</div>
-                {cartProduct.length > 1 && 
-                cartProduct.map((product) =>{
+                <div className='title-cart'> Giỏ hàng của bạn</div> 
+                {cartProduct && 
+                cartProduct.map((product) =>{                    
                     return(
                         <CartProductDetal product={product} key={product.id}/>
                     )
