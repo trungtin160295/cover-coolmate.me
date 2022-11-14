@@ -68,7 +68,7 @@ export  default function PageTitle () {
          <div style={{margin: "30px",textAlign:"center"}}>
             Sản phẩm này chưa trình bán.
             <br/>
-            Mong quý khách xem các sản phẩm khác
+            Mong quý khách xem các sản phẩm khác <a href="http://127.0.0.1:5173/">Trang chủ</a>
          </div>
          }
       </>

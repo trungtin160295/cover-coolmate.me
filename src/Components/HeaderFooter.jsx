@@ -1,15 +1,13 @@
 
-
-
 import Text from "./Text"
-import {  NavLink,Link } from "react-router-dom";
+import {  NavLink,Link, useNavigate  } from "react-router-dom";
 import useFetch from "../customize/fetch";
 import useSrt from "../customize/str"
 import Login from "./Login";
 import { useState,useEffect,useRef } from "react";
 import { useSelector,useDispatch  } from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
-import { fetchCart } from '../redux/slices/cartSlice';
+// import { fetchCart } from '../redux/slices/cartSlice';
 
 
 
@@ -19,35 +17,53 @@ import '../style/header.scss'
 import '../style/footer.scss'
 
  function Header({dataheader}) {
-   
+
+
     const  seachInput = useRef()
-    const dispatch =useDispatch()
     const [sumProduct, setSumProduct] = useState()        
     const [keyWord,setKeyWord] =useState("")
     const [show,setShow] =useState(false)
-   
+    const cartProduct =useSelector(cartProductSelector)
+    const navigate = useNavigate();
+    const handleclicproductItem = (id) => {
+        setShow(false)
+      navigate(`/product/${id}`);
+      
+    };
 
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
-  useEffect(() => {
-    dispatch(fetchCart());    
-  }, [])
+//   useEffect(() => {
+//     dispatch(fetchCart());    
+//   }, [])
  
-  const cartProduct = useSelector(cartProductSelector);
+//  if(cartProduct.length ===0){
+//     let cartProduct =useSelector(cartProductSelector)
+//     console.log("SDadasda");
+//     setcartProduct(cartProduct)
+//  }
 
- 
-  function timerShow (){
+const hideSeach = () =>{
     if(show){
-        setTimeout(() => {
-            setShow(false)
-        }, 3000); 
+        setShow (false)
     }
 }
+ var timer = setInterval(hideSeach, 3000);
+  
+ 
+  function  onKeyPressSeach (e){
+    if(e.key === "Enter" && keyWord.length >0){
+        navigate(`/Seach/${keyWord}`)
+    }
+    else{
+        clearTimeout(timer);
+    }
+  }
+
    function focusSeachInput (){
+    clearInterval(timer);
         setShow(true)
         seachInput.current.focus()
-        timerShow ()
-        
     }
     
     function sumQuantity (cartProduct){     
@@ -63,6 +79,84 @@ import '../style/footer.scss'
         setSumProduct(sumQuantity(cartProduct))
     },[cartProduct]) 
     
+    function ProductSeach ({product}) {
+        return(
+           
+                <div className="product" onClick={ () =>handleclicproductItem(product.id)}>
+
+                    <div className="product-img">
+                        <img src={product.linkImages[0]} alt="" />
+                    </div>
+                    <div className="products-right">
+                        <h5 className="product-title">
+                        {product.ductName}
+                        </h5>
+                        <div className="product-pice">
+                            <span className="pice">{product.price} .000 đ </span>
+                            <span className="pice-sale">{Math.round(product.price*(1-(product.discount/100)))}.000đ </span>
+
+                        </div>
+                        
+                    </div>
+
+
+                    </div>
+                    
+            
+        )
+
+    }
+    function TypesOpProduct ({typesOpProduct}){
+        return(
+            <div className="menu-header">
+                { 
+                  typesOpProduct.map((list) =>{     
+                    console.log("ádsa");  
+                return(
+                   <div key={list.title} >
+                     <Text className="title">{list.title}</Text>
+                        <div  className="menu-header-column">
+                            {
+                               list.child.map((child)  => {                                
+                                 return(
+                                   <div key={child.name} className="menu-header-child">                                                                            
+                                     <Link to={
+                                         child.name==="Tất cả sản phẩm" ?
+                                          "Menu/Sản-phẩm"
+                                          :`collection/${useSrt(child.name,true)}`}
+                                         className="child-name">
+                                       <div className="child-name-title"> 
+                                          <Text>{child.name}</Text>
+                                         {child.attention? <Text className= "attention-hot">{child.attention}</Text> :null}                                            
+                                                                                  
+                                          </div>                                                                              
+                                           {child.explain ? <Text className="child-explain">{child.explain}</Text> :null }                        
+                                      </Link>                                                                          
+                                      { child.product?
+                                         <ul>                                                                              
+                                         {child.product.map((content) => {
+                                         return (
+                                       <li key= {content}>
+                                        <Link to= {`collection/${useSrt(content,true)}`}  className="child-product">{content}</Link>
+                                                                                              
+                                        </li>                                                   
+                                          )
+                                       })} 
+                                        </ul>:null} 
+                                        <hr  style={{width:'80%'  ,margin: '0'} }/>
+                                         </div>
+                                        )
+                                        })}
+                             </div>
+                             </div>
+                          )
+                      } )
+                     
+                   }  
+                 </div>
+        )
+
+    }
     return (    
            
         
@@ -83,52 +177,7 @@ import '../style/footer.scss'
                                   {item.child ?  
                                     <div className="dropdown-content ">
                                         {item.title ==="Sản phẩm" &&
-                                          <div className="menu-header">
-                                              { item.child ?
-                                                  item.child.map((list) =>{       
-                                                      return(
-                                                          <div key={list.title} >
-                                                              <Text className="title">{list.title}</Text>
-                                                              <div  className="menu-header-column">
-                                                                  {
-                                                                    list.child.map((child)  => {                                
-                                                                      return(
-                                                                          <div key={child.name} className="menu-header-child">                                                                            
-                                                                              <Link to={
-                                                                               child.name==="Tất cả sản phẩm" ?
-                                                                                "Menu/Sản-phẩm"
-                                                                                :
-                                                                                `collection/${useSrt(child.name,true)}`}
-                                                                                 className="child-name">
-                                                                                  <div className="child-name-title"> 
-                                                                                          <Text>{child.name}</Text>
-                                                                                      {child.attention? <Text className= "attention-hot">{child.attention}</Text> :null}                                            
-                                                                                  
-                                                                                  </div>                                                                              
-                                                                                  {child.explain ? <Text className="child-explain">{child.explain}</Text> :null }                        
-                                                                              </Link>                                                                          
-                                                                              { child.product?
-                                                                              <ul>                                                                              
-                                                                                   {child.product.map((content) => {
-                                                                                      return (
-                                                                                          <li key= {content}>
-                                                                                              <Link to= {`collection/${useSrt(content,true)}`}  className="child-product">{content}</Link>
-                                                                                              
-                                                                                          </li>                                                   
-                                                                                      )
-                                                                                  })} 
-                                                                              </ul>:null} 
-                                                                              <hr  style={{width:'80%'  ,margin: '0'} }/>
-                                                                          </div>
-                                                                      )
-                                                                  })}
-                                                              </div>
-                                                          </div>
-                                                      )
-                                                  } )
-                                                :null
-                                              }  
-                                          </div>
+                                          <TypesOpProduct typesOpProduct = {item.child}/>
                                         }  
                                         {item.title ==="Về Coolmate" &&
                                         
@@ -153,13 +202,11 @@ import '../style/footer.scss'
 
                         })  
                     }                      
-                     
+                    
 
                   </ul>
                 </div>
-                  
-                 
-                    
+                   
                 <div className="nav-right">
                     <div>
                     <button onClick={focusSeachInput}><img src="https://www.coolmate.me/images/header/icon-search.svg"  /></button>
@@ -180,7 +227,7 @@ import '../style/footer.scss'
              :null}
              <div  className={`container-seach  ${show===true ? 'show-nav-seach' : ''}`}>
                 <div className="nav-seach">
-                    <input ref = {seachInput} type="text"  onChange={(e) =>setKeyWord(e.target.value)} />
+                    <input ref = {seachInput} type="text"  onChange={(e) =>setKeyWord(e.target.value)} onKeyPress={(e) => onKeyPressSeach(e)} />
                     <button onClick={() =>{setShow(false)}}>X</button>
                 </div>
                 {
@@ -190,29 +237,12 @@ import '../style/footer.scss'
                     {dataProductsSeach.length >0?
                     dataProductsSeach.slice(0,5).map((product) =>{
                         return(
-                            <div className="product">
-                                <div className="product-img">
-                                    <img src={product.linkImages[0]} alt="" />
-                                </div>
-                                <div className="products-right">
-                                    <h5 className="product-title">
-                                    {product.ductName}
-                                    </h5>
-                                    <div className="product-pice">
-                                        <span className="pice">{product.price} .000 đ </span>
-                                        <span className="pice-sale">{Math.round(product.price*(1-(product.discount/100)))}.000đ </span>
-
-                                    </div>
-                                    
-                                </div>
-
-
-                            </div>
+                            <ProductSeach product={product}/>
                         )
                     })
                     
                     :<div>
-                        không có sản phẩm
+                        Không có sản phẩm
                     </div> 
                     }
                     

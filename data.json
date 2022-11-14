@@ -3,10 +3,7 @@
     "header": {
       "sale": "Ưu đãi combo tiết kiệm đến 50% ",
       "header": [
-        {
-          "id": "1",
-          "title": "Sale"
-        },
+        
         {
           "id": "2",
           "title": "Sản phẩm",
@@ -2775,22 +2772,21 @@
       "color": "màu 4",
       "size": "2XL",
       "quantity": 1,
-      "id": "44d864f2-b976-4ae4-a353-af6bf5ae9dcd",
+      "id": "e5fa5620-fb8f-4992-9c61-3c2db4edb03b",
       "product": {
-        "id": 21,
+        "id": 9,
         "linkImages": [
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_1.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/3lo_trang_1.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_2.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_3.jpg"
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/polousanavyy_2.jpg",
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/polousanavy1.jpg",
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/polousanavy3.jpg"
         ],
         "rate": 3.9,
-        "comment": 400,
-        "ductName": "Áo Tank top thể thao nam thoáng khí",
+        "comment": 100,
+        "ductName": "Áo Polo nam Pique Cotton USA thấm hút tối đa (trơn)",
         "price": 200,
-        "discount": 47,
-        "voucherCode": "",
-        "sale": "Outlet",
+        "discount": 25,
+        "voucherCode": "XMDDDDDDDD",
+        "sale": "",
         "combo": "",
         "attention": "Hot",
         "voucherValue": 30000,
@@ -2807,32 +2803,32 @@
           "màu 3",
           "màu 4"
         ],
-        "demand": "Mặc-nhà-&-Mặc-trong",
+        "demand": "Mặc-hằng-ngày",
         "category": "Áo-nam",
-        "type": "Áo-Tank-top",
-        "collection": "Care-&-Share",
+        "type": "Áo-Polo",
+        "collection": "Vũ-trụ-áo-Marvel",
         "technology": "Cleandye",
-        "date": "2011-10-30",
+        "date": "2011-10-25",
         "outstanding": [
           {
             "key": "1",
-            "content": "Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+            "content": "Chất liệu: 97% Cotton USA + 3% Spandex."
           },
           {
             "key": "2",
-            "content": "Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+            "content": "Với chất liệu Cotton USA chất lượng cao, mang lại sự mềm mại và thấm hút mồ hôi tốt."
           },
           {
             "key": "3",
-            "content": "Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+            "content": "Co giãn 4 chiều mang lại sự thoải mái khi mặc."
           },
           {
             "key": "4",
-            "content": "Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+            "content": "Bo cổ dệt bằng sợi Cotton, viền phối Polyester để đảm bảo độ đàn hồi, chống bai và giữ màu qua các lần giặt."
           },
           {
             "key": "5",
-            "content": "Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+            "content": "Form áo hơi ôm eo và phù hợp với dáng nam giới Việt."
           },
           {
             "key": "6",
@@ -2850,26 +2846,27 @@
       }
     },
     {
-      "color": "màu 3",
-      "size": "XL",
-      "quantity": 1,
+      "color": "màu 1",
+      "size": "2XL",
+      "quantity": 5,
+      "id": "ec2d48a4-01c3-475d-9e54-38c38ffeb9db",
       "product": {
-        "id": 21,
+        "id": 27,
         "linkImages": [
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_1.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/3lo_trang_1.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_2.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_3.jpg"
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_1.jpg",
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_7.jpg",
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_4.jpg",
+          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/September2022/USA_REU_2.jpg"
         ],
         "rate": 3.9,
         "comment": 400,
-        "ductName": "Áo Tank top thể thao nam thoáng khí",
-        "price": 200,
-        "discount": 47,
+        "ductName": "Áo Polo nam Pique Cotton USA thấm hút tối đa (trơn)",
+        "price": 399,
+        "discount": 25,
         "voucherCode": "",
-        "sale": "Outlet",
-        "combo": "",
-        "attention": "Hot",
+        "sale": "Ưu đãi sản phẩm mới 20-27/9",
+        "combo": "Mua 3 được giảm thêm 5%",
+        "attention": "",
         "voucherValue": 30000,
         "listSize": [
           "S",
@@ -2884,32 +2881,32 @@
           "màu 3",
           "màu 4"
         ],
-        "demand": "Mặc-nhà-&-Mặc-trong",
+        "demand": "Mặc-hằng-ngày",
         "category": "Áo-nam",
-        "type": "Áo-Tank-top",
-        "collection": "Care-&-Share",
+        "type": "Áo-Polo",
+        "collection": "Clean-Vietnam",
         "technology": "Cleandye",
-        "date": "2011-10-30",
+        "date": "2011-10-23",
         "outstanding": [
           {
             "key": "1",
-            "content": "Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
+            "content": "Chất liệu: 97% Cotton USA + 3% Spandex."
           },
           {
             "key": "2",
-            "content": "Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
+            "content": "Với chất liệu Cotton USA chất lượng cao, mang lại sự mềm mại và thấm hút mồ hôi tốt."
           },
           {
             "key": "3",
-            "content": "Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
+            "content": "Co giãn 4 chiều mang lại sự thoải mái khi mặc."
           },
           {
             "key": "4",
-            "content": "Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
+            "content": "Bo cổ dệt bằng sợi Cotton, viền phối Polyester để đảm bảo độ đàn hồi, chống bai và giữ màu qua các lần giặt."
           },
           {
             "key": "5",
-            "content": "Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
+            "content": "Form áo hơi ôm eo và phù hợp với dáng nam giới Việt."
           },
           {
             "key": "6",
@@ -2924,86 +2921,7 @@
             "content": "Tự hào sản xuất tại Việt Nam."
           }
         ]
-      },
-      "id": "61503898-6d44-422e-b185-62064da12eab"
-    },
-    {
-      "color": "màu 3",
-      "size": "XL",
-      "quantity": 1,
-      "product": {
-        "id": 21,
-        "linkImages": [
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_1.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/3lo_trang_1.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_2.jpg",
-          "https://media.coolmate.me/cdn-cgi/image/quality=80/uploads/August2022/tanktop_trang_3.jpg"
-        ],
-        "rate": 3.9,
-        "comment": 400,
-        "ductName": "Áo Tank top thể thao nam thoáng khí",
-        "price": 200,
-        "discount": 47,
-        "voucherCode": "",
-        "sale": "Outlet",
-        "combo": "",
-        "attention": "Hot",
-        "voucherValue": 30000,
-        "listSize": [
-          "S",
-          "M",
-          "L",
-          "XL",
-          "2XL"
-        ],
-        "listColor": [
-          "màu 1",
-          "màu 2",
-          "màu 3",
-          "màu 4"
-        ],
-        "demand": "Mặc-nhà-&-Mặc-trong",
-        "category": "Áo-nam",
-        "type": "Áo-Tank-top",
-        "collection": "Care-&-Share",
-        "technology": "Cleandye",
-        "date": "2011-10-30",
-        "outstanding": [
-          {
-            "key": "1",
-            "content": "Chất liệu: 100% Polyester kết hợp tính năng: Wicking (Thấm hút nhanh), 4-way Mechanical stretch (Co giãn 4 chiều) và Quick-Dry (Nhanh khô)."
-          },
-          {
-            "key": "2",
-            "content": "Vải siêu nhẹ chỉ 106 gsm, mang lại cảm giác mặc như không mặc."
-          },
-          {
-            "key": "3",
-            "content": "Công nghệ hoàn thiện vải giúp chiếc quần thoải mái, khô thoáng và dễ chịu tối đa cho các hoạt động chạy nhẹ và tập gym."
-          },
-          {
-            "key": "4",
-            "content": "Dệt kiểu Double Weaving mang lại cảm giác Cooling khi mặc."
-          },
-          {
-            "key": "5",
-            "content": "Có túi 2 bên đựng đồ cá nhân nhỏ gọn và tiện lợi."
-          },
-          {
-            "key": "6",
-            "content": "Vải được nhuộm bằng công nghệ Zero Water Discharge (Không nước thải) theo đuổi xu hướng yếu tố thời trang bền vững."
-          },
-          {
-            "key": "7",
-            "content": "Đơn vị sản xuất vải là Promax - đơn vị hàng đầu về sản xuất đồ thể thao trên thế giới"
-          },
-          {
-            "key": "8",
-            "content": "Tự hào sản xuất tại Việt Nam."
-          }
-        ]
-      },
-      "id": "4a6a9b71-ef8b-44ae-ba27-d6c18ff3d231"
+      }
     }
   ]
 }

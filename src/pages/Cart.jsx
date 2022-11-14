@@ -160,10 +160,11 @@ const Cart = () => {
             </Col>
             <Col  md={12} xl={5} className='cart-right'>
                 <div className='title-cart'> Giỏ hàng của bạn</div> 
-                {cartProduct && 
-                cartProduct.map((product) =>{                    
+                {cartProduct.length > 1 && 
+                cartProduct.map((product) =>{      
+                    console.log("product.id",product.id);              
                     return(
-                        <CartProductDetal product={product} key={product.id}/>
+                        <CartProductDetal key={product.id} product={product} />
                     )
                 })
                 }

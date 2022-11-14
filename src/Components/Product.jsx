@@ -11,7 +11,7 @@ export default function Product( props) {
     return (
         <div className="product">
             <div className="product-img">
-                <Link to={`/product/${product.ductName}&${product.id} `}>
+                <Link to={`/product/${product.id} `}>
                     <img src={product.linkImages[0]} alt="Avatar" className="image hover1"/>
                     <img src={product.linkImages[1]} alt="Avatar" className="image hover2"/>
                     {product.listSize? 
@@ -65,7 +65,7 @@ export default function Product( props) {
                 </div>
                 
                 <div className="product-name ">
-                    <Link to={`/product/${product.ductName} ${product.id}`}> {product.ductName}</Link>
+                    <Link to={`/product/${product.id}`}> {product.ductName}</Link>
                  
                 </div>
                 <div className="product-price">

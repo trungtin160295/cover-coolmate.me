@@ -1,13 +1,13 @@
 import {Row,Col } from 'react-bootstrap';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
+import { Link } from 'react-router-dom';
 
-import cartSlice, { updateProduct ,deleteProduct} from "../redux/slices/cartSlice";
+import cartSlice from "../redux/slices/cartSlice";
 
 
  export default function CartProductDetal({product}){
-    
-      
+
     const dispatch =useDispatch()
     const [quantity, setQuantity] = useState(product.quantity)
     const [color, setColor] = useState(product.color)
@@ -22,9 +22,9 @@ import cartSlice, { updateProduct ,deleteProduct} from "../redux/slices/cartSlic
             setQuantity(quantity - 1 < 1 ? 1 : quantity - 1)
         }     
         }
-     if(del){
+   const deleteProduct = () => {
         (dispatch(
-            deleteProduct({
+            cartSlice.actions.deleteProduct({
               id:product.id,
             })))
      }
@@ -34,7 +34,7 @@ import cartSlice, { updateProduct ,deleteProduct} from "../redux/slices/cartSlic
     useEffect(() => {
         
         (dispatch(
-            updateProduct({
+            cartSlice.actions.updateProduct({
               color: color,
               size: size,
               quantity: quantity,                        
@@ -48,18 +48,28 @@ import cartSlice, { updateProduct ,deleteProduct} from "../redux/slices/cartSlic
     
     return( 
          product.quantity &&
-        <Row className='product-cart-detail'>
+         
+            <Row className='product-cart-detail'>
                 <Col md={12} xl={4}  className='product-img'>
                     <img src={product.product.linkImages[1]} alt={product.product.ductName} />
+                <Link to={`/product/${product.product.id}`}> </Link>
                 </Col>
                 <Col md={12} xl={8}  className='product-detail-right'>
                     <div className='product-detail-top'>
-                        <div className='product-detail-name'>
-                            {product.product.ductName}
+                        <div className='product-detail-text'>
+                        <Link to={`/product/${product.product.id}`}>
+                            <div className='product-detail-name'>
+                                
+                                {product.product.ductName}
+                            </div>
+                        </Link>
+                        
+                        <button className='button-delete' onClick={deleteProduct}>X</button>
+
                         </div>
-                        <button className='button-delete' onClick={()=>setDel(true)}>X</button>
+                        
                         <div className='product-detail-selected'>
-                            <i>{color} / {size}</i> <button ></button>
+                            <i>{color} / {size}</i> 
                         </div>
                     </div>
                     <div className='product-detail-bottom'>
@@ -107,6 +117,9 @@ import cartSlice, { updateProduct ,deleteProduct} from "../redux/slices/cartSlic
                     </div>
                     
                 </Col>
-            </Row>
+        </Row>
+
+         
+        
     )
 }

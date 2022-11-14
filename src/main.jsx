@@ -14,6 +14,7 @@ import {
 import  FallbackLoading from './Components/FallbackLoading';
 import  Wrapper from './Components/Wrapper';
 import  Test from './Components/Test';
+import Seach from './pages/Seach';
 
 const Home = lazy(() => import('./pages/Home'));
 const Views = lazy(() => import('./Components/Views'));
@@ -32,15 +33,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Wrapper>
     <Routes>
         <Route path="/" element={<Views />} >
-          <Route  index element={<Test/>} />
-          <Route path="Menu/Sale" element={<div> chưa có  </div>} />
+          <Route  index element={<Home/>} />
+          
           <Route path="Cart" element={<Cart/>} />
           <Route path="Menu/Sản-phẩm" element={<AllProduct/>} />
           <Route path="Menu/Về-Coolmate" element={<AboutCoolmate />} />     
           <Route path="Menu/Chọn-Size" element={<ChooseSize/>}/>         
-          <Route path="Menu/Coolxprint" element={<h1>Coolxprint</h1>} />      
-          <Route path = "/product/:ductName&:id" element={<ProductDetails/>}/>       
-          <Route path="/collection/:name" element={<PagesName/>}/>      
+          {/* <Route path="Menu/Coolxprint" element={<h1>Coolxprint</h1>} />    */}
+          <Route path="/Seach/:keyWord" element={<Seach/>}/>        
+          <Route path = "/product/:id" element={<ProductDetails/>}/>       
+          <Route path="/collection/:name" element={<PagesName/>}/> 
+          <Route path="*" element={<Home/>}/>           
                         
         </Route>
     </Routes>

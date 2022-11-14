@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from 'react-toastify';
 
-import cartSlice,{addProduct} from "../redux/slices/cartSlice";
+import cartSlice from "../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
 
 
@@ -72,7 +72,7 @@ const ProductDetails = () => {
     const addToCart = () => {
         if (buttonBuy ==="Thêm vào giỏ hàng") {          
           (dispatch(
-            addProduct({
+            cartSlice.actions.addProduct({
               color: color,
               size: size,
               quantity: quantity,
