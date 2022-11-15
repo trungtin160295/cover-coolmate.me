@@ -1,8 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import useAxiosPost from "../../customize/addData";
-import useAxiosDelete from "../../customize/deleteData";
-import useFetch from "../../customize/fetch";
-import axios from "axios";
 
 // export const fetchCart = createAsyncThunk("cart/fetchCart", async () => {
 //   let data = await axios
@@ -72,29 +68,44 @@ import axios from "axios";
 //     return data;
 //   }
 // );
+function sumQuantity(cartProduct) {
+  let sumProduct = 0;
+  for (let i = 1; i < cartProduct.length; i++) {
+    sumProduct += cartProduct[i].quantity;
+  }
+  return sumProduct;
+}
 
+const cartItems = localStorage.getItem("cartItems")
+  ? JSON.parse(localStorage.getItem("cartItems"))
+  : [{}];
+const cartQuantity = sumQuantity(cartItems);
 const cartSlice = createSlice({
   name: "cartProduct",
-  initialState: [{}],
+  initialState: { cartItems, cartQuantity },
   reducers: {
     addProduct: (state, action) => {
-      state.push(action.payload);
+      state.cartItems.push(action.payload);
+      localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
     updateProduct: (state, action) => {
-      const indexProduct = state.findIndex(
+      const indexProduct = state.cartItems.findIndex(
         (product) => product.id === action.payload.id
       );
       if (indexProduct) {
-        state[indexProduct] = { ...state[indexProduct], ...action.payload };
+        state.cartItems[indexProduct] = {
+          ...state.cartItems[indexProduct],
+          ...action.payload,
+        };
       }
+      localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
     deleteProduct: (state, action) => {
-      const indexProduct = state.findIndex(
-        (product) => product.id === action.payload.id
+      const cartItems = state.cartItems.filter(
+        (item) => item.id !== action.payload.id
       );
-      if (indexProduct) {
-        state = state.splice(indexProduct, 1);
-      }
+      state.cartItems = cartItems;
+      localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
   },
   // extraReducers: (builder) => {

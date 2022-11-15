@@ -19,8 +19,10 @@ const Cart = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
-    const cartProduct = useSelector(cartProductSelector);
-    // console.log("jajsdjjjjjjj",cartProduct);
+    const cartProductData = useSelector(cartProductSelector);
+    const cartProduct = cartProductData.cartItems
+
+    
     const [sumMoney, setSumMoney] = useState()
     const [payment, setPayment] = useState(
         {
@@ -159,10 +161,10 @@ const Cart = () => {
                 </Row>
             </Col>
             <Col  md={12} xl={5} className='cart-right'>
-                <div className='title-cart'> Giỏ hàng của bạn</div> 
-                {cartProduct.length > 1 && 
-                cartProduct.map((product) =>{      
-                    console.log("product.id",product.id);              
+                <div className='title-cart' onClick={() =>console.log(cartProductData.cartItems)}> Giỏ hàng của bạn</div> 
+                {cartProductData.cartItems.length > 0 && 
+                cartProductData.cartItems.map((product) =>{      
+                               
                     return(
                         <CartProductDetal key={product.id} product={product} />
                     )

@@ -47,7 +47,7 @@ import cartSlice from "../redux/slices/cartSlice";
   
     
     return( 
-         product.quantity &&
+         product.id &&
          
             <Row className='product-cart-detail'>
                 <Col md={12} xl={4}  className='product-img'>

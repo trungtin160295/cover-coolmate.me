@@ -17,13 +17,12 @@ import '../style/header.scss'
 import '../style/footer.scss'
 
  function Header({dataheader}) {
-
+    const cartProduct = useSelector(cartProductSelector);
+    const [sumProduct, setSumProduct] = useState(useSelector(cartProductSelector).cartQuantity)        
 
     const  seachInput = useRef()
-    const [sumProduct, setSumProduct] = useState()        
     const [keyWord,setKeyWord] =useState("")
     const [show,setShow] =useState(false)
-    const cartProduct =useSelector(cartProductSelector)
     const navigate = useNavigate();
     const handleclicproductItem = (id) => {
         setShow(false)
