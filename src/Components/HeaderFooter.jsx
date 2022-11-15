@@ -29,6 +29,12 @@ import '../style/footer.scss'
       navigate(`/product/${id}`);
       
     };
+    const handleClicMore = (keyWord) => {
+        setShow(false)
+      navigate(`/Seach/${keyWord}`);
+      
+    };
+
 
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
@@ -47,7 +53,7 @@ const hideSeach = () =>{
         setShow (false)
     }
 }
- var timer = setInterval(hideSeach, 3000);
+ var timer = setInterval(hideSeach, 10000);
   
  
   function  onKeyPressSeach (e){
@@ -230,15 +236,16 @@ const hideSeach = () =>{
                     <button onClick={() =>{setShow(false)}}>X</button>
                 </div>
                 {
-                keyWord.length > 0 &&show===true && loadSeach===false ? 
+                keyWord.length > 0 && show===true && loadSeach===false ? 
                 <div  className="seach-products" >
-                    <Link > Xem thêm</Link>
+                    
                     {dataProductsSeach.length >0?
-                    dataProductsSeach.slice(0,5).map((product) =>{
+                    <><button onClick={handleClicMore}> Xem thêm</button>
+                    {dataProductsSeach.slice(0,5).map((product) => {
                         return(
                             <ProductSeach product={product}/>
                         )
-                    })
+                    })}</>
                     
                     :<div>
                         Không có sản phẩm

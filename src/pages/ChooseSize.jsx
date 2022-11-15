@@ -4,13 +4,18 @@ import { useRanger } from "react-ranger";
 
 
 
+
 import '../style/chooseSize.scss'
 export default function ChooseSize() {
 
     const [body,setBody] =useState("Gầy")
     const [selectItem,setSelectItem] =useState()
+    const [show,setShow] =useState(false)
    
-
+const onClickSlecte = () =>{
+ setShow(false)
+ console.log("adasdadas",show);
+}
 const allFilterSize = [
     {
         id:1,
@@ -184,7 +189,8 @@ const Renger =({item}) =>{
                 }
                 
                 </div>
-               
+
+                
             </Col>
 
             <Col xs={12}  sm= {12} md={12}  lg={8}  xl={8} xxl={8} className='container-fiter-right'>

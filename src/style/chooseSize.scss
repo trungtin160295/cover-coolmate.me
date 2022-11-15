@@ -10,6 +10,9 @@
         margin-top: 30px;
         border-top:2px solid ;
         padding-top: 20px;
+        .show {
+            display: none;
+        }
         .container-fiter-left{
             .fixed-left{position: sticky;}
             
