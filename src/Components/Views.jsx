@@ -1,9 +1,5 @@
-
-
-import {useEffect} from 'react'
-import { useSelector ,useDispatch} from "react-redux";
-
 import {Header,Footer}  from './HeaderFooter';
+import ScrollToTops from './ScrollToTops';
 import { Outlet } from "react-router-dom";
 
 import useFetch from '../customize/fetch';
@@ -24,7 +20,10 @@ export default function Views() {
       isLoading === false && dataHeadefAndFooter?
       <>
         <Header dataheader={dataHeadefAndFooter.header} />
-        <main><Outlet /></main>                                 
+        <main>
+          <Outlet />
+          <ScrollToTops/>
+        </main>                                 
         <Footer dataFooter={dataHeadefAndFooter.footer}/>                         
       </>
       :
@@ -37,9 +36,7 @@ export default function Views() {
             <Spinner size="sm">
               Loading...
             </Spinner>
-            <span>
-              {' '}Loading
-            </span>
+           
           </Button>
         </div>
       

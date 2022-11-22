@@ -32,3 +32,7 @@ main {
   gap: 20px;
   flex-wrap: wrap;
 }
+.btn-scroll {
+  position: fixed;
+  z-index: 10;
+}

@@ -11,10 +11,13 @@ export default function ChooseSize() {
     const [body,setBody] =useState("Gầy")
     const [selectItem,setSelectItem] =useState()
     const [show,setShow] =useState(false)
+
+
+  
    
-const onClickSlecte = () =>{
+const ChooseType = (item) =>{
  setShow(false)
- console.log("adasdadas",show);
+ setSelectItem(item)
 }
 const allFilterSize = [
     {
@@ -75,21 +78,21 @@ const listChooseBody=[
         unit:"kg"
         }
 ]
+
+
 const FilterChild = ({item}) =>{
     return(
        <>
-        <Dropdown.Item 
-        className='fiter-child' 
-        onClick={() =>setSelectItem(item)} 
-        >
-        <div className='container-fiter-img'>
-           <img src={item.linkImgProduct} alt="" />
-        </div>
-       <div className='container-fiter-name'>
-       {item.title}
-        </div>
-        </Dropdown.Item>
-   <Dropdown.Divider />
+         <li  className='fiter-child ' 
+         onClick={() =>ChooseType(item)}>
+           <div className='container-fiter-img'>
+            <img src={item.linkImgProduct} alt="" />
+           </div>
+           <div className='container-fiter-name'>
+            {item.title}
+            </div>
+            <hr />
+          </li>
 
        </>
 )
@@ -159,28 +162,28 @@ const Renger =({item}) =>{
         <Row className='container-fiter'>
             <Col xs={12}  sm= {12} md={12}  lg={4}  xl={4} xxl={4} className='container-fiter-left'>
                 <div className='fixed-left'>
-                <div className='title'> Loại sản phẩm</div>
-                <Dropdown className='w-100 container-select'>
-                    <Dropdown.Toggle className='w-100'>
-                        <div className='button-select'>{selectItem ?selectItem.title:"--Chọn sản phẩm bạn cần xem--"}</div>
-                        
+                <div className='title' onClick={() => setShow(false)}> Loại sản phẩm</div>
+                <div className=''>
+                <button className='btn-choose-type' onClick={() => setShow(true)}>
                     
-                    </Dropdown.Toggle>
-
-                    <Dropdown.Menu className='w-100 container-fiter-child'>
-                        
-                        <Dropdown.Header>-- Chọn sản phẩm bạn cần xem--</Dropdown.Header>
-                        <Dropdown.Divider />
-
-                        
-                        {allFilterSize.map((item) =>{
-                            return(<FilterChild item={item} key={item.id}/>)
+                    <span>{selectItem ? selectItem.title:"--Chọn sản phẩm bạn cần xem--"}</span>
+                    <span>&#9660;</span>
+                
+                </button>
+                <ul className={`w-100 container-fiter-child ${show ? 'show' : 'hide'}`}>
+                    {allFilterSize.map((item) =>{
+                            return(
+                            
+                            <FilterChild key={item.id} item={item}/>
+                            
+                            )
                         })}
-                        
-                       
-                        
-                    </Dropdown.Menu>
-                </Dropdown>
+                </ul>
+
+                </div>
+                
+
+            
 
                 {selectItem &&
                 <div className='select-item-img'>
@@ -189,6 +192,11 @@ const Renger =({item}) =>{
                 }
                 
                 </div>
+                
+
+                
+
+
 
                 
             </Col>
@@ -238,28 +246,10 @@ const Renger =({item}) =>{
                     <img src={selectItem.linkImgTableSize} alt= {selectItem.title}/>
                 </div>
                 }
-
-               
-                
-
             </Col>
-
-
-
         </Row>
-
-
-
-      
-      
-      
-    
-
-
-
     </div>
-
-    
+  
     
   )
 }

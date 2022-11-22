@@ -6,6 +6,8 @@ import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
 import cartSlice from "../redux/slices/cartSlice";
+import address from '../assets/address.json';
+
 
 
 import CartProductDetal from '../Components/CartProductDetal';
@@ -21,19 +23,39 @@ const Cart = () => {
     const onSubmit = data => console.log(data);
     const cartProductData = useSelector(cartProductSelector);
     const cartProduct = cartProductData.cartItems
-
-    
     const [sumMoney, setSumMoney] = useState()
-    const [payment, setPayment] = useState(
-        {
-            id:1,
-            name:"COD",
-            content:["COD","Thanh toán khi nhận hàng"],
-            linkImg:"https://www.coolmate.me/images/COD.svg"
-        }
-    )
+
 
     
+    const [province, setProvince] = useState()
+    const [district, setDistrict] = useState()
+    const [ward, setWard] = useState()
+    const [dataDistricts, setDataDistricts] = useState([{"Id":"00001","Name":"Chọn quận/huyện"}])
+    const [dataWards, setDataWards] = useState([{"Id":"00001","Name":"Chọn phường xã"}])
+    
+    useEffect(() => {
+        if(province &&province!="Chọn tỉnh/thành phố" ){
+            var distric =address.filter(addres =>addres.Name == province)[0].districts;
+            
+            setDataDistricts([{"Id":"00001","Name":"Chọn quận/huyện"},...distric]) 
+            setDataWards([{"Id":"00001","Name":"Chọn phường xã"}])
+        }else{
+            setDataDistricts([{"Id":"00001","Name":"Chọn quận/huyện"}]) 
+            setDataWards([{"Id":"00001","Name":"Chọn phường xã"}])
+
+        }
+           
+        
+        },[province]) 
+
+    useEffect(() => {      
+        if(district && dataDistricts.length > 1)  
+        { const wards = dataDistricts.filter(item =>item.Name === district)[0].wards
+            setDataWards(wards)}
+        },[district]) 
+        
+
+   
     
     const listPayments=[
         {
@@ -74,7 +96,7 @@ const Cart = () => {
             linkImg:"https://mcdn.coolmate.me/uploads/May2022/9pay.svg"
         }
     ]
-
+    const [payment, setPayment] = useState( listPayments[0])
     function sum (cartProduct){
         let sumMoney = 0;
         for (let i = 1; i < cartProduct.length; i++){
@@ -117,9 +139,10 @@ const Cart = () => {
 
     return(
         <Row className="cart-product">
+            
             <Col  md={12} xl={7}  className='cart-left'>
                 <Row className='shipping-information'>
-                    <Col  className='title-shipping'>
+                    <Col  className='title-shipping' >
                         Thông tin vận chuyển
                     </Col>
                     <Col  className='title-shipping--right'>
@@ -140,6 +163,50 @@ const Cart = () => {
                 </Row>                
                 <Row>
                     <input type="text" placeholder="Địa chỉ"  className='buyer-information more'/>
+                </Row>
+                <Row className='choose-addres'>
+                    <Col>
+                            <select
+                                value={province}
+                                onChange={(e) => setProvince(e.target.value)}
+                                className='choose-addres-child'
+                               
+                            >
+                                {address.map((province) => (
+                                <option key={province.Id} value={province.Name}>{province.Name}</option>
+                                ))}
+                            </select>
+                    </Col>
+                    <Col>
+                        <select
+                          value={district}
+                          onChange={(e) => setDistrict(e.target.value)}
+                          className='choose-addres-child'
+                        >
+                          {dataDistricts && dataDistricts.map((district) => (
+                            <option key={district.Id} value={district.Name}>{district.Name}</option>
+                             ))}
+                        </select>
+                    </Col>
+                    
+                    <Col>
+                    {dataWards &&
+                        <select
+                        value={ward}
+                        onChange={(e) => setWard(e.target.value)}
+                        className='choose-addres-child'
+                      >
+                        { dataWards.map((ward) => (
+
+                          <option key={ward.Id} value={ward.Name}>{ward.Name}</option>
+                           ))}
+                      </select>
+                    }
+                        
+                    </Col>
+
+                    
+                    
                 </Row>
                 <Row>
                     <input type="text" placeholder="Chú ý (Ví dụ:Giao hàng giờ hành chính)"  className='buyer-information more'/>
@@ -163,10 +230,10 @@ const Cart = () => {
             <Col  md={12} xl={5} className='cart-right'>
                 <div className='title-cart' onClick={() =>console.log(cartProductData.cartItems)}> Giỏ hàng của bạn</div> 
                 {cartProductData.cartItems.length > 0 && 
-                cartProductData.cartItems.map((product) =>{      
+                cartProductData.cartItems.map((product,index) =>{      
                                
                     return(
-                        <CartProductDetal key={product.id} product={product} />
+                        <CartProductDetal product={product} key={index.toString()} />
                     )
                 })
                 }

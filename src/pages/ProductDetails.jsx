@@ -10,7 +10,7 @@ import { useParams} from "react-router-dom";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from 'react-toastify';
-
+import useSrt from "../customize/str"
 import cartSlice from "../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
 
@@ -60,7 +60,9 @@ const ProductDetails = () => {
 
       if (color != undefined) {
         setButtonBuy("Vui lòng chọn kích cỡ")
-        if (size != undefined) {
+        if (product.listSize &&size != undefined) {
+          setButtonBuy("Thêm vào giỏ hàng")
+         }else{
           setButtonBuy("Thêm vào giỏ hàng")
          }
       }
@@ -70,21 +72,19 @@ const ProductDetails = () => {
    
 
     const addToCart = () => {
-        if (buttonBuy ==="Thêm vào giỏ hàng") {          
-          (dispatch(
+        if (buttonBuy ==="Thêm vào giỏ hàng") {     
+          if((dispatch(
             cartSlice.actions.addProduct({
               color: color,
               size: size,
               quantity: quantity,
               product:product,                
               id:uuidv4()
-            })))
-                purchaseNotice()  
-            
+            }))))     
+          
+          purchaseNotice()  
         }
     }
-
-  
   const productPolicy =[
     { key:"1",
       icon:"https://www.coolmate.me/images/icons/icon3.svg",
@@ -112,8 +112,6 @@ const ProductDetails = () => {
     },
   ]
   const purchaseNotice = () => toast(<PurchaseNotice/>
-  
-  
   )
   const PurchaseNotice = () => {
     return(
@@ -126,27 +124,24 @@ const ProductDetails = () => {
         </div>
         <div className="information-content">
           <div className="product-title">
-            Quần short nam thể thao Movement 7' co giãn - Xanh rêu
+            {product.ductName}
           </div>
           <div className="information-buy">
             <div className="information-color-size">
-              Đen / L
+             {color}&nbsp;&nbsp;{size}
             </div>
             <div className="information-pice">
               <span className="pice">
-                40000
-
+              {Math.round(product.price*(1-(product.discount/100)))}.000đ &nbsp; &nbsp;
               </span>
+              {product.price && 
               <span className="cost">
-              55555
+              {product.price}.000đ
               </span>
-
+              }
             </div>
           </div>
-
         </div>
-
-
       </div>
       <hr />
       <Link to ="/Cart" className='see-cart'>
@@ -157,30 +152,16 @@ const ProductDetails = () => {
    
     )
   }
-  
-
-
-
-           
   return (
   <div className="product-petails">
     <ToastContainer />
-    
-
-    
     {isLoading === false && product !=null && 
-
-
       <>
          <div  className="path">
           <Link to="/">Trang chủ /</Link>
-          <Link to={`/${product.type}`}>{product.type}</Link>          
-             
+          <Link to={`/collection/${useSrt(product.type,true)}`}>{useSrt(product.type,false)}</Link>          
           </div>
-         
           <div className="product-presented">
-          
-            
             <Row>
                 <Col md={12} xl={6}  className="product-img">
                   
@@ -223,7 +204,6 @@ const ProductDetails = () => {
                                 key={item}
                                 className={color === item ? 'active' : ''} 
                                 onClick={() => setColor(item)}
-                               
                               >
                                 {item}
                               </span>
@@ -232,7 +212,8 @@ const ProductDetails = () => {
                         }
                         </div>                                                           
                       </div>
-                      <div className="product-size">
+                      { product.listSize.length > 0 &&
+                        <div className="product-size">
                         <span>Kích thước :</span>
                         <div className="product-listsize">
                         {
@@ -246,12 +227,11 @@ const ProductDetails = () => {
                                   {item}
                                 </span>
                               )
-
                             })
                         }
                         </div>                                                           
                       </div>
-
+                      }
                     <div className="product-quantity">
                       <div className="product-quantity-title">
                         Số lượng :  
@@ -270,7 +250,6 @@ const ProductDetails = () => {
                       <button  className="product-buy" onClick={() => addToCart()}>
                         {buttonBuy}
                       </button>
-                     
                   </div>
                       <div className="product-policy">
                         {
@@ -282,13 +261,9 @@ const ProductDetails = () => {
                                 </div>
                                 <span className="policy-content">{policy.content}</span>
                               </div>
-                              
                             )
                           })
                         }           
-    
-    
-    
                       </div>
                       { product.outstanding ? 
                         <div className="product.outstanding">

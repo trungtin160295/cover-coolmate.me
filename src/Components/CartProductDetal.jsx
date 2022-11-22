@@ -2,7 +2,7 @@ import {Row,Col } from 'react-bootstrap';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 import { Link } from 'react-router-dom';
-
+import { ToastContainer, toast } from 'react-toastify';
 import cartSlice from "../redux/slices/cartSlice";
 
 
@@ -32,7 +32,6 @@ import cartSlice from "../redux/slices/cartSlice";
             
         
     useEffect(() => {
-        
         (dispatch(
             cartSlice.actions.updateProduct({
               color: color,
@@ -42,6 +41,7 @@ import cartSlice from "../redux/slices/cartSlice";
               product:product.product,                
 
             })))
+        
     },[quantity,color,size])
 
   
@@ -50,6 +50,7 @@ import cartSlice from "../redux/slices/cartSlice";
          product.id &&
          
             <Row className='product-cart-detail'>
+               
                 <Col md={12} xl={4}  className='product-img'>
                     <img src={product.product.linkImages[1]} alt={product.product.ductName} />
                 <Link to={`/product/${product.product.id}`}> </Link>

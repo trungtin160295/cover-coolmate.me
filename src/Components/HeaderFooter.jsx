@@ -16,9 +16,9 @@ import { cartProductSelector } from "../redux/selectors";
 import '../style/header.scss'
 import '../style/footer.scss'
 
- function Header({dataheader}) {
+ function Header({dataheader,sumQuantit}) {
     const cartProduct = useSelector(cartProductSelector);
-    const [sumProduct, setSumProduct] = useState(useSelector(cartProductSelector).cartQuantity)        
+    const [sumProduct, setSumProduct] = useState()        
 
     const  seachInput = useRef()
     const [keyWord,setKeyWord] =useState("")
@@ -35,7 +35,7 @@ import '../style/footer.scss'
       
     };
 
-
+  
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
 //   useEffect(() => {
@@ -79,9 +79,11 @@ const hideSeach = () =>{
         }         
         return sumProduct;
     }
-
     useEffect(() => {
-        setSumProduct(sumQuantity(cartProduct))
+        cartProduct
+    },) 
+    useEffect(() => {
+        setSumProduct(sumQuantity(cartProduct.cartItems))
     },[cartProduct]) 
     
     function ProductSeach ({product}) {
@@ -99,24 +101,17 @@ const hideSeach = () =>{
                         <div className="product-pice">
                             <span className="pice">{product.price} .000 đ </span>
                             <span className="pice-sale">{Math.round(product.price*(1-(product.discount/100)))}.000đ </span>
-
                         </div>
-                        
                     </div>
-
-
                     </div>
-                    
-            
         )
-
     }
     function TypesOpProduct ({typesOpProduct}){
         return(
             <div className="menu-header">
                 { 
                   typesOpProduct.map((list) =>{     
-                    console.log("ádsa");  
+                     
                 return(
                    <div key={list.title} >
                      <Text className="title">{list.title}</Text>
@@ -167,6 +162,7 @@ const hideSeach = () =>{
         
         <header>
             {dataheader.sale ? <Text className='topbar' >{dataheader.sale} </Text> :null}        
+          
             {dataheader.header ?  
             <nav >
                 <div className="navbar">
