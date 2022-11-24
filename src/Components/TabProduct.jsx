@@ -14,17 +14,10 @@ import '../style/home.scss'
 function TabsProduct(){
     const { data: titleTabs, isLoading}
     = useFetch(`http://localhost:3004/tabs`, false);     
-    
-     
-    
-    
     const [tab, setTab] = useState()
-    
 
     if(isLoading === false && titleTabs.length > 0 && !tab){
       setTab(titleTabs[0].title)
-
-
     }
    const { data: dataProducts,isLoading:loadDataProducts }
       = useFetch(`http://localhost:3004/products/?q=${tab}`, false); 
@@ -83,7 +76,7 @@ function TabsProduct(){
                 </div>
             ))}
         </div>
-        {dataProducts?  
+        {dataProducts&& 
             <div className="slick-container">
                 <Slider {...settings}>
                     
@@ -96,7 +89,7 @@ function TabsProduct(){
                     )}
                 </Slider>
             </div>
-            : <h2>Chưa có sản phẩm</h2>
+           
         }
         </>
         }

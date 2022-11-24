@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Row,Col,Dropdown } from 'react-bootstrap'
 import { useRanger } from "react-ranger";
 
@@ -9,12 +9,13 @@ import '../style/chooseSize.scss'
 export default function ChooseSize() {
 
     const [body,setBody] =useState("Gầy")
+    const [size,setSize] =useState("M")
     const [selectItem,setSelectItem] =useState()
     const [show,setShow] =useState(false)
 
+    useEffect(() =>{
 
-  
-   
+    },[body])
 const ChooseType = (item) =>{
  setShow(false)
  setSelectItem(item)
@@ -62,6 +63,8 @@ const bodyList = [
     "Bình thường",
     " Đầy đặn"
 ]
+
+
 
 
 const listChooseBody=[
@@ -224,7 +227,7 @@ const Renger =({item}) =>{
                     <Col className='suggestions-size'>
                         <h4 className='title'>Gợi ý Sezi</h4>
                         <div className='suggestions-content'>
-                            XL
+                            {size}
 
                         </div>
                     </Col>

@@ -81,6 +81,7 @@ const hideSeach = () =>{
     }
     useEffect(() => {
         cartProduct
+        setSumProduct(sumQuantity(cartProduct.cartItems))
     },) 
     useEffect(() => {
         setSumProduct(sumQuantity(cartProduct.cartItems))
@@ -239,7 +240,7 @@ const hideSeach = () =>{
                     <><button onClick={handleClicMore}> Xem thêm</button>
                     {dataProductsSeach.slice(0,5).map((product) => {
                         return(
-                            <ProductSeach product={product}/>
+                            <ProductSeach product={product} key={product.id}/>
                         )
                     })}</>
                     

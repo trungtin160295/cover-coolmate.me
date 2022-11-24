@@ -31,7 +31,7 @@ const {linkImage,title,content,link}= {...props.obj};
                            }
                         </div>
                         <span>
-                           <Link to={link} color="info" outline>
+                           <Link to={link} color="info">
                               Tìm hiểu thêm 
                            </Link>
                         </span>

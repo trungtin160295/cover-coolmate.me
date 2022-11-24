@@ -22,7 +22,7 @@ export default function Views() {
         <Header dataheader={dataHeadefAndFooter.header} />
         <main>
           <Outlet />
-          <ScrollToTops/>
+         
         </main>                                 
         <Footer dataFooter={dataHeadefAndFooter.footer}/>                         
       </>
