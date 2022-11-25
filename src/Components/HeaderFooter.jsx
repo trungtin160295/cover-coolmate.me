@@ -16,8 +16,8 @@ import { cartProductSelector } from "../redux/selectors";
 import '../style/header.scss'
 import '../style/footer.scss'
 
- function Header({dataheader,sumQuantit}) {
-    const cartProduct = useSelector(cartProductSelector);
+ function Header({dataheader}) {
+    const cartProduct = useSelector((state) => state.cart);
     const [sumProduct, setSumProduct] = useState()        
 
     const  seachInput = useRef()
@@ -79,13 +79,10 @@ const hideSeach = () =>{
         }         
         return sumProduct;
     }
-    useEffect(() => {
-        cartProduct
-        setSumProduct(sumQuantity(cartProduct.cartItems))
-    },) 
+   
     useEffect(() => {
         setSumProduct(sumQuantity(cartProduct.cartItems))
-    },[cartProduct]) 
+    },[cartProduct.cartItems]) 
     
     function ProductSeach ({product}) {
         return(

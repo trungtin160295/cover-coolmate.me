@@ -19,7 +19,22 @@ export default function Coolxprint() {
   });
   const onSubmit = (data) => console.log(data);
 
-  
+  const ErrorForm =({name} ) =>{
+    return(
+      <ErrorMessage
+        errors={errors}
+        name={name}
+        render={({ messages }) => {
+          return messages
+            ? Object.entries(messages).map(([type, message]) => (
+                <p key={type}>{message}</p>
+              ))
+            : null;
+        }}
+      />
+    )
+    
+  }
 
   const listCustomer = [
     {"id":1,
@@ -372,27 +387,17 @@ export default function Coolxprint() {
               <input 
                 type="text" 
                 placeholder="vd: 2 áo Polo" 
-                id="NameProduct" 
+                id="Name product" 
                 className="from-control" 
                 {...register("Name product", 
                 {required: "Vui lòng  nhập đủ thông tin." ,
-                
                 minLength: {
                   value: 6,
                   message: "Tên tối thiểu 6 kí tự "
                 }})} 
               />
-              <ErrorMessage
-              errors={errors}
-              name="Name product"
-              render={({ messages }) => {
-                return messages
-                  ? 
-                      <p >{Object.entries(messages)[0][1]}</p>
-                    
-                  : null;
-              }}
-              />
+              <ErrorForm name="Name product"/>
+              
           </div>
           <div className=" form-group">
             <label htmlFor="Name custom">2. Tên khách hàng :</label>
@@ -410,17 +415,7 @@ export default function Coolxprint() {
                   value: 2,
                   message: "Tên tối thiểu 2 kí tự "
                 }})} />
-              <ErrorMessage
-              errors={errors}
-              name="Name custom"
-              render={({ messages }) => {
-                return messages
-                  ? 
-                      <p >{Object.entries(messages)[0][1]}</p>
-                    
-                  : null;
-              }}
-              />
+              <ErrorForm name="Name custom"/>
           </div>
           <div className=" form-group">
             <label htmlFor="Email">3. Email khách hàng :</label>
@@ -438,19 +433,7 @@ export default function Coolxprint() {
                
               })}
             />
-            <ErrorMessage
-              errors={errors}
-              name="Email"
-              render={({ messages }) => {
-                return messages
-                  ? 
-                      <p >{Object.entries(messages)[0][1]}</p>
-                    
-                  : null;
-              }}
-            />
-              
-              
+            <ErrorForm name="Email"/>
           </div>
           <div className=" form-group">
             <label htmlFor="mobileNumber">4. Số điện thoại khách hàng :</label>
@@ -461,32 +444,14 @@ export default function Coolxprint() {
               className="from-control"
               {...register("mobileNumber", {
                 required: "Vui lòng  nhập đủ thông tin.",
-                
-                maxLength: {
-                  value: 15,
-                  message: "Nhập tối đa 15 số"
-                },
-                minLength: {
-                  value: 8,
-                  message: "Nhập tối thiểu 8 số  "
-                },
+                               
                 pattern: {
                   value: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
-                  message: "Chỉ nhập được số."
+                  message: "Vui lòng kiểm tra lại số điện thoại."
                 }
               })}
             />
-            <ErrorMessage
-              errors={errors}
-              name="mobileNumber"
-              render={({ messages }) => {
-                return messages
-                  ? 
-                      <p >{Object.entries(messages)[0][1]}</p>
-                    
-                  : null;
-              }}
-            />
+            <ErrorForm name="mobileNumber"/>
           </div>
          
            <div className=" submit-wrapper">

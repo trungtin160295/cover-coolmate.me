@@ -1,13 +1,13 @@
 
 import {Row,Col } from 'react-bootstrap';
 import Login from '../Components/Login';
-import { useForm } from 'react-hook-form';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
 import cartSlice from "../redux/slices/cartSlice";
 import address from '../assets/address.json';
-
+import { useForm } from 'react-hook-form';
+import { ErrorMessage } from "@hookform/error-message";
 
 
 import CartProductDetal from '../Components/CartProductDetal';
@@ -16,11 +16,15 @@ import CartProductDetal from '../Components/CartProductDetal';
 import '../style/cart.scss'
 
 const Cart = () => {  
+    const {
+        register,
+        formState: { errors },
+        handleSubmit
+      } = useForm({
+        criteriaMode: "all"
+      });
+    const onSubmit = (data) => console.log(data);  
     
-    
-
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
     const cartProductData = useSelector(cartProductSelector);
     const cartProduct = cartProductData.cartItems
     const [sumMoney, setSumMoney] = useState()
@@ -111,6 +115,23 @@ const Cart = () => {
         
         setSumMoney(sum(cartProduct))
     },[cartProduct]) 
+    function ErrorForm({name} ){
+        return(
+          <ErrorMessage
+            errors={errors}
+            name={name}
+            render={({ messages }) => {
+              return messages
+                ? Object.entries(messages).map(([type, message]) => (
+                    <p key={type}>{message}</p>
+                  ))
+                : null;
+            }}
+          />
+        )
+        
+      }
+    
 
     function Payments({item}){
         return(
@@ -150,21 +171,63 @@ const Cart = () => {
                     <Login/>
                     </Col>
                 </Row>
-                <Row >
-                    <Col md={12} xl={6} > 
-                        <input type="text" placeholder="Họ và tên"  className='buyer-information'/>
-                    </Col>
-                    <Col md={12} xl={6} >
-                        <input type="text" placeholder="Số điện thoại" {...register("Mobile number", {required: true, minLength: 9, maxLength: 12})}  className='buyer-information'/>
-                    </Col>
-                </Row>
+                <form onSubmit={handleSubmit(onSubmit) }>
+                    <Row >
+                        <Col md={12} xl={6} > 
+                            <input 
+                                type="text" 
+                                placeholder="Họ và tên" 
+                                className="buyer-information" 
+                                {...register("Name", 
+                                {required: "Vui lòng  nhập đủ thông tin." ,
+                                minLength: {
+                                value: 6,
+                                message: "Tên tối thiểu 6 kí tự "
+                                }})} 
+                            />
+                            <ErrorForm name="Name"/>
+                            
+                        </Col>
+                        <Col md={12} xl={6} >
+                            <input
+                
+                                placeholder="Số điện thoại người nhận" 
+                                className="buyer-information"
+                                {...register("mobileNumber", {
+                                    required: "Vui lòng  nhập đủ thông tin.",
+                                    
+                                    pattern: {
+                                    value: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
+                                    message: "Vui lòng kiểm tra lại số điện thoại."
+                                    }
+                                })}
+                                />
+                                <ErrorForm name="mobileNumber"/>
+                        </Col>
+                    </Row>
+                
                 <Row>
-                    <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})}  className='buyer-information more'/>
-                </Row>                
-                <Row>
-                    <input type="text" placeholder="Địa chỉ"  className='buyer-information more'/>
-                </Row>
+                    <Col>
+                     <input
+                        type="text" 
+                        placeholder="Email" 
+                        className="buyer-information "
+                        {...register("Email", {
+                            required: "Vui lòng  nhập đủ thông tin.",
+                            pattern: {
+                            value: /^\S+@\S+$/i,
+                            message: "Vui lòng nhập đúng ."
+                            }
+                        })}
+                        />
+                        <ErrorForm name="Email"/>
+                    </Col>
+
+                </Row>   
+
                 <Row className='choose-addres'>
+                    
+                
                     <Col>
                             <select
                                 value={province}
@@ -202,14 +265,40 @@ const Cart = () => {
                            ))}
                       </select>
                     }
+                    </Col>
+                </Row>             
+                <Row>
+                    
+                    <Col>
+                     <input
+                        type="text" 
+                        placeholder="Địa chỉ:(ví dụ:Số nhà 88 ngõ 8 đường Hạnh Phúc)" 
+                        className="buyer-information "
+                        {...register("Address", 
+                            {required: "Vui lòng  nhập đủ thông tin." ,
+                            maxLength: {
+                            value: 100,
+                            message: "Tên tối đa 100 kí tự"
+                            },
+                            minLength: {
+                            value: 2,
+                            message: "Tên tối thiểu 5 kí tự "
+                            }})}
+                        />
+                        <ErrorForm name="Address"/>
+                    </Col>
+                </Row>
+                
+                <Row>
+                <Col>
+                     <input
+                        type="text" 
+                        placeholder="Chú ý : (ví dụ:Giao hàng giờ hành chính))" 
+                        className="buyer-information "
+                        {...register("Note")}
+                        />
                         
                     </Col>
-
-                    
-                    
-                </Row>
-                <Row>
-                    <input type="text" placeholder="Chú ý (Ví dụ:Giao hàng giờ hành chính)"  className='buyer-information more'/>
                 </Row>
                 <div >
                     <hr />
@@ -221,11 +310,12 @@ const Cart = () => {
                 })}
                 </div>
                 <Row>
-                    <button className='button-pay'>
+                    <button className='button-pay' type='Sumbit'>
                          Thanh toán {sumMoney != 0 ? sumMoney :"0"}
                          .000 đ bằng {payment.name}
                          </button>
                 </Row>
+                </form>
             </Col>
             <Col  md={12} xl={5} className='cart-right'>
                 <div className='title-cart' onClick={() =>console.log(cartProductData.cartItems)}> Giỏ hàng của bạn</div> 
