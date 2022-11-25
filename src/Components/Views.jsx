@@ -1,5 +1,4 @@
 import {Header,Footer}  from './HeaderFooter';
-import ScrollToTops from './ScrollToTops';
 import { Outlet } from "react-router-dom";
 
 import useFetch from '../customize/fetch';
