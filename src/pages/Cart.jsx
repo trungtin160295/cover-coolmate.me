@@ -318,7 +318,7 @@ const Cart = () => {
                 </form>
             </Col>
             <Col  md={12} xl={5} className='cart-right'>
-                <div className='title-cart' onClick={() =>console.log(cartProductData.cartItems)}> Giỏ hàng của bạn</div> 
+                <div className='title-cart'> Giỏ hàng của bạn</div> 
                 {cartProductData.cartItems.length > 0 && 
                 cartProductData.cartItems.map((product,index) =>{      
                                

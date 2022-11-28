@@ -3,12 +3,12 @@ import { Outlet } from "react-router-dom";
 
 import useFetch from '../customize/fetch';
 import { Button,Spinner } from 'reactstrap';
-
+import { useSelector,useDispatch  } from "react-redux";
 
 
 
 export default function Views() { 
-
+  
   
 
   const { data: dataHeadefAndFooter, isLoading}

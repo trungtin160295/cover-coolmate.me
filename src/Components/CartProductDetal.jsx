@@ -26,6 +26,7 @@ import cartSlice from "../redux/slices/cartSlice";
         (dispatch(
             cartSlice.actions.deleteProduct({
               id:product.id,
+              quantity: quantity
             })))
      }
         

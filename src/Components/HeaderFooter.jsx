@@ -18,6 +18,7 @@ import '../style/footer.scss'
 
  function Header({dataheader}) {
     const cartProduct = useSelector((state) => state.cart);
+    const cartQuantity = useSelector((state) => state.cart).cartQuantity
     const [sumProduct, setSumProduct] = useState()        
 
     const  seachInput = useRef()
@@ -54,8 +55,6 @@ const hideSeach = () =>{
     }
 }
  var timer = setInterval(hideSeach, 10000);
-  
- 
   function  onKeyPressSeach (e){
     if(e.key === "Enter" && keyWord.length >0){
         navigate(`/Seach/${keyWord}`)
@@ -64,13 +63,11 @@ const hideSeach = () =>{
         clearTimeout(timer);
     }
   }
-
    function focusSeachInput (){
     clearInterval(timer);
         setShow(true)
         seachInput.current.focus()
     }
-    
     function sumQuantity (cartProduct){     
         let  sumProduct = 0 ;
         for (let i = 1; i < cartProduct.length  ; i++){
@@ -79,11 +76,10 @@ const hideSeach = () =>{
         }         
         return sumProduct;
     }
-   
     useEffect(() => {
+        
         setSumProduct(sumQuantity(cartProduct.cartItems))
-    },[cartProduct.cartItems]) 
-    
+    },[cartProduct]) 
     function ProductSeach ({product}) {
         return(
            
@@ -156,11 +152,8 @@ const hideSeach = () =>{
 
     }
     return (    
-           
-        
         <header>
             {dataheader.sale ? <Text className='topbar' >{dataheader.sale} </Text> :null}        
-          
             {dataheader.header ?  
             <nav >
                 <div className="navbar">
@@ -193,16 +186,12 @@ const hideSeach = () =>{
                                             })}                                    
                                          </div>                                      
                                         }                                  
-                                      
                                     </div>
                                 : null}
                             </li>
                         )
-
                         })  
                     }                      
-                    
-
                   </ul>
                 </div>
                    
@@ -210,18 +199,15 @@ const hideSeach = () =>{
                     <div>
                     <button onClick={focusSeachInput}><img src="https://www.coolmate.me/images/header/icon-search.svg"  /></button>
                     </div>
-                    
-                    
                     <div className="cart-product">
                     <Link to="/Cart"><img src="https://www.coolmate.me/images/header/icon-cart.svg" /></Link> 
-                    <span className="quantity-product">{sumProduct}</span>
+                    <span className="quantity-product">{cartQuantity}</span>
                     </div>
-                    <Login  button/>    
+                    <Login  button/>   
+                   <button onClick={() =>console.log(cartQuantity,cartProduct)}>ádđ </button>
                               
                 </div>
                 </div>
-    
-                
             </nav>
              :null}
              <div  className={`container-seach  ${show===true ? 'show-nav-seach' : ''}`}>
@@ -240,20 +226,14 @@ const hideSeach = () =>{
                             <ProductSeach product={product} key={product.id}/>
                         )
                     })}</>
-                    
                     :<div>
                         Không có sản phẩm
                     </div> 
                     }
-                    
-
                 </div>
                 :null}
                
              </div>
-            
-          
-        
         </header>
     )
   }
