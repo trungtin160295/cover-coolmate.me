@@ -29,8 +29,6 @@ main {
 .collections-filter {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 .btn-scroll {
   position: fixed;

@@ -2,6 +2,10 @@ import ListProduct from "../Components/ListProduct";
 import useFetch from "../customize/fetch";
 import useSrt from "../customize/str"
 import { useParams } from "react-router-dom";
+import {Row,Col, } from 'react-bootstrap';
+
+
+
 import '../style/allProduct.scss'
 export default function AllProduct () {    
 
@@ -114,7 +118,8 @@ export default function AllProduct () {
             <div className="collections-filter">
                 {collectionsFilter.map((item) => {
                     return(
-                        <a href="#"><img src={item.linkImg} key={item.id} alt=""  /></a>
+                        <Col><a href="#"><img src={item.linkImg} key={item.id} alt=""  /></a></Col>
+                        
                     )
                 })}
             </div>
