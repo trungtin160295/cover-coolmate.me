@@ -78,7 +78,7 @@ function sumQuantity(cartProduct) {
 
 const cartItems = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
-  : [{}];
+  : [];
 const cartQuantity = sumQuantity(cartItems);
 const cartSlice = createSlice({
   name: "cartProduct",
