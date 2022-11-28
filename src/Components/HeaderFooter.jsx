@@ -204,7 +204,7 @@ const hideSeach = () =>{
                     <span className="quantity-product">{cartQuantity}</span>
                     </div>
                     <Login  button/>   
-                   <button onClick={() =>console.log(cartQuantity,cartProduct)}>ádđ </button>
+               
                               
                 </div>
                 </div>
