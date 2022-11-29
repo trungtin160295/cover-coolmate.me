@@ -52,11 +52,11 @@ import cartSlice from "../redux/slices/cartSlice";
          
             <Row className='product-cart-detail'>
                
-                <Col md={12} xl={4}  className='product-img'>
+                <Col xs={5}  sm= {5} md={6}  lg={5}  xl={5} xxl={4}  className='product-img'>
                     <img src={product.product.linkImages[1]} alt={product.product.ductName} />
                 <Link to={`/product/${product.product.id}`}> </Link>
                 </Col>
-                <Col md={12} xl={8}  className='product-detail-right'>
+                <Col xs={7}  sm= {7} md={6}  lg={7}  xl={7} xxl={8} className='product-detail-right'>
                     <div className='product-detail-top'>
                         <div className='product-detail-text'>
                         <Link to={`/product/${product.product.id}`}>

@@ -31,21 +31,45 @@ export default function Login({button}) {
             <h2 className='title'>Đăng nhập</h2>
             <CloseButton className='close-button' onClick={handleClose}/>
           </div>
-          {/* <span>Nếu đã từng mua hàng trên Website trước đây,
-             bạn có thể dùng tính năng  <a href="">"Lấy mật khẩu"</a> để có thể truy cập vào tài khoản bằng email nhé. </span> */}
+          <span>Nếu đã từng mua hàng trên Website trước đây,
+             bạn có thể dùng tính năng  <a href="">"Lấy mật khẩu"</a> để có thể truy cập vào tài khoản bằng email nhé. </span>
         </div>        
-        <form onSubmit={handleSubmit(onSubmit) }>     
-          <div className='form-login'>
-            <input type="text" placeholder="Email / Mobile number"  className='login-input' {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-            <input type="password" placeholder="Password" className='login-input'{...register("Mobile number", {required: true, minLength: 9, maxLength: 12})} />
-            <button type='Sumbit' className='button-login'>Đăng nhập</button>
-          </div>     
-          
-        </form>
+        
+                        
+                        <div className="account">
+                            <input type="text" className="input_account" placeholder='Email/SDT của bạn' />
+                        </div>
+                        <div className="account">
+                            <input type="text" className="input_account" placeholder='Mật khẩu' />
+                        </div>
+                        <div className="button_login">
+                            <button className="text_button_login">
+                                Đăng nhập
+                            </button>
+                        </div>
+                        <p className="or">Hoặc</p>
+                        <div className="button_login_facebook">
+                            <button className="login_facebook">
+                                <p className="text_login">Đăng nhập với Facebook <i className="fa-brands fa-facebook icon_login" /></p>
+                            </button>
+                        </div>
+                        <div className="button_login_google">
+                            <button className="login_Google">
+                                <p className="text_login">Đăng nhập với Google <i className="fa-brands fa-google icon_login" /></p>
+                            </button>
+                        </div>
+                        <div className="footer_login">
+                            <p className="new_account">Đăng ký tài khoản mới</p>
+                            <p className="new_account">Quên mật khẩu</p>
+                        </div>
+                    
         
         
       </Modal>
     </div>
   );
 }
+
+
+
 

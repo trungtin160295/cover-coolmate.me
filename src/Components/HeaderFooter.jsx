@@ -68,7 +68,7 @@ const hideSeach = () =>{
         setShow(true)
         seachInput.current.focus()
     }
-    function sumQuantity (cartProduct){     
+   const sumQuantity = (cartProduct) =>{     
         let  sumProduct = 0 ;
         for (let i = 1; i < cartProduct.length  ; i++){
             
@@ -201,7 +201,7 @@ const hideSeach = () =>{
                     </div>
                     <div className="cart-product">
                     <Link to="/Cart"><img src="https://www.coolmate.me/images/header/icon-cart.svg" /></Link> 
-                    <span className="quantity-product">{cartQuantity}</span>
+                    <span className="quantity-product">{sumProduct}</span>
                     </div>
                     <Login  button/>   
                
