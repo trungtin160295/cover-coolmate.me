@@ -27,9 +27,10 @@ const AboutCoolmate = lazy(() => import('./pages/AboutCoolmate'));
 const ChooseSize = lazy(() => import('./pages/ChooseSize'));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<Suspense fallback={<FallbackLoading />}>
 <Provider store={store} >
-    {/* <React.StrictMode> */}
+<Suspense fallback={<FallbackLoading />}>
+
+    <React.StrictMode>
     <BrowserRouter>
     <Wrapper>
     <Routes>
@@ -53,12 +54,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       
   </BrowserRouter>
-  {/* </React.StrictMode> */}
-    </Provider>
+  </React.StrictMode>
+    
     
 
 </Suspense>
-
+</Provider>
   
   
  
