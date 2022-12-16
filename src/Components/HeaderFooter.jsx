@@ -153,6 +153,7 @@ const hideSeach = () =>{
     }
     return (    
         <header>
+            <button onClick={() =>console.log(cartProduct)}></button>
             {dataheader.sale ? <Text className='topbar' >{dataheader.sale} </Text> :null}        
             {dataheader.header ?  
             <nav >
@@ -201,7 +202,7 @@ const hideSeach = () =>{
                     </div>
                     <div className="cart-product">
                     <Link to="/Cart"><img src="https://www.coolmate.me/images/header/icon-cart.svg" /></Link> 
-                    <span className="quantity-product">{sumProduct}</span>
+                    <span className="quantity-product">{cartQuantity}</span>
                     </div>
                     <Login  button/>   
                

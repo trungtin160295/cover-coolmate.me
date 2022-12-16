@@ -29,7 +29,7 @@ const ChooseSize = lazy(() => import('./pages/ChooseSize'));
 ReactDOM.createRoot(document.getElementById('root')).render(
 <Suspense fallback={<FallbackLoading />}>
 <Provider store={store} >
-    <React.StrictMode>
+    {/* <React.StrictMode> */}
     <BrowserRouter>
     <Wrapper>
     <Routes>
@@ -53,7 +53,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       
   </BrowserRouter>
-  </React.StrictMode>
+  {/* </React.StrictMode> */}
     </Provider>
     
 

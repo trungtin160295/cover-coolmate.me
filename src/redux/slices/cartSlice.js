@@ -107,7 +107,7 @@ const cartSlice = createSlice({
     deleteProduct: (state, action) => {
       const cartItems = state.cartItems.filter(
         (item) => item.id !== action.payload.id
-      );
+      ); 
       state.cartItems = cartItems;
       state.cartQuantity += -action.payload.quantity;
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));

@@ -10,7 +10,7 @@ export default function ListProduct({imgFirst,dataProducts}) {
     return (
        dataProducts.length > 0 &&
         
-        <Row className='list-product' >
+        <Row >
             {imgFirst ?
             <Col    xs={12}  sm= {12} md={6}  lg={4}  xl={3} xxl={2}  className="collection-thumbnail">
                 <img src={imgFirst} alt={imgFirst} />
