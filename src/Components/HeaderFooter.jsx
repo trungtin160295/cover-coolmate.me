@@ -153,6 +153,7 @@ const hideSeach = () =>{
     }
     return (    
         <header>
+            
             {dataheader.sale ? <Text className='topbar' >{dataheader.sale} </Text> :null}        
             {dataheader.header ?  
             <nav >
@@ -170,7 +171,7 @@ const hideSeach = () =>{
                                     <div className="dropdown-content ">
                                         {item.title ==="Sản phẩm" &&
                                           <TypesOpProduct typesOpProduct = {item.child}/>
-                                        }  
+                                        }   
                                         {item.title ==="Về Coolmate" &&
                                         
                                           <div className="about-cool ">

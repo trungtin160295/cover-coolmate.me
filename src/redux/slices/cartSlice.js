@@ -78,7 +78,7 @@ function sumQuantity(cartProduct) {
 
 const cartItems = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
-  : [];
+  : [{}];
 const cartQuantity = sumQuantity(cartItems);
 const cartSlice = createSlice({
   name: "cartProduct",
@@ -97,17 +97,17 @@ const cartSlice = createSlice({
         state.cartQuantity +=
           action.payload.quantity - state.cartItems[indexProduct].quantity;
         state.cartItems[indexProduct] = {
-          ...state.cartItems[indexProduct],
           ...action.payload,
         };
+        console.log(indexProduct, cartItems, action.payload);
       }
-
+      console.log(state.cartItems, action.payload, indexProduct);
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
     deleteProduct: (state, action) => {
       const cartItems = state.cartItems.filter(
         (item) => item.id !== action.payload.id
-      ); 
+      );
       state.cartItems = cartItems;
       state.cartQuantity += -action.payload.quantity;
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));

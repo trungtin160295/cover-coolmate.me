@@ -319,14 +319,14 @@ const Cart = () => {
             </Col>
             <Col  md={12} xl={5} className='cart-right'>
                 <div className='title-cart'> Giỏ hàng của bạn</div> 
-                {cartProductData.cartItems.length > 0 && 
-                cartProductData.cartItems.map((product,index) =>{      
-                               
-                    return(
-                        <CartProductDetal product={product} key={index.toString()} />
-                    )
-                })
-                }
+                    {cartProductData.cartItems.length > 0 && 
+                    cartProductData.cartItems.map((product) =>{      
+                                
+                        return(
+                            <CartProductDetal product={product} key={product.id} />
+                        )
+                    })
+                    }
                 
                 <div className='bill'>
                     <hr />
