@@ -3,6 +3,7 @@ import  { useState ,useEffect} from 'react';
 import {Modal,CloseButton }from 'react-bootstrap';
 
 import '../style/header.scss'
+import IconAccount from "../img/icon-account.svg"
 import { useForm } from 'react-hook-form';
 
 export default function Login({button}) {
@@ -19,7 +20,7 @@ export default function Login({button}) {
     <div className='card-login'>
       {button ? 
       <button  onClick={handleShow}>
-        <img src="https://www.coolmate.me/images/header/icon-account.svg" alt="" />
+        <img src={IconAccount} alt="" />
       </button>      
       :
       <button  onClick={handleShow}className="button-login--now" >Đăng nhập ngay</button>

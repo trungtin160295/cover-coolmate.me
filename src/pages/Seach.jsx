@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import useFetch from "../customize/fetch";
 import useSrt from "../customize/str"
 import ListProduct from '../Components/ListProduct';
+import IconSearch from "../img/icon-search.svg"
+
 
 import '../style/pageSeach.scss';
 
@@ -10,6 +12,7 @@ import '../style/pageSeach.scss';
 
 export  default function Seach () {  
     const {keyWord} = useParams();
+    console.log(keyWord);
     const [key,setKey] =useState(keyWord)
       const { data: dataProducts, isLoading }
     = useFetch(`http://localhost:3004/products/?q=${key}`, false); 
@@ -28,7 +31,7 @@ export  default function Seach () {
                      <input type="text"  placeholder='Tìm kiếm sản phẩm ...' onChange={(e) =>setKey(e.target.value)} />
                     
                     <button>
-                    <img src="https://www.coolmate.me/images/header/icon-search.svg" alt="" />
+                    <img src={IconSearch} alt="" />
 
                     </button>  
 

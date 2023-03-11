@@ -9,14 +9,16 @@ import { useSelector,useDispatch  } from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
 // import { fetchCart } from '../redux/slices/cartSlice';
 
-
-
+import IconSearch from "../img/icon-search.svg"
+import IconCart from "../img/icon-cart.svg"
+import IconAccount from "../img/icon-account.svg"
 
 
 import '../style/header.scss'
 import '../style/footer.scss'
 
  function Header({dataheader}) {
+    
     const cartProduct = useSelector((state) => state.cart);
     const cartQuantity = useSelector((state) => state.cart).cartQuantity
     const [sumProduct, setSumProduct] = useState()        
@@ -32,6 +34,7 @@ import '../style/footer.scss'
     };
     const handleClicMore = (keyWord) => {
         setShow(false)
+        console.log(keyWord);
       navigate(`/Seach/${keyWord}`);
       
     };
@@ -39,15 +42,7 @@ import '../style/footer.scss'
   
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
-//   useEffect(() => {
-//     dispatch(fetchCart());    
-//   }, [])
- 
-//  if(cartProduct.length ===0){
-//     let cartProduct =useSelector(cartProductSelector)
-//     console.log("SDadasda");
-//     setcartProduct(cartProduct)
-//  }
+
 
 const hideSeach = () =>{
     if(show){
@@ -198,10 +193,10 @@ const hideSeach = () =>{
                    
                 <div className="nav-right">
                     <div>
-                    <button onClick={focusSeachInput}><img src="https://www.coolmate.me/images/header/icon-search.svg"  /></button>
+                    <button onClick={focusSeachInput}><img src={IconSearch} /></button>
                     </div>
                     <div className="cart-product">
-                    <Link to="/Cart"><img src="https://www.coolmate.me/images/header/icon-cart.svg" /></Link> 
+                    <Link to="/Cart"><img src={IconCart} /></Link> 
                     <span className="quantity-product">{sumProduct}</span>
                     </div>
                     <Login  button/>   
