@@ -6,7 +6,7 @@ import {Row,Col, } from 'react-bootstrap';
 
 
 
-import '../style/allProduct.scss'
+// import '../style/allProduct.scss'
 export default function AllProduct () {    
 
     let {title} = useParams();
