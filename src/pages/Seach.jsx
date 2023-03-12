@@ -12,16 +12,11 @@ import '../style/pageSeach.scss';
 
 export  default function Seach () {  
     const {keyWord} = useParams();
-    console.log(keyWord);
+   
     const [key,setKey] =useState(keyWord)
       const { data: dataProducts, isLoading }
     = useFetch(`http://localhost:3004/products/?q=${key}`, false); 
     
-  
-  
-
-  
-  
     return (
       <>
           <div className="collections-filter">

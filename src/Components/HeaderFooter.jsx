@@ -6,10 +6,10 @@ import useSrt from "../customize/str"
 import Login from "./Login";
 import { useState,useEffect,useRef } from "react";
 import { useSelector,useDispatch  } from "react-redux";
-
+import axios from "axios";
 import IconSearch from "../img/icon-search.svg"
 import IconCart from "../img/icon-cart.svg"
-
+import { Button,Spinner } from 'reactstrap';
 
 import '../style/header.scss'
 import '../style/footer.scss'
@@ -17,7 +17,9 @@ import '../style/footer.scss'
 
  function Header({dataheader}) {
  
-    
+    const [dataProductsSeach, setDataProductsSeach] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [isError, setIsError] = useState(false);
     const cartProduct = useSelector((state) => state.cart);
     const [sumProduct, setSumProduct] = useState()
     
@@ -35,8 +37,48 @@ import '../style/footer.scss'
         setShow(false)
       navigate(`/Seach/${keyWord}`);
     };
-  const { data: dataProductsSeach,isLoading:loadSeach }
-  = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
+//   const { data: dataProductsSeach,isLoading:loadSeach }
+//   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
+  useEffect(() => {
+    setIsLoading(true)
+    setDataProductsSeach([])
+    const ourRequest = axios.CancelToken.source(); 
+
+    async function fetchData() {
+      try {
+        let res = await axios.get(`http://localhost:3004/products/?q=${keyWord}`, {
+          cancelToken: ourRequest.token, 
+        });
+
+        let data = res && res.data ? res.data : null;
+       
+
+        setDataProductsSeach(data);
+        setIsLoading(false);
+        setIsError(false);
+      } catch (err) {
+        if (axios.isCancel(err)) {
+          console.log("Request canceled", err.message);
+        } else {
+          setIsError(true);
+          setIsLoading(false);
+        }
+      }
+    }
+
+    setTimeout(() => {
+      fetchData();
+    }, 1000);
+
+    return () => {
+      ourRequest.cancel("Operation canceled by the user."); // <-- 3rd step
+    };
+  }, [keyWord]);
+
+
+
+
+
 
 function focusSeachInput (){
     seachInput.current.focus()
@@ -207,11 +249,28 @@ function focusSeachInput (){
                     <input ref = {seachInput} type="text"  onChange={(e) =>onChangeKey(e)} onKeyDown={(e) => onKeyPressSeach(e)} />
                     <button onClick={() =>{setShow(false)}}>X</button>
                 </div>
+               
                 {
-                keyWord.length > 0 && show===true && loadSeach===false ? 
+                keyWord.length > 0 && show===true  ? 
+                
+                
                 <div  className="seach-products" >
+                    {
+                    isLoading===true ? <div className='loading'>
+                    <Button
+                        color="primary"
+                        disabled
+                      >
+                        <Spinner size="sm">
+                          Loading...
+                        </Spinner>
+                       
+                      </Button>
+                    </div>
+                    :
+                
                     
-                    {dataProductsSeach.length >0?
+                    dataProductsSeach.length >0 && isLoading === false?
                     <><button onClick={handleClicMore}> Xem thêm</button>
                     {dataProductsSeach.slice(0,5).map((product) => {
                         return(
