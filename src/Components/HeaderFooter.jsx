@@ -6,63 +6,59 @@ import useSrt from "../customize/str"
 import Login from "./Login";
 import { useState,useEffect,useRef } from "react";
 import { useSelector,useDispatch  } from "react-redux";
-import { cartProductSelector } from "../redux/selectors";
-// import { fetchCart } from '../redux/slices/cartSlice';
 
 import IconSearch from "../img/icon-search.svg"
 import IconCart from "../img/icon-cart.svg"
-import IconAccount from "../img/icon-account.svg"
 
 
 import '../style/header.scss'
 import '../style/footer.scss'
 
+
  function Header({dataheader}) {
+ 
     
     const cartProduct = useSelector((state) => state.cart);
-    const cartQuantity = useSelector((state) => state.cart).cartQuantity
-    const [sumProduct, setSumProduct] = useState()        
-
+    const [sumProduct, setSumProduct] = useState()
+    
     const  seachInput = useRef()
     const [keyWord,setKeyWord] =useState("")
     const [show,setShow] =useState(false)
     const navigate = useNavigate();
+   
+
     const handleclicproductItem = (id) => {
         setShow(false)
       navigate(`/product/${id}`);
-      
     };
-    const handleClicMore = (keyWord) => {
+    const handleClicMore = () => {
         setShow(false)
-        console.log(keyWord);
       navigate(`/Seach/${keyWord}`);
-      
     };
-
-  
   const { data: dataProductsSeach,isLoading:loadSeach }
   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
 
-
-const hideSeach = () =>{
-    if(show){
-        setShow (false)
-    }
+function focusSeachInput (){
+    seachInput.current.focus()
+    setShow(true)
 }
- var timer = setInterval(hideSeach, 10000);
+
   function  onKeyPressSeach (e){
-    if(e.key === "Enter" && keyWord.length >0){
+    if(e.key === "Enter" ){
+        setShow(false)
         navigate(`/Seach/${keyWord}`)
     }
-    else{
-        clearTimeout(timer);
     }
+    
+  
+  function onChangeKey(e){
+    setKeyWord(e.target.value)
   }
-   function focusSeachInput (){
-    clearInterval(timer);
-        setShow(true)
-        seachInput.current.focus()
-    }
+  useEffect(() => {
+        
+    setSumProduct(sumQuantity(cartProduct.cartItems))
+},[cartProduct]) 
+
    const sumQuantity = (cartProduct) =>{     
         let  sumProduct = 0 ;
         for (let i = 1; i < cartProduct.length  ; i++){
@@ -208,7 +204,7 @@ const hideSeach = () =>{
              :null}
              <div  className={`container-seach  ${show===true ? 'show-nav-seach' : ''}`}>
                 <div className="nav-seach">
-                    <input ref = {seachInput} type="text"  onChange={(e) =>setKeyWord(e.target.value)} onKeyPress={(e) => onKeyPressSeach(e)} />
+                    <input ref = {seachInput} type="text"  onChange={(e) =>onChangeKey(e)} onKeyDown={(e) => onKeyPressSeach(e)} />
                     <button onClick={() =>{setShow(false)}}>X</button>
                 </div>
                 {

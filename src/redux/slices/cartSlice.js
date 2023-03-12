@@ -99,9 +99,8 @@ const cartSlice = createSlice({
         state.cartItems[indexProduct] = {
           ...action.payload,
         };
-        console.log(indexProduct, cartItems, action.payload);
       }
-      console.log(state.cartItems, action.payload, indexProduct);
+
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
     deleteProduct: (state, action) => {

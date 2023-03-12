@@ -98,7 +98,7 @@ const Responsibility =({item,index}) =>{
                 </h3>
                 
                     {item.child.map((content,index) =>{
-                        return <div className='responsibility-child-content' key={index}>{content}</div>
+                        return <div className='responsibility-child-content' key={`${content.slice(0,3)}+${index}`}>{content}</div>
                     })}
 
                 
@@ -147,9 +147,9 @@ export default function AboutCoolmate() {
                     </h1>
                 </Col>
                 <Col  xs={12}  sm= {12} md={6}  lg={7}  xl={8} xxl={9} className='coolmate-born-right'>
-                    {coolmateBorn.map((content) =>{
+                    {coolmateBorn.map((content,index) =>{
 
-                       return <div className='coolmate-born-content' >
+                       return <div className='coolmate-born-content' key={`${content.slice(0,3)}+${index}`} >
                                 {content}
                         </div>
                     })}
@@ -186,7 +186,8 @@ export default function AboutCoolmate() {
                         </h2>
                         <div className='story-content'>
                         {customerErviceStory.map((content) => {
-                            return <div>{content}</div>
+                            return 
+                            <div key={`${content.slice(0,3)}+${index}`}>{content}</div>
                         })}
 
                     </div>
@@ -204,7 +205,7 @@ export default function AboutCoolmate() {
                 Coolmate đang hướng tới
             </h2>
             {responsibility.map((item,index) =>{
-                return <Responsibility  item={item} index ={index}/>
+                return <Responsibility  item={item} index ={item.id}/>
             })}
        </section>
        <section className='coolmate-thanks'>
