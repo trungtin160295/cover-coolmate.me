@@ -1,21 +1,16 @@
 import {Header,Footer}  from './HeaderFooter';
 import { Outlet } from "react-router-dom";
 
-import useFetch from '../customize/fetch';
+import useFetch from '../ultils/fetch';
 import { Button,Spinner } from 'reactstrap';
 import { useSelector,useDispatch  } from "react-redux";
 
 
 
 export default function Views() { 
-  
-  
-
   const { data: dataHeadefAndFooter, isLoading}
-  = useFetch(`http://localhost:3004/headerAndFooter`, false);
-
+  = useFetch("headerAndFooter");
     return (
-     
       isLoading === false && dataHeadefAndFooter?
       <>
         <Header dataheader={dataHeadefAndFooter.header} />

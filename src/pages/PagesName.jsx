@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useState ,useEffect} from "react";
 import ListProduct from "../Components/ListProduct";
-import useFetch from "../customize/fetch";
-import useSrt from "../customize/str"
-import sortBy from "../customize/sortBy"
+import useFetch from "../ultils/fetch";
+import useSrt from "../ultils/str"
+import sortBy from "../ultils/sortBy"
 import '../style/pagesName.scss';
 
 export  default function PageTitle () {  
@@ -14,7 +14,7 @@ export  default function PageTitle () {
  
   
     const { data: dataProducts, isLoading }
-  = useFetch(`http://localhost:3004/products/?q=${name}`, false); 
+  = useFetch(`products/?q=${name}`, false); 
   if(isLoading === false && !dataProductsFilter.length){
     setDataProductsFilter(dataProducts)
     }

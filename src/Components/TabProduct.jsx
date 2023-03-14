@@ -1,10 +1,9 @@
 import React, { useState,useRef} from 'react';
-import useFetch from '../customize/fetch';
+import useFetch from '../ultils/fetch';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 import "slick-carousel/slick/slick-theme.css";
-import ListProduct from './ListProduct';
 import Product from './Product';
 import '../style/home.scss'
 
@@ -13,14 +12,14 @@ import '../style/home.scss'
 
 function TabsProduct(){
     const { data: titleTabs, isLoading}
-    = useFetch(`http://localhost:3004/tabs`, false);     
+    = useFetch("tabs", false);     
     const [tab, setTab] = useState()
 
     if(isLoading === false && titleTabs.length > 0 && !tab){
       setTab(titleTabs[0].title)
     }
    const { data: dataProducts,isLoading:loadDataProducts }
-      = useFetch(`http://localhost:3004/products/?q=${tab}`, false); 
+      = useFetch(`products/?q=${tab}`, false); 
             
     const settings = {        
       speed: 1000,

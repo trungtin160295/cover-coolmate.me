@@ -1,13 +1,12 @@
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import{Row,Col}  from "react-bootstrap";
 import Slider from "react-slick";
+import { useForm } from 'react-hook-form';
+import { ErrorMessage } from "@hookform/error-message";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../style/pageCoolPrint.scss'
-import { Card } from "reactstrap";
-import { useForm } from 'react-hook-form';
-import { ErrorMessage } from "@hookform/error-message";
 
 export default function Coolxprint() {
   const {

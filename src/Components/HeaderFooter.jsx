@@ -1,14 +1,13 @@
 
 import Text from "./Text"
 import {  NavLink,Link, useNavigate  } from "react-router-dom";
-import useFetch from "../customize/fetch";
-import useSrt from "../customize/str"
+import useSrt from "../ultils/str"
 import Login from "./Login";
 import { useState,useEffect,useRef } from "react";
 import { useSelector,useDispatch  } from "react-redux";
 import axios from "axios";
-import IconSearch from "../img/icon-search.svg"
-import IconCart from "../img/icon-cart.svg"
+import IconSearch from "../assets/img/icon-search.svg"
+import IconCart from "../assets/img/icon-cart.svg"
 import { Button,Spinner } from 'reactstrap';
 import { Col } from "react-bootstrap";
 

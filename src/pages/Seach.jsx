@@ -1,9 +1,8 @@
 import {useState}from 'react'
 import { useParams } from "react-router-dom";
-import useFetch from "../customize/fetch";
-import useSrt from "../customize/str"
+import useFetch from "../ultils/fetch";
 import ListProduct from '../Components/ListProduct';
-import IconSearch from "../img/icon-search.svg"
+import IconSearch from "../assets/img/icon-search.svg"
 
 
 import '../style/pageSeach.scss';
@@ -15,7 +14,7 @@ export  default function Seach () {
    
     const [key,setKey] =useState(keyWord)
       const { data: dataProducts, isLoading }
-    = useFetch(`http://localhost:3004/products/?q=${key}`, false); 
+    = useFetch(`products/?q=${key}`); 
     
     return (
       <>

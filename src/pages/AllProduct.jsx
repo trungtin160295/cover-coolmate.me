@@ -1,6 +1,6 @@
 import ListProduct from "../Components/ListProduct";
-import useFetch from "../customize/fetch";
-import useSrt from "../customize/str"
+import useFetch from "../ultils/fetch";
+import useSrt from "../ultils/str"
 import { useParams } from "react-router-dom";
 import {Row,Col, } from 'react-bootstrap';
 
@@ -11,7 +11,7 @@ export default function AllProduct () {
 
     let {title} = useParams();
     const { data: dataProducts, isLoading }
-  = useFetch(`http://localhost:3004/products`, false); 
+  = useFetch("products", false); 
 
     const collectionsFilter=[
         {

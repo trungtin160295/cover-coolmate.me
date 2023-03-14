@@ -4,7 +4,6 @@ import Login from '../Components/Login';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 import { cartProductSelector } from "../redux/selectors";
-import cartSlice from "../redux/slices/cartSlice";
 import address from '../assets/address.json';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from "@hookform/error-message";
@@ -186,16 +185,13 @@ const Cart = () => {
                                 }})} 
                             />
                             <ErrorForm name="Name"/>
-                            
                         </Col>
                         <Col md={12} xl={6} >
                             <input
-                
                                 placeholder="Số điện thoại người nhận" 
                                 className="buyer-information"
                                 {...register("mobileNumber", {
                                     required: "Vui lòng  nhập đủ thông tin.",
-                                    
                                     pattern: {
                                     value: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
                                     message: "Vui lòng kiểm tra lại số điện thoại."
@@ -205,7 +201,6 @@ const Cart = () => {
                                 <ErrorForm name="mobileNumber"/>
                         </Col>
                     </Row>
-                
                 <Row>
                     <Col>
                      <input
@@ -222,18 +217,13 @@ const Cart = () => {
                         />
                         <ErrorForm name="Email"/>
                     </Col>
-
                 </Row>   
-
                 <Row className='choose-addres'>
-                    
-                
                     <Col>
                             <select
                                 value={province}
                                 onChange={(e) => setProvince(e.target.value)}
                                 className='choose-addres-child'
-                               
                             >
                                 {address.map((province) => (
                                 <option key={province.Id} value={province.Name}>{province.Name}</option>
@@ -288,7 +278,6 @@ const Cart = () => {
                         <ErrorForm name="Address"/>
                     </Col>
                 </Row>
-                
                 <Row>
                 <Col>
                      <input
@@ -311,9 +300,8 @@ const Cart = () => {
                 </div>
                 <Row>
                     <button className='button-pay' type='Sumbit'>
-                         Thanh toán {sumMoney != 0 ? sumMoney :"0"}
-                         .000 đ bằng {payment.name}
-                         </button>
+                        Đăng nhập
+                     </button>
                 </Row>
                 </form>
             </Col>
@@ -327,7 +315,6 @@ const Cart = () => {
                         )
                     })
                     }
-                
                 <div className='bill'>
                     <hr />
                     <div className=' bill-child'>

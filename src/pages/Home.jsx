@@ -5,7 +5,6 @@ import Basic from '../Components/Basic'
 import { Link } from 'react-router-dom'
 import Text from '../Components/Text'
 
-//  import Collection from '../Components/Collection'
  
  import '../style/home.scss'
 

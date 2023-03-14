@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
-import useFetch from "../customize/fetch";
+import useFetch from "../ultils/fetch";
 import { Button,Spinner } from 'reactstrap';
 import {Row,Col } from 'react-bootstrap';
 import Text from '../Components/Text';
@@ -10,36 +10,38 @@ import { useParams} from "react-router-dom";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from 'react-toastify';
-import useSrt from "../customize/str"
+import useSrt from "../ultils/str"
 import cartSlice from "../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
-
-
-
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import 'react-toastify/dist/ReactToastify.css';
 import '../style/productDetails.scss'
 
-
-
-
 const ProductDetails = () => {  
   let {id} = useParams();
-  const { data: product, isLoading,imgProduct }
-      = useFetch(`http://localhost:3004/products/${id}`, true);   
-
- 
+  const { data: product, isLoading }
+      = useFetch(`products/${id}`);   
     const dispatch =useDispatch()
     const [buttonBuy, setButtonBuy] = useState("Vui lòng chọn màu sắc")
     const [color, setColor] = useState(undefined)
-
-
     const [size, setSize] = useState(undefined)
-
     const [quantity, setQuantity] = useState(1)
+    const [imgProduct, setImgProduct] = useState([])
 
-
+  useEffect(()=>{
+    if (isLoading===false && product.linkImages) {
+      const imgProduct = product.linkImages.map((item) => {
+        return {
+          original: item,
+          thumbnail: item,
+          originalWidth: "100%",
+          originalHeght: "100%",
+        };
+      });
+      setImgProduct(imgProduct);
+    }
+  },[isLoading])
     const updateQuantity = (type) => {
         if (type === 'plus') {
             setQuantity(quantity + 1)
@@ -48,7 +50,6 @@ const ProductDetails = () => {
         }
     }
     
-  
     useEffect(() => {
         
         setQuantity(1)
@@ -57,11 +58,11 @@ const ProductDetails = () => {
     }, [product])
 
     useEffect(() => {
-
-      if (color != undefined) {
-        setButtonBuy("Vui lòng chọn kích cỡ")
-        if (product.listSize &&size != undefined) {
-          setButtonBuy("Thêm vào giỏ hàng")
+        
+      if (isLoading===false && product.listColor && color ) {
+        setButtonBuy("Vui lòng chọn màu sắc")
+        if (product.listSize && size ) {
+          setButtonBuy("Vui lòng chọn kích cỡ")
          }else{
           setButtonBuy("Thêm vào giỏ hàng")
          }
@@ -186,11 +187,7 @@ const ProductDetails = () => {
                         </>
                         :null}
                       </div>
-                      {/* { product.combo!= "" && 
-                        <span className="product-combo">
-                          {product.combo}
-                        </span>
-                        } */}
+
                       { product.sale != "" &&
                         <Text className="product-sale">{product.sale}   </Text>
                         }
@@ -307,6 +304,5 @@ const ProductDetails = () => {
 };
 
   
-
 
 export default ProductDetails;

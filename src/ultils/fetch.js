@@ -1,32 +1,21 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useFetch = (url, isProductdData) => {
+const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
-  const [imgProduct, setImgProduct] = useState(null);
 
   useEffect(() => {
     const ourRequest = axios.CancelToken.source(); // <-- 1st step
 
     async function fetchData() {
       try {
-        let res = await axios.get(url, {
+        let res = await axios.get(`http://localhost:3004/${url}`, {
           cancelToken: ourRequest.token, // <-- 2nd step
         });
         let data = res && res.data ? res.data : null; // true, false
-        if (data && isProductdData === true) {
-          const setimgProduct = data.linkImages.map((item) => {
-            return {
-              original: item,
-              thumbnail: item,
-              originalWidth: "100%",
-              originalHeght: "100%",
-            };
-          });
-          setImgProduct(setimgProduct);
-        }
+
         setData(data);
         setIsLoading(false);
         setIsError(false);
@@ -53,7 +42,6 @@ const useFetch = (url, isProductdData) => {
     data,
     isLoading,
     isError,
-    imgProduct,
   };
 };
 

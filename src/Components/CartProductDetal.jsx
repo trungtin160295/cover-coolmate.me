@@ -2,7 +2,6 @@ import {Row,Col } from 'react-bootstrap';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
 import { Link } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
 import cartSlice from "../redux/slices/cartSlice";
 
 
