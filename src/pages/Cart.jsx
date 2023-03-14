@@ -219,7 +219,7 @@ const Cart = () => {
                     </Col>
                 </Row>   
                 <Row className='choose-addres'>
-                    <Col>
+                    <Col style={{    margin: "10px 0"}}>
                             <select
                                 value={province}
                                 onChange={(e) => setProvince(e.target.value)}
@@ -230,7 +230,7 @@ const Cart = () => {
                                 ))}
                             </select>
                     </Col>
-                    <Col>
+                    <Col style={{    margin: "10px 0"}}>
                         <select
                           value={district}
                           onChange={(e) => setDistrict(e.target.value)}
@@ -242,7 +242,7 @@ const Cart = () => {
                         </select>
                     </Col>
                     
-                    <Col>
+                    <Col style={{    margin: "10px 0"}}>
                     {dataWards &&
                         <select
                         value={ward}

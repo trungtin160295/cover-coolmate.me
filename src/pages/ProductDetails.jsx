@@ -62,9 +62,9 @@ const ProductDetails = () => {
       if (isLoading===false && product.listColor && color ) {
         setButtonBuy("Vui lòng chọn màu sắc")
         if (product.listSize && size ) {
-          setButtonBuy("Vui lòng chọn kích cỡ")
-         }else{
           setButtonBuy("Thêm vào giỏ hàng")
+         }else{
+          setButtonBuy(" Vui lòng chọn kích cỡ")
          }
       }
 

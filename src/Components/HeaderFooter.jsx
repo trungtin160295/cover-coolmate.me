@@ -156,7 +156,7 @@ function focusSeachInput (){
                                        <div className="menu-3th__name"> 
                                           <div className="menu-3th__content">{child.name} </div> 
                                          { child.attention ? 
-                                            <div className=  "menu-3th__attention">{child.attention}
+                                            <div className= {`menu-3th__attention ${child.attention}`} >{child.attention}
                                             </div> 
                                             :null
                                          }                                            

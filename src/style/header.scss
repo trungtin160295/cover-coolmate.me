@@ -15,7 +15,6 @@ header{
     margin-bottom: 0;
     line-height:30px ;
   }
-  
   .nav {
     background-color: rgb(205, 236, 236);
     display: flex;
@@ -23,7 +22,6 @@ header{
     width: 100%;
     margin:0 auto ;
     position:relative;
-    
     .nav__logo img {
       width: 100px;
       height: 40px;
@@ -36,19 +34,15 @@ header{
       list-style-type: none;
       padding: 0;
     } 
-     
     .navbar{
       .navbar-tittle{
         position:relative;
-        
       }
-       
         a {
           text-decoration: none;
           padding: 0 10px;
           color: rgb(8, 8, 8);
           font-weight: 500;
-          
         }
         .navbar-tittle :hover {
           color: #2f42e8;
@@ -56,7 +50,6 @@ header{
       .navbar-tittle:hover .menu__dropdown {
         display: flex;
       }
-      
       .menu__dropdown {
         display: none;
         position:fixed;
@@ -71,9 +64,7 @@ header{
             color: rgb(0, 0, 0);
             font-weight: 600;
             font-size:22px ;
-            
           }
-          
           .menu-3th {
             display: flex;
             flex-direction: column;
@@ -90,43 +81,38 @@ header{
                     font-size: 20px;
                   }
                   .menu-3th__attention{
-                    border-radius: 5px;
-                    padding: 0 10px;
-                    color: #110101;
+                    border-radius: 15px 4px;
+                    padding: 0 6px;
+                    margin-left: 10px ;
                   }
                   .hot {
-                    background-color: #e21c16;
-                    
+                    background-color: #f8ed7b;
+                    color: #e63434;
                   }
                   .sale {
-                    background-color: rgb(57, 199, 49);
-                    
+                    background-color: rgba(240, 131, 77, 0.733);
+                    color: #f4eeee;
                   }
                   .new {
-                    background-color: aqua;
-                    
+                    background-color: rgba(63, 202, 86, 0.7);
+                    color: #f4eeee;
                   }
                 }
                 .menu-3th__explain{
                     font-size: 13px;
                     color: #362c2c;
-                  
                 }
-      
-                
               }
-              
             }
           .menu-4th{
             display: flex;
             flex-direction: column;
             list-style-type: none;
-            padding: 0 8px;
+            padding: 0 15px;
             .menu-4th__tittle{
               font-size: 17px;
             }
           }
-            
           }
           
           .about-cool{     
@@ -134,11 +120,8 @@ header{
             justify-content: space-evenly;
               padding-top:20px ;
               color: black;
-          
-          
             .container-about-cool{
               color: black;
-              
               img{
                   width: 100%;
                   border-radius: 20px;
@@ -154,9 +137,6 @@ header{
               }
             }
               }
-              
-              
-            
           }
         
       
