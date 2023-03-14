@@ -4,6 +4,7 @@
 import Basic from '../Components/Basic'
 import { Link } from 'react-router-dom'
 import Text from '../Components/Text'
+import Login from '../Components/Login';
 
  
  import '../style/home.scss'
@@ -57,20 +58,20 @@ import Text from '../Components/Text'
 
     const collections=[
         {title:"Đồ mặc trong",
-        linkImg:"./src/img/mceclip0_43.jpg",
+        linkImg:"../src/assets/img/mceclip0_43.jpg",
         id:1,
         linkTo:"collection/Mặc-nhà-&-Mặc-trong"
     },
         {title:"Mặc hàng ngày",
-        linkImg:"./src/img/mceclip0_99.jpg",
+        linkImg:"../src/assets/img/mceclip0_99.jpg",
         linkTo:"collection/Mặc-hằng-ngày",
         id:2},
         {title:"Đồ thể thao",
-        linkImg:"./src/img/mceclip1_56.jpg",
+        linkImg:"../src/assets/img/mceclip1_56.jpg",
         linkTo:"collection/Đồ-thể-thao",
         id:3},
         {title:"Tất cả",
-        linkImg:"./src/img/mceclip1_61.jpg",
+        linkImg:"../src/assets/img/mceclip1_61.jpg",
         linkTo:"Menu/Sản-phẩm",
         id:4},
     
@@ -105,10 +106,14 @@ import Text from '../Components/Text'
                 </div>
             }
             <Card obj={shoppingWithCool}/>    
-            <div className='marquee ' >
-                <marquee>CoolClub - Ưu đãi nhiều hơn, mua sắm vui hơn. Nhận ngay ưu đãi 7% cho lần mua sắm tiếp theo</marquee>
-             <a href="">Đăng nhập ngay</a>
-            </div>       
+            <section className='container-marquee' >
+                <div className='marquee'>
+                    <marquee className="marquee__tittle">CoolClub - Ưu đãi nhiều hơn, mua sắm vui hơn. Nhận ngay ưu đãi 7% cho lần mua sắm tiếp theo</marquee>
+                </div>
+                
+                <Login classNames="marquee-login"></Login>
+                
+            </section>       
 
            <div className='card-collections '>
             <div><a href=""><img src="https://mcdn.coolmate.me/uploads/November2021/image1_59.jpg" alt="" /></a></div>

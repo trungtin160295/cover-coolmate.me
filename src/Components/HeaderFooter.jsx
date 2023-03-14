@@ -11,6 +11,7 @@ import IconCart from "../assets/img/icon-cart.svg"
 import { Button,Spinner } from 'reactstrap';
 import { Col } from "react-bootstrap";
 
+
 import '../style/header.scss'
 import '../style/footer.scss'
 
@@ -207,7 +208,7 @@ function focusSeachInput (){
                                       
     )}
 
- 
+    
     return (    
         <header>
             
@@ -271,7 +272,7 @@ function focusSeachInput (){
                     <Link to="/Cart"><img src={IconCart} /></Link> 
                     <span className="quantity-product">{sumProduct}</span>
                     </div>
-                    <Login  button/>   
+                    <Login img />   
                
                               
                 </div>

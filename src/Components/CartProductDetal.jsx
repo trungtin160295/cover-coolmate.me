@@ -64,11 +64,8 @@ import cartSlice from "../redux/slices/cartSlice";
                                 {product.product.ductName}
                             </div>
                         </Link>
-                        
                         <button className='button-delete' onClick={deleteProduct}>X</button>
-
                         </div>
-                        
                         <div className='product-detail-selected'>
                             <i>{color} / {size}</i> 
                         </div>

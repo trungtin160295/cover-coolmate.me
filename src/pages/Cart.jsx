@@ -167,7 +167,7 @@ const Cart = () => {
                     </Col>
                     <Col  className='title-shipping--right'>
                     <span>Bạn đã có tài khoản ?</span>
-                    <Login/>
+                    <Login  classNames = "button-login--now"/>
                     </Col>
                 </Row>
                 <form onSubmit={handleSubmit(onSubmit) }>

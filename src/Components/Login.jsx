@@ -1,10 +1,13 @@
 import  { useState ,useEffect} from 'react';
 import {Modal,CloseButton }from 'react-bootstrap';
 import '../style/header.scss'
-import IconAccount from "../assets/img/icon-account.svg"
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from "@hookform/error-message";
-export default function Login({button}) {
+import { ClassNames } from '@emotion/react';
+import IconAccount from "../assets/img/icon-account.svg"
+
+
+export default function Login({img,classNames}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -37,13 +40,17 @@ function ErrorForm({name} ){
 }
   return (
     <div className='card-login'>
-      {button ? 
-      <button  onClick={handleShow}>
-        <img src={IconAccount} alt="" />
-      </button>      
-      :
-      <button  onClick={handleShow}className="button-login--now" >Đăng nhập ngay</button>
-}
+      {
+        <button  onClick={handleShow} className={classNames}>
+        {
+          img ? <img src={IconAccount} alt="" />
+          :"Đăng nhập ngay"
+        }
+        
+      </button> 
+      }
+           
+      
       
       <Modal show={show} onHide={handleClose}>
         <div className='login-top'>
