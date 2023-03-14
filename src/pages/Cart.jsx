@@ -300,7 +300,8 @@ const Cart = () => {
                 </div>
                 <Row>
                     <button className='button-pay' type='Sumbit'>
-                        Đăng nhập
+                    Thanh toán {sumMoney != 0 ? sumMoney :"0"}
+                         .000 đ bằng {payment.name}
                      </button>
                 </Row>
                 </form>
