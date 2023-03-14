@@ -4,7 +4,7 @@ import ListProduct from "../Components/ListProduct";
 import useFetch from "../customize/fetch";
 import useSrt from "../customize/str"
 import sortBy from "../customize/sortBy"
-import '../style/HomeUnderwear.scss';
+import '../style/pagesName.scss';
 
 export  default function PageTitle () {  
   const  listFilter = ["Mới nhất","Bán chạy", "Giá thấp đến cao","Giá cao đến thấp"]
@@ -49,14 +49,14 @@ export  default function PageTitle () {
         <div className="collections-filter">
             <h2>Sản phẩm :{useSrt(name,false)} </h2> 
             <select
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
-                        >
-            {listFilter.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            >
+                    {listFilter.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+              ))}
           </select>
         </div>
                   { isLoading === false && dataProducts.length >0 &&

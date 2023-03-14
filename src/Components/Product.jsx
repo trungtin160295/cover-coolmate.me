@@ -9,7 +9,8 @@ export default function Product( props) {
    
         
     return (
-        <div className="product">
+        
+            <div className="product">
             <div className="product-img">
                 <Link to={`/product/${product.id} `}>
                     <img src={product.linkImages[0]} alt="Avatar" className="image hover1"/>
@@ -86,10 +87,7 @@ export default function Product( props) {
                 
 
             </div>
-    </div>
-  
-
-        
+        </div>
         
     );
   }

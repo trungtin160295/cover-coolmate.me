@@ -5,7 +5,7 @@ footer {
     color: azure;
     font-size: 14px;
     line-height: 200%;
-    margin-top: 40px;
+    margin-top: 10px;
   }
   .footer-menu {
     display: flex;
@@ -117,14 +117,4 @@ footer {
     background-color: antiquewhite;
   }
   
-  .card-collections {
-    display: flex;
-    gap: 2%;
-  }
-  .card-collections div {
-    width: 48%;
-    margin-bottom: 30px;
-  }
-  .card-collections img {
-    width: 100%;
-  }
+  

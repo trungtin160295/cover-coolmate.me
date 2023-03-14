@@ -15,7 +15,7 @@ import  FallbackLoading from './Components/FallbackLoading';
 import  Wrapper from './Components/Wrapper';
 import  Coolxprint from './pages/Coolxprint';
 import Seach from './pages/Seach';
-import Tets from './pages/Tets';
+
 
 const Home = lazy(() => import('./pages/Home'));
 const Views = lazy(() => import('./Components/Views'));

@@ -58,9 +58,13 @@
  
   .slick-container{
     position: relative;
+    .container-product{
+      padding: 8px;
+    }
+  
 
   }
-
+  
   
   .image-holder {
     position: relative;
@@ -71,41 +75,36 @@
     width: 100%;
     object-fit: cover;
   }
-  // .slick-next {
-  //   right: 0px !important;
-  //   z-index: 3!important;
-  //   border-radius: 10px;
-  //   margin-right: 5px;
-  //   margin-top:-370px;    
-  //   position: absolute !important;   
-    
-    
-  // }
-  // .slick-prev {
-  //   left: 0px !important;
-  //   z-index: 3 !important;
-  //   border-radius: 10px;
-  //   margin-left: 5px;
-  //   margin-top:250px ;    
-  //   position: absolute !important; 
-   
-   
-    
-  // }
+  .slick-next {
+    right: 0px !important;
+    z-index: 3!important;
+    border-radius: 10px;
+    position: absolute !important;   
+    height: 50px;
+    width: 50px;
+  }
+  .slick-prev {
+    left: 0px !important;
+    z-index: 3 !important;
+    border-radius: 10px;
+    position: absolute !important; 
+  }
   .slick-prev::before,
   .slick-next::before {
-    color:rgb(192, 25, 25) !important;
-    font-size: 20px !important;
+    color:rgb(111, 99, 99) !important;
+    font-size: 60px !important;
+
+   
   }
-  // .slick-list {
-  //   width: 95% !important;
-  //   margin: 0 auto !important;
-  //   height: 100% !important;
-  // }
+  .slick-list {
+   
+    margin: 0 auto !important;
+    height: 100% !important;
+  }
   .slick-track {
     display: flex !important;
     justify-content: space-between !important;
-    gap:10px ;
+   gap: 0;
   }
 
 
@@ -182,7 +181,7 @@
     font-size: 24px;
     height: 65px;
     width: 100%;
-    margin-bottom: 8px;
+    margin: 8px 0px;
   }
   .marquee a {
     text-decoration: none;
@@ -240,4 +239,14 @@
 }
 .right{
     flex-direction: row-reverse;
+}
+
+.card-collections {
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 49%;
+    margin-bottom: 10px;}
+    img {
+      width: 100%;}
 }

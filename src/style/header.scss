@@ -4,54 +4,169 @@ header{
   position: fixed;
   width: 100%;
   z-index: 5;
-  
-  .topbar {
+  .nav__logo {
+    display: flex;
+    align-items: center;
+  }
+  .most-special{
     text-align: center;
     font-weight: 600;
     background-color: #f9f86c;
-    line-height: 25px;
-    font-size: 13px;
+    margin-bottom: 0;
+    line-height:30px ;
   }
-  .navbar {
-    background-color: rgb(236, 243, 243);
+  
+  .nav {
+    background-color: rgb(205, 236, 236);
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin:0 auto ;
+    position:relative;
     
-    .logo img {
+    .nav__logo img {
       width: 100px;
       height: 40px;
       padding-top: 5px;
     }
-    ul {
-      margin: 10px 0 8px 0;
+    .navbar>ul {
+      margin: 10px 0 0px 0;
       display: flex;
       justify-content: space-between;  
       list-style-type: none;
       padding: 0;
-    }  
-    a:hover{
-      color: #2f42e8;
-    }   
-    .nav-center{
-      a {
-        text-decoration: none;
-        padding: 0 10px;
-        color: black;
-        font-weight: 500;
+    } 
+     
+    .navbar{
+      .navbar-tittle{
+        position:relative;
+        
       }
-      .hover:hover .dropdown-content {
-        display: block;
+       
+        a {
+          text-decoration: none;
+          padding: 0 10px;
+          color: rgb(8, 8, 8);
+          font-weight: 500;
+          
+        }
+        .navbar-tittle :hover {
+          color: #2f42e8;
+        }
+      .navbar-tittle:hover .menu__dropdown {
+        display: flex;
       }
-      .dropdown-content {
+      
+      .menu__dropdown {
         display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        width: 100%;
+        position:fixed;
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
         left: 0;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 5;
+        margin-top: 8px;
+        padding: 10px;
+        justify-content: space-evenly;
+          .menu--second__title {
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-size:22px ;
+            
+          }
+          
+          .menu-3th {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: auto;
+              .menu-3th__tittle {
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                .menu-3th__name{
+                  display: flex;
+                  font-size: 18px;
+                  .menu-3th__content{
+                    font-size: 20px;
+                  }
+                  .menu-3th__attention{
+                    border-radius: 5px;
+                    padding: 0 10px;
+                    color: #110101;
+                  }
+                  .hot {
+                    background-color: #e21c16;
+                    
+                  }
+                  .sale {
+                    background-color: rgb(57, 199, 49);
+                    
+                  }
+                  .new {
+                    background-color: aqua;
+                    
+                  }
+                }
+                .menu-3th__explain{
+                    font-size: 13px;
+                    color: #362c2c;
+                  
+                }
+      
+                
+              }
+              
+            }
+          .menu-4th{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0 8px;
+            .menu-4th__tittle{
+              font-size: 17px;
+            }
+          }
+            
+          }
+          
+          .about-cool{     
+            display: flex;
+            justify-content: space-evenly;
+              padding-top:20px ;
+              color: black;
+          
+          
+            .container-about-cool{
+              color: black;
+              
+              img{
+                  width: 100%;
+                  border-radius: 20px;
+              }
+              .container-child{
+                margin:10px ;
+                .container-child__title{
+                  font-weight: 600;
+                  margin: 10px 0;
+              }
+              p{
+                  font-size: 16px;
+              }
+            }
+              }
+              
+              
+            
+          }
+        
+      
+      .menu__space{
+        background-color: rgb(205, 236, 236);
+        position: absolute;
+        width: 100px;
+        z-index: 1;
+        margin: -5px -50px 0 0;
+
       }
     }
     .nav-right{
@@ -63,7 +178,7 @@ header{
       button {
         border: none;
         padding:5px 10px ;
-        background-color: rgba(236, 243, 243, 0.747);
+        background-color:  rgb(205, 236, 236);
        
       } 
       button:hover{
@@ -96,117 +211,8 @@ header{
    
   }
 }
-  /* Menuhearder */
-  .menu-header {
-    padding: 10px;
-    height: 50vh;
-    display: flex;
-    gap: 50px;
-    justify-content: space-evenly;
-    .title {
-      color: rgba(2, 0, 0, 0.706);
-      font-weight: 600;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    .menu-header-column {
-      display: flex;
-      height: 50vh;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: auto;
-      .menu-header-child {
-        display: flex;
-        flex-direction: column;
 
-        .child-name {
-          font-weight: 600;
-          display: flex;
-          flex-direction: column;
-          .child-name-title {
-            display: flex;
-            .attention-hot {
-              background-color: #e21c16;
-              border-radius: 5px;
-              padding: 0 10px;
-            }
-            .attention-sale {
-              background-color: rgb(57, 199, 49);
-              border-radius: 5px;
-              padding: 10px;
-            }
-            .attention-new {
-              background-color: aqua;
-              border-radius: 5px;
-              padding: 10px;
-            }
-          }
-
-          .child-product {
-            font-weight: 600;
-            color: rgba(97, 86, 86, 0.432);
-          }
-        }
-        hr{
-          width:'80%';
-          color: black;
-
-        }
-      }
-      .child-attention {
-        border-radius: 5px;
-        padding: 10px;
-      }
-    }
-  }
-.child-explain {
-    font-size: 13px;
-  }
-  .child-product {
-    font-weight: 600;
-    color: rgba(97, 86, 86, 0.432);
-  }
-  .child-product:hover {
-    color: rgb(0, 89, 255);
-  }
-
-  .menu-header-child ul {
-    flex-direction: column;
-    padding: 0;
-    list-style-type: none;
-  }
-
-
-
-//về coolmate
-
-  .about-cool{     
-    display: flex;
-    justify-content: space-evenly;
-      padding:20px 0 ;
-      color: black;
   
-  
-    .about-cool-child{
-      width: 300px;
-      
-      img{
-          width: 300px;
-          border-radius: 20px;
-      }
-      .title{
-          font-weight: 600;
-          margin: 10px 0;
-      }
-      span{
-          font-size: 14px;
-      }
-    }
-      
-    
-  }
   
   //login//
   .card-login{    

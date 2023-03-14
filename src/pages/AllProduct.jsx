@@ -6,7 +6,7 @@ import {Row,Col, } from 'react-bootstrap';
 
 
 
-// import '../style/allProduct.scss'
+import '../style/allProduct.scss'
 export default function AllProduct () {    
 
     let {title} = useParams();
@@ -104,11 +104,13 @@ export default function AllProduct () {
         return(
            
             <>
-            <h3> <span>{collection.title1}</span> {collection.title2?  <span > & {collection.title2}  </span> :null}</h3>
+            <section className={`${collection.title1} collections-listing`}>
+            <h2 className="collections-listing__tittle"> <span>{collection.title1}</span> {collection.title2?  <span > & {collection.title2}  </span> :null}</h2>
             <ListProduct 
               imgFirst={collection.linkImg}
               dataProducts ={productFilter}
             />
+            </section>
             </>
         )
     }
@@ -118,19 +120,19 @@ export default function AllProduct () {
             <div className="collections-filter">
                 {collectionsFilter.map((item) => {
                     return(
-                        <Col><a href="#"><img src={item.linkImg} key={item.id} alt=""  /></a></Col>
+                        <Col className="collections-filter__img"><a href="#"><img src={item.linkImg} key={item.id} alt=""  /></a></Col>
                         
                     )
                 })}
             </div>
             <hr />
-           {isLoading===false && dataProducts.length >0&&
-           <div className="collections-listing">
-            {collectionsListing.map((collection) =>{
+           {isLoading===false && dataProducts.length >0 ?
+           
+            collectionsListing.map((collection) =>{
                 return < Collection collection={collection} key={collection.id}/>
 
-            })}
-            </div>
+            }):null
+            
            } 
         </div>
     )

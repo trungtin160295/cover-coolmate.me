@@ -82,7 +82,10 @@ function TabsProduct(){
                     
                     {dataProducts.map((child,index) => {                      
                         return ( 
-                        <Product products ={child}  index={index} key={child.id}/>
+                          <div className="container-product">
+                            <Product products ={child}  index={index} key={child.id}/>
+                          </div>
+                        
                         
                         )
                     }

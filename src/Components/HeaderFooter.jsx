@@ -10,6 +10,7 @@ import axios from "axios";
 import IconSearch from "../img/icon-search.svg"
 import IconCart from "../img/icon-cart.svg"
 import { Button,Spinner } from 'reactstrap';
+import { Col } from "react-bootstrap";
 
 import '../style/header.scss'
 import '../style/footer.scss'
@@ -26,6 +27,8 @@ import '../style/footer.scss'
     const  seachInput = useRef()
     const [keyWord,setKeyWord] =useState("")
     const [show,setShow] =useState(false)
+    const [showMenu,setShowMenu] =useState(false)
+
     const navigate = useNavigate();
    
 
@@ -133,95 +136,127 @@ function focusSeachInput (){
                     </div>
         )
     }
-    function TypesOpProduct ({typesOpProduct}){
+    function TypesOpProduct ({data}){
         return(
-            <div className="menu-header">
+            <>
                 { 
-                  typesOpProduct.map((list) =>{     
+                  data.map((list) =>{     
                      
                 return(
-                   <div key={list.title} >
-                     <Text className="title">{list.title}</Text>
-                        <div  className="menu-header-column">
+                   <div key={list.title}  className="menu--second">
+                     <Text className="menu--second__title">{list.title}</Text>
                             {
                                list.child.map((child)  => {                                
                                  return(
-                                   <div key={child.name} className="menu-header-child">                                                                            
+                                   <div key={child.name} className="menu-3th">                                                                            
                                      <Link to={
                                          child.name==="Tất cả sản phẩm" ?
                                           "Menu/Sản-phẩm"
                                           :`collection/${useSrt(child.name,true)}`}
-                                         className="child-name">
-                                       <div className="child-name-title"> 
-                                          <Text>{child.name}</Text>
-                                         {child.attention? <Text className= "attention-hot">{child.attention}</Text> :null}                                            
-                                                                                  
-                                          </div>                                                                              
-                                           {child.explain ? <Text className="child-explain">{child.explain}</Text> :null }                        
+                                         className="menu-3th__tittle">
+                                       <div className="menu-3th__name"> 
+                                          <div className="menu-3th__content">{child.name} </div> 
+                                         { child.attention ? 
+                                            <div className=  "menu-3th__attention">{child.attention}
+                                            </div> 
+                                            :null
+                                         }                                            
+                                       </div>                                                                              
+                                           {child.explain ? <Text className="menu-3th__explain">{child.explain}</Text> :null }                        
                                       </Link>                                                                          
                                       { child.product?
-                                         <ul>                                                                              
+                                         <ul className="menu-4th">                                                                              
                                          {child.product.map((content) => {
                                          return (
                                        <li key= {content}>
-                                        <Link to= {`collection/${useSrt(content,true)}`}  className="child-product">{content}</Link>
+                                        <Link to= {`collection/${useSrt(content,true)}`}  className="menu-4th__tittle">{content}</Link>
                                                                                               
                                         </li>                                                   
                                           )
                                        })} 
                                         </ul>:null} 
-                                        <hr  style={{width:'80%'  ,margin: '0'} }/>
+                                        
                                          </div>
                                         )
                                         })}
                              </div>
-                             </div>
+                             
                           )
                       } )
                      
                    }  
-                 </div>
+                 </>
         )
 
     }
+    function AboutCool({data}) {
+      
+     return(<div className="about-cool">
+     { data.map((content) =>{
+          return(
+              <Col key={content.id} xs={12}  sm= {12} md={6}  lg={3}  xl={3} xxl={3} className=" container-about-cool">
+                <div className="container-child"><img src={content.linkImg} alt={content.title} />
+                  <div className="container-child__title">{content.title}</div>
+                  <p>{content.content}</p>
+                  </div>
+                  
+              </Col>
+          )
+      }) }
+
+     </div>
+                                      
+    )}
+
+ 
     return (    
         <header>
             
-            {dataheader.sale ? <Text className='topbar' >{dataheader.sale} </Text> :null}        
+            {dataheader.sale ? <h5 className='most-special' >{dataheader.sale} </h5> :null}        
             {dataheader.header ?  
             <nav >
-                <div className="navbar">
-                <div className="logo">
+                <div className="nav">
+                <div className="nav__logo">
                     <Link to="/"><img src="https://www.coolmate.me/images/logo-coolmate.svg" alt="" /></Link>                    
                 </div>
-                <div className="nav-center">
-                  <ul >
+                <div className="navbar">
+                  <ul className="nabar__flex" >
                       { dataheader.header.map((item) =>{
                           return(
-                            <li className="hover" key={item.id}>
-                                  <NavLink  to={`Menu/${useSrt(item.title,true)}`}>  {item.title}  </NavLink>
-                                  {item.child ?  
-                                    <div className="dropdown-content ">
-                                        {item.title ==="Sản phẩm" &&
-                                          <TypesOpProduct typesOpProduct = {item.child}/>
-                                        }   
-                                        {item.title ==="Về Coolmate" &&
-                                        
-                                          <div className="about-cool ">
-                                            {item.child.map((content) =>{
-                                                return(
-                                                    <div key={content.id} className="about-cool-child">
-                                                        <img src={content.linkImg} alt={content.title} />
-                                                        <div className="title">{content.title}</div>
-                                                        <span>{content.content}</span>
-                                                    </div>
-                                                )
-                                                
-                                            })}                                    
-                                         </div>                                      
-                                        }                                  
+                            <li className="navbar-tittle " style={{fontSize:"22px"}} key={item.id}>
+                                  <NavLink  to={`Menu/${useSrt(item.title,true)}` }
+                                   > 
+                                    {item.title}  
+                                  </NavLink>
+                                  
+                                    
+                                   
+                                    {  item.title === "Sản phẩm"&& item.child  ?
+                                    
+                                  <>
+                                    <div className="menu__space menu__dropdown  ">
+                                    &#8192;           
                                     </div>
-                                : null}
+                                    <div className="menu__dropdown">
+                                    <TypesOpProduct data = {item.child}/>
+                                    </div>
+                                  </>
+                                  :null
+                                   }
+                                    { item.title === "Về Coolmate" && item.child ?
+                                    <>
+                                   
+                                      <div className="menu__space menu__dropdown  ">
+                                         &#8192;           
+                                      </div>
+                                      <div className="menu__dropdown">
+                                       <AboutCool data={item.child}/> 
+                                      </div>
+                                      </>
+                                  :null
+                                   }
+                                    
+                                   
                             </li>
                         )
                         })  
@@ -244,14 +279,14 @@ function focusSeachInput (){
                 </div>
             </nav>
              :null}
-             <div  className={`container-seach  ${show===true ? 'show-nav-seach' : ''}`}>
+             <div  className={`container-seach  ${show ? 'show-nav-seach' : ''}`}>
                 <div className="nav-seach">
                     <input ref = {seachInput} type="text"  onChange={(e) =>onChangeKey(e)} onKeyDown={(e) => onKeyPressSeach(e)} />
                     <button onClick={() =>{setShow(false)}}>X</button>
                 </div>
                
                 {
-                keyWord.length > 0 && show===true  ? 
+                keyWord.length > 0 && show  ? 
                 
                 
                 <div  className="seach-products" >

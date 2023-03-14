@@ -26,10 +26,6 @@ main {
   padding: 50px;
 }
 
-.collections-filter {
-  display: flex;
-  flex-direction: row;
-}
 .btn-scroll {
   position: fixed;
   z-index: 10;

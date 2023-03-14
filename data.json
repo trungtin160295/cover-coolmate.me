@@ -21,13 +21,13 @@
                 {
                   "name": "Đồ thể thao",
                   "explain": "Casualwear",
-                  "attention": "Hot",
-                  "product": []
+                  "attention": "hot"
+                 
                 },
                 {
                   "name": "Phụ kiện",
-                  "explain": "Accessories",
-                  "product": []
+                  "explain": "Accessories"
+                  
                 }
               ]
             },
@@ -69,15 +69,6 @@
                     "Quần Brief Boxer",
                     "(Boxer dài)"
                   ]
-                },
-                {
-                  "name": "Tất cả sản phẩm",
-                  "product": []
-                },
-                {
-                  "name": "Box đồ nam",
-                  "attention": "Sale",
-                  "product": []
                 }
               ]
             },
@@ -87,23 +78,23 @@
                 {
                   "name": "Vũ trụ Áo Marvel",
                   "explain": "Ưu đãi trải nghiệm hấp dẫn",
-                  "attention": "New",
-                  "product": []
+                  "attention": "New"
+                 
                 },
                 {
                   "name": "Clean Vietnam",
-                  "explain": "Sự kết hợp giữa Coolmate & Vietmax",
-                  "product": []
+                  "explain": "Sự kết hợp giữa Coolmate & Vietmax"
+                  
                 },
                 {
                   "name": "Coolmate Basics",
-                  "explain": "10% doanh thu dành cho các bé",
-                  "product": []
+                  "explain": "10% doanh thu dành cho các bé"
+                  
                 },
                 {
                   "name": "Sản phẩm bền vững",
-                  "explain": "Sản phẩm thân thiện với môi trường",
-                  "product": []
+                  "explain": "Sản phẩm thân thiện với môi trường"
+                  
                 }
               ]
             },
@@ -112,29 +103,23 @@
               "child": [
                 {
                   "name": "Excool",
-                  "explain": "Công nghệ làm mát tối đa",
-                  "product": []
+                  "explain": "Công nghệ làm mát tối đa"
+                  
                 },
                 {
                   "name": "Cleandye",
-                  "explain": "Nhuộm không dùng nước",
-                  "product": []
+                  "explain": "Nhuộm không dùng nước"
+                  
                 },
                 {
                   "name": "HeiQ Viroblock",
-                  "explain": "10% doanh thu dành cho các bé",
-                  "product": []
+                  "explain": "10% doanh thu dành cho các bé"
+                  
                 },
                 {
                   "name": "Anti-Smell",
-                  "explain": "Công nghệ khử mùi từ Nhật Bản",
-                  "product": []
-                },
-                {
-                  "name": "",
-                  "explain": "",
-                  "product": [],
-                  "imgSale": "https://media.coolmate.me/cdn-cgi/image/width=1920,quality=100/uploads/September2022/Desktop-Banner-CLEARANCE-SALE-_100.jpeg"
+                  "explain": "Công nghệ khử mùi từ Nhật Bản "
+                  
                 }
               ]
             }
@@ -262,7 +247,7 @@
       "voucherCode": "",
       "sale": "",
       "combo": "",
-      "attention": "New",
+      "attention": "new",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -385,7 +370,7 @@
       "voucherCode": "XMDDDDDDDD",
       "sale": "",
       "combo": "",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -448,7 +433,7 @@
       "voucherCode": "XMDDDDDDDD",
       "sale": "",
       "combo": "Mua 3 được giảm thêm 5%",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -512,7 +497,7 @@
       "voucherCode": "",
       "sale": "",
       "combo": "",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -572,7 +557,7 @@
       "voucherCode": "",
       "sale": "",
       "combo": "Mua 3 được giảm thêm 5%",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -637,7 +622,7 @@
       "discount": "",
       "sale": "",
       "combo": "Mua 2 chỉ còn 199k/chiếc",
-      "attention": "Hot",
+      "attention": "hot",
       "listSize": [
         "S",
         "M",
@@ -700,7 +685,7 @@
       "voucherCode": "XMDDDDDDDD",
       "sale": "",
       "combo": "Mua 2 chỉ còn 249k/chiếc",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": 30000,
       "listSize": [
         "S",
@@ -767,7 +752,7 @@
       "voucherCode": "XMDDDDDDDD",
       "sale": "",
       "combo": "",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": 30000,
       "listSize": [
         "S",
@@ -911,7 +896,7 @@
       "voucherCode": "",
       "sale": "",
       "combo": "Mua 3 được giảm thêm 5%",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": 30000,
       "listSize": [
         "S",
@@ -983,7 +968,7 @@
       "voucherCode": "",
       "sale": "Ưu đãi sản phẩm mới 20-27/9",
       "combo": "Mua 3 được giảm thêm 5%",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -1165,7 +1150,7 @@
       "voucherCode": "XMDDDDDDDD",
       "sale": "Ưu đãi sản phẩm mới 20-27/9",
       "combo": "Mua 3 được giảm thêm 5%",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": 30000,
       "listSize": [
         "S",
@@ -1530,7 +1515,7 @@
       "voucherCode": "",
       "sale": "Outlet",
       "combo": "",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": 30000,
       "listSize": [
         "S",
@@ -1674,7 +1659,7 @@
       "voucherCode": "XMDDDDDDDD",
       "sale": "",
       "combo": "Mua 2 chỉ còn 259k/chiếc",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -1802,7 +1787,7 @@
       "voucherCode": "",
       "sale": "",
       "combo": "Mua 2 chỉ còn 149k/chiếc",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -1866,7 +1851,7 @@
       "voucherCode": "",
       "sale": "",
       "combo": "Mua 2 với giá 259K/sản phẩm",
-      "attention": "Hot",
+      "attention": "hot",
       "voucherValue": "",
       "listSize": [
         "S",
@@ -2787,7 +2772,7 @@
         "voucherCode": "XMDDDDDDDD",
         "sale": "",
         "combo": "",
-        "attention": "Hot",
+        "attention": "hot",
         "voucherValue": 30000,
         "listSize": [
           "S",

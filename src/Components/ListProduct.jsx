@@ -21,7 +21,7 @@ export default function ListProduct({imgFirst,dataProducts}) {
             {     
              dataProducts.map( (product) =>{
                 return(                 
-                    <Col xs={12}  sm= {12} md={6}  lg={4}  xl={3}  xxl={2} className='product-child' key={product.id}>
+                    <Col xs={12}  sm= {12} md={6}  lg={4}  xl={3}  xxl={2} key={product.id}>
                          <Product products ={product} />   
                         
                     </Col>
