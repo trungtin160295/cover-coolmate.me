@@ -2,9 +2,9 @@
 
 
 import React from 'react'
-import { Children } from 'react'
 import { Row,Col } from 'react-bootstrap'
-import '../style/aboutCoolmate.scss'
+import './AboutCoolmate.scss'
+
 
 const coolmateBorn=[
     "Phải chia sẻ thật là rất nhiều người đặt câu hỏi này cho đội ngũ Coolmate, nhưng gần đây, khi Coolmate bước sang 3 tuổi thì chúng tôi mới có được câu trả lời một cách rõ ràng và tự tin cho câu hỏi này.",
@@ -100,22 +100,14 @@ const Responsibility =({item,index}) =>{
                     {item.child.map((content,index) =>{
                         return <div className='responsibility-child-content' key={`${content.slice(0,3)}+${index}`}>{content}</div>
                     })}
-
-                
-
-
             </Col>
-
             <Col xs={12}  sm= {12} md={12}  lg={6}  xl={6} xxl={6} className='responsibility-child-right'>
                 <div className='responsibility-child-img'>
                     <img src={item.linkimg} alt="" />
                 </div>
                 
                 <div className='responsibility-child-note'>{item.note}</div>
-                
-
             </Col>
-
         </section>
     )
 }
@@ -131,7 +123,6 @@ export default function AboutCoolmate() {
                 <div className='banner-conten-titlet'>
                     <h1 className='title'>
                         Câu Chuyện Về Coolmate
-                        
                     </h1>                    
                     <span>Đây là chuyên mục giúp các bạn biết được Coolmate đã hình thành ra sao và chúng tôi muốn xây dựng một công ty như thế nào!</span>
                 </div>
@@ -148,7 +139,6 @@ export default function AboutCoolmate() {
                 </Col>
                 <Col  xs={12}  sm= {12} md={6}  lg={7}  xl={8} xxl={9} className='coolmate-born-right'>
                     {coolmateBorn.map((content,index) =>{
-
                        return <div className='coolmate-born-content' key={`${content.slice(0,3)}+${index}`} >
                                 {content}
                         </div>
@@ -189,16 +179,10 @@ export default function AboutCoolmate() {
                             return 
                             <div key={`${content.slice(0,3)}+${index}`}>{content}</div>
                         })}
-
                     </div>
                     </div>
-                    
                 </Col>
-
-        
-        
        </section>
-       
        <section className='responsibility-coolmate'>
             <h2 className='responsibility-coolmate-title'>
                 Câu chuyện mô hình doanh nghiệp CÓ TRÁCH NHIỆM
@@ -215,15 +199,8 @@ export default function AboutCoolmate() {
          
             <span>&#8258;</span>
         </div>
-        
-
        </section>
-
-  
-
     </div>
     )
-
-    
 }
 

@@ -1,6 +1,5 @@
 
-import Text from './Text';
-import '../style/card.scss'
+
 import { Link } from 'react-router-dom';
 
 
@@ -20,13 +19,13 @@ const {linkImage,title,content,link}= {...props.obj};
         <div className={className}>
                      <img src={linkImage}  alt={props.obj.title} />    
                      <div className='content'> 
-                        <Text className="title">
+                        <div className="title">
                         {title}
-                        </Text>
+                        </div>
                         <div >
                            {
                               content.map((text) =>{
-                                 return(<Text key={text.key}>{text.content}</Text>)
+                                 return(<div key={text.key}>{text.content}</div>)
                               })
                            }
                         </div>
@@ -37,10 +36,7 @@ const {linkImage,title,content,link}= {...props.obj};
                         </span>
                      
                       </div>
-                 
          </div>            
-                     
-      
     );
   }
     

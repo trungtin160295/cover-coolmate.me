@@ -2,21 +2,21 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
-import useFetch from "../ultils/fetch";
+import useFetch from "../../ultils/fetch";
 import { Button,Spinner } from 'reactstrap';
 import {Row,Col } from 'react-bootstrap';
-import Text from '../Components/Text';
+import Text from '../../components/Text';
 import { useParams} from "react-router-dom";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from 'react-toastify';
-import useSrt from "../ultils/str"
-import cartSlice from "../redux/slices/cartSlice";
+import useSrt from "../../ultils/str"
+import cartSlice from "../../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import 'react-toastify/dist/ReactToastify.css';
-import '../style/productDetails.scss'
+import './Details.scss'
 
 const ProductDetails = () => {  
   let {id} = useParams();

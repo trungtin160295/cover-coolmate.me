@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useState ,useEffect} from "react";
-import ListProduct from "../Components/ListProduct";
-import useFetch from "../ultils/fetch";
-import useSrt from "../ultils/str"
-import sortBy from "../ultils/sortBy"
-import '../style/pagesName.scss';
+import ListProduct from "../../components/ListProduct";
+import useFetch from "../../ultils/fetch";
+import useSrt from "../../ultils/str"
+import sortBy from "../../ultils/sortBy"
+import './Category.scss';
 
 export  default function PageTitle () {  
   const  listFilter = ["Mới nhất","Bán chạy", "Giá thấp đến cao","Giá cao đến thấp"]

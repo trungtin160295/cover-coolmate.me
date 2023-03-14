@@ -24,8 +24,9 @@ export default function Basic() {
 
     ]
     return (
-        <div className =" basic ">
+        <section className ="container__basic ">
            <h1>Coolmate Basics</h1>
+           <div className="basic__comment">Dòng sản phảm mặc cơ bản chất lượng tốt và giá rẻ của Coolmate.</div>
             <div className="list-basic">
                     {list.map((image) => {
                         return(
@@ -38,9 +39,9 @@ export default function Basic() {
                 </div>
            
                
-                <div>Dòng sản phảm mặc cơ bản chất lượng tốt và giá rẻ của Coolmate</div>
-                <button> Khám phá Basic </button>
-    </div>
+                
+         
+    </section>
         
     )
  }

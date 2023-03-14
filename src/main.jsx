@@ -1,7 +1,7 @@
 import React,{Suspense,lazy} from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './index.css';
+import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import store from './redux/store';
@@ -11,20 +11,19 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import  FallbackLoading from './Components/FallbackLoading';
-import  Wrapper from './Components/Wrapper';
-import  Coolxprint from './pages/Coolxprint';
-import Seach from './pages/Seach';
+import  FallbackLoading from './components/FallbackLoading';
 
 
 const Home = lazy(() => import('./pages/Home'));
-const Views = lazy(() => import('./Components/Views'));
-const ProductDetails = lazy(() => import('./pages/ProductDetails'));
-const PagesName = lazy(() => import('./pages/PagesName'));
+const Views = lazy(() => import('./components/Views'));
+const ProductDetails = lazy(() => import('./pages/Details'));
+const PagesName = lazy(() => import('./pages/Category'));
 const Cart = lazy(() => import('./pages/Cart'));
 const AllProduct = lazy(() => import('./pages/AllProduct'));
 const AboutCoolmate = lazy(() => import('./pages/AboutCoolmate'));
 const ChooseSize = lazy(() => import('./pages/ChooseSize'));
+const Seach = lazy(() => import('./pages/Search'));
+const  Coolxprint = lazy(() => import('./pages/Coolxprint'));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <Provider store={store} >
@@ -32,7 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <React.StrictMode>
     <BrowserRouter>
-    <Wrapper>
+    
     <Routes>
         <Route path="/" element={<Views />} >
           <Route  index element={<Home/>} />
@@ -42,7 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="Menu/Về-Coolmate" element={<AboutCoolmate />} />     
           <Route path="Menu/Chọn-Size" element={<ChooseSize/>}/>         
           <Route path="Menu/Coolxprint" element={<Coolxprint/>} />   
-          <Route path="/Seach/:keyWord" element={<Seach/>}/>        
+          <Route path="/Search/:keyWord" element={<Seach/>}/>        
           <Route path = "/product/:id" element={<ProductDetails/>}/>       
           <Route path="/collection/:name" element={<PagesName/>}/> 
           <Route path="*" element={<Home/>}/>           
@@ -50,7 +49,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Route>
     </Routes>
 
-    </Wrapper>
+  
 
       
   </BrowserRouter>

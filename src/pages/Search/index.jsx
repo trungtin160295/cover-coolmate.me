@@ -1,11 +1,10 @@
 import {useState}from 'react'
 import { useParams } from "react-router-dom";
-import useFetch from "../ultils/fetch";
-import ListProduct from '../Components/ListProduct';
-import IconSearch from "../assets/img/icon-search.svg"
+import useFetch from "../../ultils/fetch";
+import ListProduct from '../../components/ListProduct';
+import IconSearch from "../../../src/assets/img/icon-search.svg"
 
-
-import '../style/pageSeach.scss';
+import './Seach.scss';
 
 
 

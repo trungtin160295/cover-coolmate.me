@@ -1,5 +1,4 @@
 
-import Text from "./Text"
 import {  NavLink,Link, useNavigate  } from "react-router-dom";
 import useSrt from "../ultils/str"
 import Login from "./Login";
@@ -144,7 +143,7 @@ function focusSeachInput (){
                      
                 return(
                    <div key={list.title}  className="menu--second">
-                     <Text className="menu--second__title">{list.title}</Text>
+                     <div className="menu--second__title">{list.title}</div>
                             {
                                list.child.map((child)  => {                                
                                  return(
@@ -162,7 +161,7 @@ function focusSeachInput (){
                                             :null
                                          }                                            
                                        </div>                                                                              
-                                           {child.explain ? <Text className="menu-3th__explain">{child.explain}</Text> :null }                        
+                                           {child.explain ? <div className="menu-3th__explain">{child.explain}</div> :null }                        
                                       </Link>                                                                          
                                       { child.product?
                                          <ul className="menu-4th">                                                                              
@@ -334,7 +333,7 @@ function focusSeachInput (){
                {dataFooter.map((item) => {
                    return(
                        <div className="footer-menu-item" key={item.id}>  
-                           <Text className="footer-title">{item.name}</Text>
+                           <div className="footer-title">{item.name}</div>
                            <ul>
                                {item.children.map((content) =>{
                                    return(
@@ -349,23 +348,23 @@ function focusSeachInput (){
                    )    })}
                
                <div className="footer-right">
-                   <Text className="footer-title-right">COOLMATE lắng nghe bạn!</Text>
-                   <Text className="footer-content-right">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý
-                        kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</Text>
+                   <div className="footer-title-right">COOLMATE lắng nghe bạn!</div>
+                   <div className="footer-content-right">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý
+                        kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</div>
                    
                    <a href="#" className="sent-idea">Gửi ý kiến</a>
                    <div className="hotline">
                        <img src="https://www.coolmate.me/images/footer/icon-hotline.svg" alt="" />
                        <div>
-                           <Text> Hotline</Text>
-                           <Text> 1900.272737 (028.7777.2737)</Text>
+                           <div> Hotline</div>
+                           <div> 1900.272737 (028.7777.2737)</div>
                        </div>                        
                    </div>
                    <div className="hotline">
                        <img src="https://www.coolmate.me/images/footer/icon-email.svg" alt="" />
                        <div>
-                           <Text> Email</Text>
-                           <Text> Cool@coolmate.me</Text>
+                           <div> Email</div>
+                           <div> Cool@coolmate.me</div>
                        </div>                        
                    </div>
                    <div className="social">

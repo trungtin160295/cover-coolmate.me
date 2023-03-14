@@ -1,12 +1,12 @@
-import ListProduct from "../Components/ListProduct";
-import useFetch from "../ultils/fetch";
-import useSrt from "../ultils/str"
+import ListProduct from "../../components/ListProduct";
+import useFetch from "../../ultils/fetch";
+import useSrt from "../../ultils/str"
 import { useParams } from "react-router-dom";
 import {Row,Col, } from 'react-bootstrap';
 
 
 
-import '../style/allProduct.scss'
+import './AllProduct.scss'
 export default function AllProduct () {    
 
     let {title} = useParams();

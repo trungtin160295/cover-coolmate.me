@@ -184,7 +184,7 @@
     font-size: 24px;
     height: 65px;
     width: 100%;
-    margin: 8px 0px;
+    margin: 20px 0px;
     .marquee{
       width: 91%;
     }
@@ -201,10 +201,6 @@
     }
      
   }
-  
-  
-
-
 
   .card{
     border-radius: 50px ;
@@ -212,7 +208,7 @@
     display: flex;
     flex-direction: row;
     gap: 2%;
-    
+    margin-top: 30px;
 
 
     img{
@@ -257,3 +253,29 @@
     img {
       width: 100%;}
 }
+
+.container__basic {
+  margin: 20px 0;
+  text-align: center;
+  .list-basic {
+    display: flex;
+  align-items: center;
+
+    .list-basic-child {
+      width: 20%;
+       img {
+        width: 100%;
+      }
+    }
+  }
+  .basic__comment{
+    font-size: 18px;
+  }
+  
+}
+
+
+
+
+
+

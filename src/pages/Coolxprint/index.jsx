@@ -6,7 +6,7 @@ import { ErrorMessage } from "@hookform/error-message";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../style/pageCoolPrint.scss'
+import './Coolprint.scss'
 
 export default function Coolxprint() {
   const {

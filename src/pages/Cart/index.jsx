@@ -1,18 +1,18 @@
 
 import {Row,Col } from 'react-bootstrap';
-import Login from '../Components/Login';
+import Login from '../../components/Login';
 import { useState ,useEffect} from 'react';
 import { useSelector ,useDispatch} from "react-redux";
-import { cartProductSelector } from "../redux/selectors";
-import address from '../assets/address.json';
+import { cartProductSelector } from "../../redux/selectors";
+import address from '../../assets/address.json';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from "@hookform/error-message";
 
 
-import CartProductDetal from '../Components/CartProductDetal';
+import CartProductDetal from '../../components/CartProductDetal';
 
 
-import '../style/cart.scss'
+import './Cart.scss'
 
 const Cart = () => {  
     const {

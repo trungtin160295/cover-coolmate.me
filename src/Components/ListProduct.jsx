@@ -3,7 +3,7 @@
 import {Row,Col, } from 'react-bootstrap';
 import Product from './Product';
 
-import '../style/listProduct.scss'
+
 
 export default function ListProduct({imgFirst,dataProducts}) {       
    

@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import Text from './Text';
-import '../style/listProduct.scss'
-
 
 export default function Product( props) {  
     
@@ -34,15 +31,14 @@ export default function Product( props) {
                    
                 </Link>   
 
-                {product.discount&&<Text className="price">Chỉ với {Math.round(product.price*(1-(product.discount/100)))} K</Text>}
-                {/* <Text className="attention ">Saving Packs</Text> */}
+                {product.discount&&<div className="price">Chỉ với {Math.round(product.price*(1-(product.discount/100)))} K</div>}
             
                 {product.rate? 
                     <div className="evaluate">
-                    <Text >{product.rate}</Text>
+                    <div >{product.rate}</div>
                     
-                    <Text ><i className="fa-solid fa-star" style={{fontSize:"15px" , color:"black"}} ></i></Text>
-                    <Text className="product-comment">({product.comment})</Text>                                                 
+                    <div ><i className="fa-solid fa-star" style={{fontSize:"15px" , color:"black"}} ></i></div>
+                    <div className="product-comment">({product.comment})</div>                                                 
                 
                 </div> 
                 :null
@@ -73,12 +69,12 @@ export default function Product( props) {
 
 
 
-                    <Text className="price-discount">{Math.round(product.price*(1-(product.discount/100)))}.000 đ</Text> 
+                    <div className="price-discount">{Math.round(product.price*(1-(product.discount/100)))}.000 đ</div> 
                     {product.discount &&
                     <>
-                        <Text  className="price"><i>{product.price}.000 đ</i></Text> 
+                        <div  className="price"><i>{product.price}.000 đ</i></div> 
                     
-                        <Text  className="discount">-{product.discount}%</Text> 
+                        <div  className="discount">-{product.discount}%</div> 
                     </>
                    
                     }

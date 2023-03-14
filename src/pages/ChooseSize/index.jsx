@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from 'react';
-import { Row,Col,Dropdown } from 'react-bootstrap'
+import { Row,Col } from 'react-bootstrap'
 import { useRanger } from "react-ranger";
 
 
 
 
-import '../style/chooseSize.scss'
+import './ChooseSize.scss'
 export default function ChooseSize() {
 
     const [body,setBody] =useState("Gầy")
@@ -25,37 +25,37 @@ const allFilterSize = [
         id:1,
         title:"Áo dài tay",
         linkImgProduct:"https://mcdn.coolmate.me/uploads/November2020/31.jpg",
-        linkImgTableSize:"../src/img/img-select-size/ao-polo.jpg"
+        linkImgTableSize:"./../../src/assets/img/img-select-size/ao-polo.jpg"
     },
     {
         id:2,
         title:"Áo Polo",
         linkImgProduct:"https://mcdn.coolmate.me/uploads/December2021/POLO2x.png",
-        linkImgTableSize:"../src/img/img-select-size/ao-dai-tay.jpg"
+        linkImgTableSize:"./../../src/assets/img/img-select-size/ao-dai-tay.jpg"
     },
     {
         id:3,
         title:"Áo Tank Top",
         linkImgProduct:"https://mcdn.coolmate.me/uploads/December2021/TANK_TOP2x.png",
-        linkImgTableSize:"../src/img/img-select-size/ao-tank-top.jpg"
+        linkImgTableSize:"./../../src/assets/img/img-select-size/ao-tank-top.jpg"
     },
     {
         id:4,
         title:"Quần Jeans",
         linkImgProduct:"https://mcdn.coolmate.me/uploads/December2021/JEANS2x.png",
-        linkImgTableSize:"../src/img/img-select-size/quan-jeans.jpg"
+        linkImgTableSize:"./../../src/assets/img/img-select-size/quan-jeans.jpg"
     },
     {
         id:5,
         title:"Quần Short",
         linkImgProduct:"https://mcdn.coolmate.me/uploads/December2021/EZ_ACTIV2x.png",
-        linkImgTableSize:"../src/img/img-select-size/quan-short.jpg"
+        linkImgTableSize:"./../../src/assets/img/img-select-size/quan-short.jpg"
     },
     {
         id:6,
         title:"Trunk Cotton Pima",
         linkImgProduct:"https://mcdn.coolmate.me/image/September2022/mceclip0_25.jpg",
-        linkImgTableSize:"../src/img/img-select-size/quan-trunk-cotton-pima.jpg"
+        linkImgTableSize:"./../../src/assets/img/img-select-size/quan-trunk-cotton-pima.jpg"
     }
 ]
 const bodyList = [
@@ -150,12 +150,7 @@ const Renger =({item}) =>{
 
                         </div>
     )
-
     } 
-    
-
-
-
   return (
     
     <div className='choose-size'>
@@ -176,18 +171,11 @@ const Renger =({item}) =>{
                 <ul className={`w-100 container-fiter-child ${show ? 'show' : 'hide'}`}>
                     {allFilterSize.map((item) =>{
                             return(
-                            
                             <FilterChild key={item.id} item={item}/>
-                            
                             )
                         })}
                 </ul>
-
                 </div>
-                
-
-            
-
                 {selectItem &&
                 <div className='select-item-img'>
                 <img src={selectItem.linkImgProduct} alt= {selectItem.title}/>
@@ -195,15 +183,7 @@ const Renger =({item}) =>{
                 }
                 
                 </div>
-                
-
-                
-
-
-
-                
             </Col>
-
             <Col xs={12}  sm= {12} md={12}  lg={8}  xl={8} xxl={8} className='container-fiter-right'>
                 <Row className='container-body-parameters'>
                     <Col xs={12}  sm= {8} md={8}  lg={8}  xl={8} xxl={8} className='choose-body-parameters'>
@@ -234,8 +214,6 @@ const Renger =({item}) =>{
                 </Row>
                 <hr />
                 {selectItem &&
-                
-
                 <div className='select-item-tablesize'>
                     <div className='tablesize-content'>
                         <h6 className='title'>Size chart</h6>

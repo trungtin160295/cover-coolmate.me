@@ -1,11 +1,10 @@
 import React, { useState,useRef} from 'react';
-import useFetch from '../ultils/fetch';
+import useFetch from '../../../ultils/fetch';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 import "slick-carousel/slick/slick-theme.css";
-import Product from './Product';
-import '../style/home.scss'
+import Product from '../../../components/Product';
 
 
 
