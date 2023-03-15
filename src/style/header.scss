@@ -44,6 +44,7 @@ header{
     .navbar{
       .navbar-tittle{
         position:relative;
+        font-size: 18px;
       }
         a {
           text-decoration: none;
@@ -70,7 +71,7 @@ header{
           .menu--second__title {
             color: rgb(0, 0, 0);
             font-weight: 600;
-            font-size:22px ;
+            font-size:16px ;
           }
           .menu-3th {
             display: flex;
@@ -83,9 +84,9 @@ header{
                 flex-direction: column;
                 .menu-3th__name{
                   display: flex;
-                  font-size: 18px;
+                  font-size: 14px;
                   .menu-3th__content{
-                    font-size: 20px;
+                    font-size: 14px;
                   }
                   .menu-3th__attention{
                     border-radius: 15px 4px;
@@ -106,7 +107,7 @@ header{
                   }
                 }
                 .menu-3th__explain{
-                    font-size: 13px;
+                    font-size: 12px;
                     color: #362c2c;
                 }
               }
@@ -117,7 +118,7 @@ header{
             list-style-type: none;
             padding: 0 15px;
             .menu-4th__tittle{
-              font-size: 17px;
+              font-size: 14px;
             }
           }
           }

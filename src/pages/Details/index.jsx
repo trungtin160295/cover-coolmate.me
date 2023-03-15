@@ -12,6 +12,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import useSrt from "../../ultils/str"
 import cartSlice from "../../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
+import Loading from "../../components/Loading";
+import IconLoading from"../../assets/img/Spinner-17px.svg"
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import 'react-toastify/dist/ReactToastify.css';
@@ -63,7 +65,7 @@ const ProductDetails = () => {
         if (product.listSize && size ) {
           setButtonBuy("Thêm vào giỏ hàng")
          }else{
-          setButtonBuy(" Vui lòng chọn kích cỡ")
+          setButtonBuy(" Vui lòng chọn kích thước")
          }
       }
 
@@ -217,7 +219,7 @@ const ProductDetails = () => {
                               return(
                               <span 
                                 key={item}  
-                                className={size === item ? 'active' : ''} 
+                                className={`${size === item ? 'active' : ''} product-size__content `}
                                 onClick={() => setSize(item)}
                                 >
                                   {item}
@@ -283,19 +285,7 @@ const ProductDetails = () => {
 
           </>}
           {isLoading === true &&
-              <div className='loading'>
-              <Button
-                  color="primary"
-                  disabled
-                >
-                  <Spinner size="sm">
-                    Loading...
-                  </Spinner>
-                  <span>
-                    {' '}Loading
-                  </span>
-                </Button>
-              </div>
+              <Loading linkImg={IconLoading}/>
           }
             
     </div> 

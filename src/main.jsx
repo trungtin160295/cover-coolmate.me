@@ -19,7 +19,7 @@ import IconLoading from"./assets/img/Spinner-49px.svg"
 
 const Home = lazy(() => import('./pages/Home'));
 const ProductDetails = lazy(() => import('./pages/Details'));
-const PagesName = lazy(() => import('./pages/Category'));
+const Category = lazy(() => import('./pages/Category'));
 const Cart = lazy(() => import('./pages/Cart'));
 const AllProduct = lazy(() => import('./pages/AllProduct'));
 const AboutCoolmate = lazy(() => import('./pages/AboutCoolmate'));
@@ -63,7 +63,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="Menu/Coolxprint" element={<Coolxprint/>} />   
           <Route path="/Search/:keyWord" element={<Seach/>}/>        
           <Route path = "/product/:id" element={<ProductDetails/>}/>       
-          <Route path="/collection/:name" element={<PagesName/>}/> 
+          <Route path="/collection/:name" element={<Category/>}/> 
           {/* <Route path="*" element={<Home/>}/>            */}
         </Route>
     </Routes>

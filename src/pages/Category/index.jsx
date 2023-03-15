@@ -9,12 +9,12 @@ import sortBy from "../../ultils/sortBy"
 import IconLoading from"../../assets/img/Spinner-17px.svg"
 import './Category.scss';
 
-export  default function PageTitle () {  
+export  default function Category () {  
   const  listFilter = ["Mới nhất","Bán chạy", "Giá thấp đến cao","Giá cao đến thấp"]
   const [filter,setFilter] =useState("Mới nhất")
   const [dataProductsFilter,setDataProductsFilter] =useState([])
   const {name} = useParams();
- 
+ console.log(useSrt(name));
   
     const { data: dataProducts, isLoading }
   = useFetch(`products/?q=${name}`); 

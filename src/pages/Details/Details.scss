@@ -85,7 +85,7 @@
                         background-color: rgb(227, 240, 166);;
                     }
                 }                           
-            }in
+            }
             .product-size{
                 margin-top: 20px ;
 
@@ -93,8 +93,7 @@
                     display: flex;
                     gap:10px;
 
-                    span{
-                       
+                    .product-size__content{
                         border-radius:5px ;
                         border: 2px solid;
                         background-color: rgb(245, 245, 245);

@@ -168,7 +168,7 @@ function focusSeachInput (){
                                      <Link to={
                                          child.name==="Tất cả sản phẩm" ?
                                           "Menu/Sản-phẩm"
-                                          :`collection/${useSrt(child.name)}`}
+                                          : `collection/${child.name.replaceAll(/\s+/g, "-")}`}
                                          className="menu-3th__tittle">
                                        <div className="menu-3th__name"> 
                                           <div className="menu-3th__content">{child.name} </div> 
@@ -184,9 +184,8 @@ function focusSeachInput (){
                                          <ul className="menu-4th">                                                                              
                                          {child.product.map((content) => {
                                          return (
-                                       <li key= {content}>
-                                        <Link to= {`collection/${useSrt(content,true)}`}  className="menu-4th__tittle">{content}</Link>
-                                                                                              
+                                        <li key= {content} className="menu-4th__tittle">
+                                         <Link to= {`collection/${content.replaceAll(/\s+/g, "-")}`}  className="menu-4th__tittle">{content}</Link>
                                         </li>                                                   
                                           )
                                        })} 
@@ -243,14 +242,11 @@ function focusSeachInput (){
                   <ul className="nabar__flex" >
                       { dataheader.header.map((item) =>{
                           return(
-                            <li className="navbar-tittle " style={{fontSize:"22px"}} key={item.id}>
+                            <li className="navbar-tittle " key={item.id}>
                                   <NavLink  to={`Menu/${useSrt(item.title,true)}` }
                                    > 
                                     {item.title}  
                                   </NavLink>
-                                  
-                                    
-                                   
                                     {  item.title === "Sản phẩm"&& item.child  ?
                                     
                                   <>

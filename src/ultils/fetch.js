@@ -5,6 +5,7 @@ const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
+  console.log(`http://localhost:3004/${url}`);
 
   useEffect(() => {
     setIsLoading(true);
