@@ -340,6 +340,7 @@ const Cart = () => {
                     </div>
 
             </div>
+            <hr />
 
                 
             </Col>

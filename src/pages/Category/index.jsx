@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useState ,useEffect} from "react";
 import ListProduct from "../../components/ListProduct";
+import Loading from "../../components/Loading";
+
 import useFetch from "../../ultils/fetch";
 import useSrt from "../../ultils/str"
 import sortBy from "../../ultils/sortBy"
+import IconLoading from"../../assets/img/Spinner-17px.svg"
 import './Category.scss';
 
 export  default function PageTitle () {  
@@ -14,12 +17,12 @@ export  default function PageTitle () {
  
   
     const { data: dataProducts, isLoading }
-  = useFetch(`products/?q=${name}`, false); 
+  = useFetch(`products/?q=${name}`); 
   if(isLoading === false && !dataProductsFilter.length){
     setDataProductsFilter(dataProducts)
     }
 
-
+    
   useEffect(() => {
     if(isLoading === false && dataProducts.length >0){
       let data =[...dataProducts]
@@ -46,7 +49,7 @@ export  default function PageTitle () {
 
   return (
     <>
-        <div className="collections-filter">
+        <div className="collections-filter__cattgory">
             <h2>Sản phẩm :{useSrt(name,false)} </h2> 
             <select
               value={filter}
@@ -59,7 +62,8 @@ export  default function PageTitle () {
               ))}
           </select>
         </div>
-                  { isLoading === false && dataProducts.length >0 &&
+        {isLoading && <Loading linkImg={IconLoading}/> }
+        { isLoading === false && dataProducts.length >0 &&
             <ListProduct 
               dataProducts ={dataProductsFilter}
             />

@@ -109,11 +109,11 @@ export default function SliderBanner(args) {
             </Carousel>
 
         </div>
-        <div className='policy'>
+        <div className='slide-policy'>
             {
 
                 listPolicy.map((policy) => {
-                    return (<span key={policy.id}>{policy.content}</span> )
+                    return (<span key={policy.id} className="slide-policy__content">{policy.content}</span> )
                    
                 })
             }

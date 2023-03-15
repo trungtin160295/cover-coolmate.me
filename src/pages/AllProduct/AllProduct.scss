@@ -1,9 +1,11 @@
 .collections-filter{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   .collections-filter__img{
     display: flex;
     justify-content: center;
+    padding-top:10px ;
   }
 }
 

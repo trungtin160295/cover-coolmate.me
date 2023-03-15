@@ -238,6 +238,15 @@ export default function Coolxprint() {
       <section className="pod-why">
         <div className="container container--medium">
           <div className="pod-why__cart">
+          <div className="pod-why__heading">
+              <span>
+                Vì sao
+                <br />
+                lựa chọn
+                <br />
+                CoolXPrint?
+              </span>
+            </div>
             <div className="pod-why__item">
               <div className="pod-why__inner">
                 <PodWhy 
@@ -266,15 +275,7 @@ export default function Coolxprint() {
                 />
               </div>
             </div>
-            <div className="pod-why__heading">
-              <span>
-                Vì sao
-                <br />
-                lựa chọn
-                <br />
-                CoolXPrint?
-              </span>
-            </div>
+            
           </div>
         </div>
       </section>

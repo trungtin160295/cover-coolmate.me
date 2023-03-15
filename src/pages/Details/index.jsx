@@ -5,7 +5,6 @@ import ImageGallery from "react-image-gallery";
 import useFetch from "../../ultils/fetch";
 import { Button,Spinner } from 'reactstrap';
 import {Row,Col } from 'react-bootstrap';
-import Text from '../../components/Text';
 import { useParams} from "react-router-dom";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
@@ -178,18 +177,18 @@ const ProductDetails = () => {
                       </div>
                       
                       <div className="product-price">
-                        <Text className="price-discount">{Math.round(product.price*(1-(product.discount/100)))}.000đ &nbsp;</Text>  
+                        <div className="price-discount">{Math.round(product.price*(1-(product.discount/100)))}.000đ &nbsp;</div>  
                         
                         {product.discount ?
                         <>
-                          <Text  className="price">{product.price}.000đ &nbsp;</Text> 
-                          <Text  className="product-discount">-{product.discount}%</Text>
+                          <div  className="price">{product.price}.000đ &nbsp;</div> 
+                          <div  className="product-discount">-{product.discount}%</div>
                         </>
                         :null}
                       </div>
 
                       { product.sale != "" &&
-                        <Text className="product-sale">{product.sale}   </Text>
+                        <div className="product-sale">{product.sale}   </div>
                         }
                       <div className="product-color">
                         <span>Màu sắc:</span>

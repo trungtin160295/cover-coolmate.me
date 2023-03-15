@@ -7,6 +7,8 @@ const useFetch = (url) => {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
+    setIsError(false);
     const ourRequest = axios.CancelToken.source(); // <-- 1st step
 
     async function fetchData() {

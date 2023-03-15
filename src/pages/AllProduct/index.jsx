@@ -3,6 +3,8 @@ import useFetch from "../../ultils/fetch";
 import useSrt from "../../ultils/str"
 import { useParams } from "react-router-dom";
 import {Row,Col, } from 'react-bootstrap';
+import Loading from "../../components/Loading";
+import IconLoading from"../../assets/img/Spinner-17px.svg"
 
 
 
@@ -85,8 +87,6 @@ export default function AllProduct () {
    
    
     const Collection =({collection}) =>{  
-        
-       
       let productFilter       
         if(collection.type===true){
             let productFilter1 = dataProducts.filter(product =>product.type==useSrt(collection.title1,true));
@@ -99,8 +99,6 @@ export default function AllProduct () {
         else{
              productFilter = dataProducts.filter(product =>product.category==useSrt(collection.title1,true))
         }
-        
-
         return(
            
             <>
@@ -114,24 +112,20 @@ export default function AllProduct () {
             </>
         )
     }
-
     return(
         <div className="all-products">
             <div className="collections-filter">
                 {collectionsFilter.map((item) => {
                     return(
                         <Col className="collections-filter__img"><a href="#"><img src={item.linkImg} key={item.id} alt=""  /></a></Col>
-                        
                     )
                 })}
             </div>
             <hr />
            {isLoading===false && dataProducts.length >0 ?
-           
             collectionsListing.map((collection) =>{
                 return < Collection collection={collection} key={collection.id}/>
-
-            }):null
+            }):<Loading linkImg={IconLoading}/>
             
            } 
         </div>

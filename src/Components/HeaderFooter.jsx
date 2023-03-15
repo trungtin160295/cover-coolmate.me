@@ -7,6 +7,8 @@ import { useSelector,useDispatch  } from "react-redux";
 import axios from "axios";
 import IconSearch from "../assets/img/icon-search.svg"
 import IconCart from "../assets/img/icon-cart.svg"
+import IconMenu from "../assets/img/icon-menu.svg"
+
 import { Button,Spinner } from 'reactstrap';
 import { Col } from "react-bootstrap";
 
@@ -37,8 +39,14 @@ import '../style/footer.scss'
     };
     const handleClicMore = () => {
         setShow(false)
-      navigate(`/Seach/${keyWord}`);
+      navigate(`/Search/${keyWord}`);
     };
+    function  onKeyPressSeach (e){
+      if(e.key === "Enter" ){
+          setShow(false)
+          navigate(`/Search/${keyWord}`)
+      }
+      }
 //   const { data: dataProductsSeach,isLoading:loadSeach }
 //   = useFetch(`http://localhost:3004/products/?q=${keyWord}`, false); 
   useEffect(() => {
@@ -87,30 +95,39 @@ function focusSeachInput (){
     setShow(true)
 }
 
-  function  onKeyPressSeach (e){
-    if(e.key === "Enter" ){
-        setShow(false)
-        navigate(`/Seach/${keyWord}`)
-    }
-    }
+ 
     
   
   function onChangeKey(e){
     setKeyWord(e.target.value)
   }
+  function onClickMenu() {
+    
+    var menu= document.getElementById("navbar-ipad")
+    menu.classList.toggle("navbar-show")
+    
+    
+  }
+  function onClickMenuHide() {
+    
+    var menu= document.getElementById("navbar-ipad")
+    menu.classList.toggle("navbar-show")
+    
+  }
+  const sumQuantity = (cartProduct) =>{     
+    let  sumProduct = 0 ;
+    for (let i = 1; i < cartProduct.length  ; i++){
+        
+        sumProduct += cartProduct[i].quantity;
+    }         
+    return sumProduct;
+}
   useEffect(() => {
         
     setSumProduct(sumQuantity(cartProduct.cartItems))
 },[cartProduct]) 
 
-   const sumQuantity = (cartProduct) =>{     
-        let  sumProduct = 0 ;
-        for (let i = 1; i < cartProduct.length  ; i++){
-            
-            sumProduct += cartProduct[i].quantity;
-        }         
-        return sumProduct;
-    }
+ 
     useEffect(() => {
         
         setSumProduct(sumQuantity(cartProduct.cartItems))
@@ -151,7 +168,7 @@ function focusSeachInput (){
                                      <Link to={
                                          child.name==="Tất cả sản phẩm" ?
                                           "Menu/Sản-phẩm"
-                                          :`collection/${useSrt(child.name,true)}`}
+                                          :`collection/${useSrt(child.name)}`}
                                          className="menu-3th__tittle">
                                        <div className="menu-3th__name"> 
                                           <div className="menu-3th__content">{child.name} </div> 
@@ -190,10 +207,10 @@ function focusSeachInput (){
     }
     function AboutCool({data}) {
       
-     return(<div className="about-cool">
+     return(<div className="container-about-cool">
      { data.map((content) =>{
           return(
-              <Col key={content.id} xs={12}  sm= {12} md={6}  lg={3}  xl={3} xxl={3} className=" container-about-cool">
+              <Col key={content.id} xs={12}  sm= {12} md={6}  lg={3}  xl={3} xxl={3} className=" about-cool">
                 <div className="container-child"><img src={content.linkImg} alt={content.title} />
                   <div className="container-child__title">{content.title}</div>
                   <p>{content.content}</p>
@@ -208,7 +225,8 @@ function focusSeachInput (){
     )}
 
     
-    return (    
+    return ( 
+        <>
         <header>
             
             {dataheader.sale ? <h5 className='most-special' >{dataheader.sale} </h5> :null}        
@@ -216,9 +234,12 @@ function focusSeachInput (){
             <nav >
                 <div className="nav">
                 <div className="nav__logo">
-                    <Link to="/"><img src="https://www.coolmate.me/images/logo-coolmate.svg" alt="" /></Link>                    
+                    <Link to="/"><img src="https://www.coolmate.me/images/logo-coolmate.svg" alt="" /></Link>     
+                                  
                 </div>
-                <div className="navbar">
+                <div id="button-menu" className="button-menu" onClick={()=>onClickMenu()} > <a href="#navbar-ipad"><img src={IconMenu} alt="" /></a></div> 
+                
+                <div  className="navbar">
                   <ul className="nabar__flex" >
                       { dataheader.header.map((item) =>{
                           return(
@@ -278,6 +299,7 @@ function focusSeachInput (){
                 </div>
             </nav>
              :null}
+            
              <div  className={`container-seach  ${show ? 'show-nav-seach' : ''}`}>
                 <div className="nav-seach">
                     <input ref = {seachInput} type="text"  onChange={(e) =>onChangeKey(e)} onKeyDown={(e) => onKeyPressSeach(e)} />
@@ -319,7 +341,51 @@ function focusSeachInput (){
                 :null}
                
              </div>
+             
         </header>
+        <div id="navbar-ipad" className="navbar-ipad" onClick={()=>onClickMenuHide()}>
+        
+        <div className="list-menu" >
+                      { dataheader.header.map((item) =>{
+                          return(
+                            <li className="navbar-tittle " style={{fontSize:"22px"}} key={item.id}>
+                                  <NavLink  to={`Menu/${useSrt(item.title,true)}` }
+                                   > 
+                                    {item.title}  
+                                  </NavLink>
+                                  
+                                    
+                                   
+                                    {  item.title === "Sản phẩm"&& item.child  ?
+                                    
+                                  <>
+                                    
+                                    <div className="menu__dropdown">
+                                    <TypesOpProduct data = {item.child}/>
+                                    </div>
+                                  </>
+                                  :null
+                                   }
+                                    { item.title === "Về Coolmate" && item.child ?
+                                    <>
+                                   
+                                      <div className="menu__dropdown">
+                                       <AboutCool data={item.child}/> 
+                                      </div>
+                                      </>
+                                  :null
+                                   }
+                                    
+                                   
+                            </li>
+                        )
+                        })  
+                    }                      
+        </div>      
+        </div>
+    </> 
+        
+
     )
   }
    

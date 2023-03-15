@@ -1,6 +1,5 @@
 
 
-
  
   .category-container {
     position: relative;
@@ -114,27 +113,29 @@
   
   .slide {
     position: relative;
-  }
-  .slide img {
+    img {
     height: 80vh;
     width: 100%;
   }
-  .policy {
+  .slide-policy {
     position: absolute;
     bottom: 30px;
     width: 100%;
     z-index: 3;
-    color: aqua;
     display: flex;
     justify-content: space-around;
-    span {
+    .slide-policy__content {
       border: solid;
       border-radius: 10px;
-      background: #f9f9f9;
-      color: rgba(13, 17, 1, 0.766);
+      background: #f3f5ef;
+      color: rgb(0, 0, 0);
       padding: 10px 25px;
+      text-align: center;
     }
   }
+  }
+
+  
  
   
   
@@ -274,6 +275,14 @@
   
 }
 
+@media  only screen and (max-width: 820px) {
+  .slide img{
+    height: 50vh;
+  }
+  .slide-policy__content{
+    padding: 0;
+  }
+}
 
 
 

@@ -4,10 +4,7 @@ header{
   position: fixed;
   width: 100%;
   z-index: 5;
-  .nav__logo {
-    display: flex;
-    align-items: center;
-  }
+  
   .most-special{
     text-align: center;
     font-weight: 600;
@@ -15,17 +12,27 @@ header{
     margin-bottom: 0;
     line-height:30px ;
   }
+  
   .nav {
-    background-color: rgb(205, 236, 236);
+    background-color: #9fefeb;
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin:0 auto ;
     position:relative;
-    .nav__logo img {
-      width: 100px;
-      height: 40px;
-      padding-top: 5px;
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 40px;
+        padding-top: 5px;
+      }
+    }
+    .button-menu{
+      display: none;
+      align-items: center;
     }
     .navbar>ul {
       margin: 10px 0 0px 0;
@@ -115,15 +122,16 @@ header{
           }
           }
           
-          .about-cool{     
+          .container-about-cool{     
             display: flex;
             justify-content: space-evenly;
               padding-top:20px ;
               color: black;
-            .container-about-cool{
+            .about-cool{
               color: black;
               img{
                   width: 100%;
+                  height: 280px;
                   border-radius: 20px;
               }
               .container-child{
@@ -141,7 +149,7 @@ header{
         
       
       .menu__space{
-        background-color: rgb(205, 236, 236);
+        background-color:#9fefeb;
         position: absolute;
         width: 100px;
         z-index: 1;
@@ -158,7 +166,7 @@ header{
       button {
         border: none;
         padding:5px 10px ;
-        background-color:  rgb(205, 236, 236);
+        background-color: #9fefeb;
        
       } 
       button:hover{
@@ -190,8 +198,146 @@ header{
     
    
   }
+  @media  only screen and (max-width: 820px) {
+    .nav {
+      justify-content: space-between;
+      padding:0 10px ;
+      .button-menu{
+        display: flex;
+      }
+    }
+    .navbar{
+      display: none;
+    }
+    .container-seach{
+      width: 90%;
+    }
+    
+    
+    
+  }
+
 }
 
+.navbar-ipad{
+  width: 100%;
+  z-index: 5;
+  background-color: #ffffff;
+  display: none;
+ .list-menu{
+  padding-top: 100px;
+  list-style-type: none;
+  .navbar-tittle{
+    font-size: 20px;
+    font-weight: 500;
+  }
+ }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .button-menu__hide{
+    position: fixed;
+    margin-top: 100px;
+   text-align: right;
+   width: 100%;
+   
+  }
+  .menu__dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    left: 0;
+    z-index: 5;
+    margin-top: 8px;
+    padding: 10px;
+    justify-content: space-evenly;
+    padding-left:10px ;
+      .menu--second__title {
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-size:22px ;
+      }
+      .menu-3th {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        padding-left: 10px;
+          .menu-3th__tittle {
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            .menu-3th__name{
+              display: flex;
+              font-size: 18px;
+              .menu-3th__content{
+                font-size: 20px;
+              }
+              .menu-3th__attention{
+                border-radius: 15px 4px;
+                padding: 0 6px;
+                margin-left: 10px ;
+              }
+              .hot {
+                background-color: #f8ed7b;
+                color: #e63434;
+              }
+              .sale {
+                background-color: rgba(240, 131, 77, 0.733);
+                color: #f4eeee;
+              }
+              .new {
+                background-color: rgba(63, 202, 86, 0.7);
+                color: #f4eeee;
+              }
+            }
+            .menu-3th__explain{
+                font-size: 13px;
+                color: #362c2c;
+            }
+          }
+        }
+      .menu-4th{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0 15px;
+        .menu-4th__tittle{
+          font-size: 17px;
+        }
+      }
+      }
+      .container-about-cool{     
+        display: flex;
+        justify-content: space-evenly;
+          padding-top:20px ;
+          color: black;
+          flex-direction: column;
+        .about-cool{
+          color: black;
+          img{
+              width: 100%;
+              height: 280px;
+              border-radius: 20px;
+          }
+          .container-child{
+            margin:10px ;
+            .container-child__title{
+              font-weight: 600;
+              margin: 10px 0;
+          }
+          p{
+              font-size: 16px;
+          }
+        }
+          }
+      }
+}
+.navbar-show{
+  display: block;
+}
   
   
   //login//
